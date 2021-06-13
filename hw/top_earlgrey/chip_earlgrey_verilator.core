@@ -116,7 +116,7 @@ targets:
           # Users can override this setting by appending e.g.
           # --verilator_options '--threads 2'
           # to the end of the fusesoc invocation when compiling the simulation.
-          # - '--threads 4'
+          - '--threads 4'
           # XXX: Cleanup all warnings and remove this option
           # (or make it more fine-grained at least)
           - '-Wno-fatal'
