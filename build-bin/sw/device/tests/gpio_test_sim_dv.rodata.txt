@@ -1,0 +1,918 @@
+addr: 200024f0
+string: 
+addr: 200024f4
+string: L-
+addr: 200024f7
+string: �
+addr: 20002500
+string: r-
+addr: 20002503
+string: 
+addr: 20002508
+string: L-
+addr: 2000250b
+string: �
+addr: 20002510
+string: 
+addr: 20002514
+string: �-
+addr: 20002517
+string: 
+addr: 2000251c
+string: L-
+addr: 2000251f
+string: �
+addr: 20002524
+string: 
+addr: 20002528
+string: �-
+addr: 2000252b
+string: 
+addr: 20002530
+string: L-
+addr: 20002533
+string: �
+addr: 2000253c
+string: .
+addr: 2000253f
+string: 
+addr: 20002544
+string: L-
+addr: 20002547
+string: �
+addr: 2000254c
+string: 
+addr: 20002550
+string: C.
+addr: 20002553
+string: 
+addr: 20002558
+string: L-
+addr: 2000255b
+string: 
+addr: 20002564
+string: }.
+addr: 20002567
+string: 
+addr: 2000256c
+string: L-
+addr: 2000256f
+string: 
+addr: 20002574
+string: 
+addr: 20002578
+string: �.
+addr: 2000257b
+string: 
+addr: 20002580
+string: L-
+addr: 20002583
+string: 
+addr: 2000258c
+string: �.
+addr: 2000258f
+string: 
+addr: 20002594
+string: L-
+addr: 20002597
+string: 
+addr: 200025a0
+string: �.
+addr: 200025a3
+string: 
+addr: 200025a8
+string: L-
+addr: 200025ab
+string: 
+addr: 200025b4
+string: %/
+addr: 200025b7
+string: 
+addr: 200025c0
+string: L-
+addr: 200025c3
+string: E
+addr: 200025cc
+string: F/
+addr: 200025cf
+string: 
+addr: 200025d4
+string: L-
+addr: 200025d7
+string: I
+addr: 200025e0
+string: ]/
+addr: 200025e3
+string: 
+addr: 200025e8
+string: L-
+addr: 200025eb
+string: Q
+addr: 200025f4
+string: ~/
+addr: 200025f7
+string: 
+addr: 200025fc
+string: L-
+addr: 200025ff
+string: U
+addr: 20002608
+string: �/
+addr: 2000260b
+string: 
+addr: 20002610
+string: L-
+addr: 20002613
+string: [
+addr: 2000261c
+string: �/
+addr: 2000261f
+string: 
+addr: 20002624
+string: L-
+addr: 20002627
+string: a
+addr: 20002630
+string: 0
+addr: 20002633
+string: 
+addr: 20002638
+string: L-
+addr: 2000263b
+string: k
+addr: 20002644
+string: 40
+addr: 20002647
+string: 
+addr: 2000264c
+string: L-
+addr: 2000264f
+string: o
+addr: 20002658
+string: N0
+addr: 2000265b
+string: 
+addr: 20002660
+string: L-
+addr: 20002663
+string: u
+addr: 2000266c
+string: �0
+addr: 2000266f
+string: 
+addr: 20002674
+string: L-
+addr: 20002677
+string: z
+addr: 20002680
+string: �0
+addr: 20002683
+string: 
+addr: 20002688
+string: L-
+addr: 2000268b
+string: �
+addr: 20002690
+string: 
+addr: 20002694
+string: �0
+addr: 20002697
+string: 
+addr: 2000269c
+string: L-
+addr: 2000269f
+string: �
+addr: 200026a8
+string: �0
+addr: 200026ab
+string: 
+addr: 200026b0
+string: L-
+addr: 200026b3
+string: �
+addr: 200026bc
+string: �0
+addr: 200026bf
+string: 
+addr: 200026c4
+string: L-
+addr: 200026c7
+string: �
+addr: 200026d0
+string: �0
+addr: 200026d3
+string: 
+addr: 200026d8
+string: L-
+addr: 200026db
+string: �
+addr: 200026e4
+string: �0
+addr: 200026e7
+string: 
+addr: 200026ec
+string: L-
+addr: 200026ef
+string: �
+addr: 200026f4
+string: 
+addr: 200026f8
+string: �0
+addr: 200026fb
+string: 
+addr: 20002700
+string: L-
+addr: 20002703
+string: �
+addr: 2000270c
+string: �0
+addr: 2000270f
+string: 
+addr: 20002714
+string: L-
+addr: 20002717
+string: �
+addr: 20002720
+string: �0
+addr: 20002723
+string: 
+addr: 20002728
+string: L-
+addr: 2000272b
+string: �
+addr: 20002734
+string: 1
+addr: 20002737
+string: 
+addr: 2000273c
+string: L-
+addr: 2000273f
+string: �
+addr: 20002748
+string: 1
+addr: 2000274b
+string: 
+addr: 20002750
+string: L-
+addr: 20002753
+string: �
+addr: 2000275c
+string: W1
+addr: 2000275f
+string: 
+addr: 20002764
+string: L-
+addr: 20002767
+string: �
+addr: 20002770
+string: �1
+addr: 20002773
+string: 
+addr: 20002778
+string: L-
+addr: 2000277b
+string: �
+addr: 20002784
+string: N0
+addr: 20002787
+string: 
+addr: 2000278c
+string: 
+addr: 20002790
+string: �1
+addr: 20002793
+string: �1
+addr: 20002797
+string: �1
+addr: 2000279b
+string: �1
+addr: 2000279f
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 200027f4
+string: �1
+addr: 200027f7
+string: 
+addr: 20002800
+string: �1
+addr: 20002803
+string: 
+addr: 20002808
+string: �1
+addr: 2000280b
+string: "
+addr: 20002814
+string: 2
+addr: 20002817
+string: 
+addr: 2000281c
+string: 2
+addr: 2000281f
+string: E
+addr: 20002828
+string: &2
+addr: 2000282b
+string: 
+addr: 20002830
+string: 2
+addr: 20002833
+string: K
+addr: 2000283c
+string: >2
+addr: 2000283f
+string: 
+addr: 20002844
+string: 2
+addr: 20002847
+string: Q
+addr: 20002850
+string: S2
+addr: 20002853
+string: 
+addr: 20002858
+string: 2
+addr: 2000285b
+string: n
+addr: 20002864
+string: B3
+addr: 20002867
+string: 
+addr: 2000286c
+string: 2
+addr: 2000286f
+string: 
+addr: 20002874
+string: 
+addr: 20002878
+string: _3
+addr: 2000287b
+string: 
+addr: 20002880
+string: 2
+addr: 20002883
+string: 
+addr: 20002888
+string: 
+addr: 2000288c
+string: b3
+addr: 2000288f
+string: 
+addr: 20002894
+string: v3
+addr: 20002897
+string: 
+addr: 200028a0
+string: �3
+addr: 200028a3
+string: 
+addr: 200028a8
+string: v3
+addr: 200028ab
+string: !
+addr: 200028b4
+string: �3
+addr: 200028b7
+string: 
+addr: 200028bc
+string: 
+addr: 200028c0
+string: 
+addr: 200028c4
+string: 
+addr: 200028c8
+string: 
+addr: 200028cc
+string: 
+addr: 200028d0
+string: 
+addr: 200028d4
+string: 
+addr: 200028d8
+string: 
+addr: 200028dc
+string: 
+addr: 200028e0
+string: 
+addr: 200028e4
+string: 
+addr: 200028e8
+string: 
+addr: 200028ec
+string: 
+addr: 200028f0
+string: 
+addr: 200028f4
+string: 
+addr: 200028f8
+string: 
+addr: 200028fc
+string: 
+addr: 20002900
+string: 
+addr: 20002904
+string: 
+addr: 20002908
+string: 
+addr: 2000290c
+string: 
+addr: 20002910
+string: 
+addr: 20002914
+string: 
+addr: 20002918
+string: 
+addr: 2000291c
+string: 
+addr: 20002920
+string: 
+addr: 20002924
+string: 
+addr: 20002928
+string: 
+addr: 2000292c
+string: 
+addr: 20002930
+string: 
+addr: 20002934
+string: 
+addr: 20002938
+string: 
+addr: 2000293c
+string: 
+addr: 20002940
+string: 
+addr: 20002944
+string: 
+addr: 20002948
+string: 
+addr: 2000294c
+string: 
+addr: 20002950
+string: 
+addr: 20002954
+string: 
+addr: 20002958
+string: 
+addr: 2000295c
+string: 
+addr: 20002960
+string: 
+addr: 20002964
+string: 
+addr: 20002968
+string: 
+addr: 2000296c
+string: 
+addr: 20002970
+string: 
+addr: 20002974
+string: 
+addr: 20002978
+string: 
+addr: 2000297c
+string: 
+addr: 20002980
+string: 
+addr: 20002984
+string: 
+addr: 20002988
+string: 
+addr: 2000298c
+string: 
+addr: 20002990
+string: 
+addr: 20002994
+string: 
+addr: 20002998
+string: 
+addr: 2000299c
+string: 
+addr: 200029a0
+string: 
+addr: 200029a4
+string: 
+addr: 200029a8
+string: 
+addr: 200029ac
+string: 
+addr: 200029b0
+string: 
+addr: 200029b4
+string: 
+addr: 200029b8
+string: 
+addr: 200029bc
+string: 
+addr: 200029c0
+string: 
+addr: 200029c4
+string: 
+addr: 200029c8
+string: 
+addr: 200029cc
+string: 
+addr: 200029d0
+string: 
+addr: 200029d4
+string: 
+addr: 200029d8
+string: 
+addr: 200029dc
+string: 
+addr: 200029e0
+string: 
+addr: 200029e4
+string: 
+addr: 200029e8
+string: 
+addr: 200029ec
+string: 
+addr: 200029f0
+string: 
+addr: 200029f4
+string: 
+addr: 200029f8
+string: 
+addr: 200029fc
+string: 
+addr: 20002a00
+string: 
+addr: 20002a04
+string: 
+addr: 20002a08
+string: 
+addr: 20002a0c
+string: 
+addr: 20002a10
+string: 
+addr: 20002a14
+string: 
+addr: 20002a18
+string: 
+addr: 20002a1c
+string: 
+addr: 20002a20
+string: 
+addr: 20002a24
+string: 
+addr: 20002a28
+string: 
+addr: 20002a2c
+string: 
+addr: 20002a30
+string: 
+addr: 20002a34
+string: 
+addr: 20002a38
+string: 
+addr: 20002a3c
+string: 
+addr: 20002a40
+string: 
+addr: 20002a44
+string: 
+addr: 20002a48
+string: 
+addr: 20002a4c
+string: 
+addr: 20002a50
+string: 
+addr: 20002a54
+string: 
+addr: 20002a58
+string: 
+addr: 20002a5c
+string: 
+addr: 20002a60
+string: 
+addr: 20002a64
+string: 
+addr: 20002a68
+string: 
+addr: 20002a6c
+string: 
+addr: 20002a70
+string: 
+addr: 20002a74
+string: 
+addr: 20002a78
+string: 
+addr: 20002a7c
+string: 
+addr: 20002a80
+string: 
+addr: 20002a84
+string: 
+addr: 20002a88
+string: 
+addr: 20002a8c
+string: 
+addr: 20002a90
+string: 
+addr: 20002a94
+string: 
+addr: 20002a98
+string: 
+addr: 20002a9c
+string: 
+addr: 20002aa0
+string: 
+addr: 20002aa4
+string: 
+addr: 20002aa8
+string: 
+addr: 20002aac
+string: 
+addr: 20002ab0
+string: 
+addr: 20002ab4
+string: 
+addr: 20002ab8
+string: 
+addr: 20002abc
+string: 
+addr: 20002ac0
+string: 
+addr: 20002ac4
+string: 
+addr: 20002ac8
+string: 
+addr: 20002acc
+string: 
+addr: 20002ad0
+string: 
+addr: 20002ad4
+string: 
+addr: 20002ad8
+string: 
+addr: 20002adc
+string: 
+addr: 20002ae0
+string: 
+addr: 20002ae4
+string: 
+addr: 20002ae8
+string: 
+addr: 20002aec
+string: 
+addr: 20002af0
+string: 
+addr: 20002af4
+string: 
+addr: 20002af8
+string: 
+addr: 20002afc
+string: 
+addr: 20002b00
+string: 
+addr: 20002b04
+string: 
+addr: 20002b08
+string: 
+addr: 20002b0c
+string: 
+addr: 20002b10
+string: 
+addr: 20002b14
+string: 
+addr: 20002b18
+string: 
+addr: 20002b1c
+string: 
+addr: 20002b20
+string: 
+addr: 20002b24
+string: 
+addr: 20002b28
+string: 
+addr: 20002b2c
+string: 
+addr: 20002b30
+string: 
+addr: 20002b34
+string: 
+addr: 20002b38
+string: 
+addr: 20002b3c
+string: 
+addr: 20002b40
+string: 
+addr: 20002b44
+string: 
+addr: 20002b48
+string: 
+addr: 20002b4c
+string: 
+addr: 20002b50
+string: 
+addr: 20002b54
+string: 
+addr: 20002b58
+string: 
+addr: 20002b5c
+string: 
+addr: 20002b60
+string: 
+addr: 20002b64
+string: 
+addr: 20002b68
+string: 
+addr: 20002b6c
+string: 
+addr: 20002b70
+string: 
+addr: 20002b74
+string: 
+addr: 20002b78
+string: 
+addr: 20002b7c
+string: 
+addr: 20002b80
+string: 
+addr: 20002b84
+string: 
+addr: 20002b90
+string: 
+addr: 20002b94
+string: 
+addr: 20002b98
+string: 
+addr: 20002b9c
+string: 
+addr: 20002ba0
+string: 
+addr: 20002ba4
+string: 
+addr: 20002ba8
+string: 
+addr: 20002bac
+string: 
+addr: 20002bb0
+string: 
+addr: 20002bb4
+string: 
+addr: 20002bb8
+string: 
+addr: 20002bbc
+string: 
+addr: 20002bc0
+string: 
+addr: 20002bc4
+string: 
+addr: 20002bc8
+string: 
+addr: 20002bcc
+string: 
+addr: 20002bd0
+string: 
+addr: 20002bd4
+string: 
+addr: 20002bd8
+string: 
+addr: 20002bdc
+string: 
+addr: 20002be0
+string: 
+addr: 20002be4
+string: 
+addr: 20002be8
+string: 
+addr: 20002bec
+string: 
+addr: 20002bf0
+string: 
+addr: 20002bf4
+string: 
+addr: 20002bf8
+string: 
+addr: 20002bfc
+string: 
+addr: 20002c00
+string: 
+addr: 20002c04
+string: 
+addr: 20002c08
+string: 
+addr: 20002c0c
+string: 
+addr: 20002c10
+string: 
+addr: 20002c21
+string: ��
+addr: 20002c29
+string: 6n
+addr: 20002c31
+string: l�
+addr: 20002c38
+string: @B
+addr: 20002c40
+string: ��
+addr: 20002c47
+string: 0
+addr: 20002c4b
+string: 0
+addr: 20002c4d
+string: ../sw/device/tests/sim_dv/gpio_test.c
+addr: 20002d72
+string: CHECK-fail: dif_plic_irq_claim failed
+addr: 20002d98
+string: CHECK-fail: Interrupt from incorrect peripheral: (exp: %d, obs: %s)
+addr: 20002ddc
+string: CHECK-fail: Incorrect GPIO interrupt (exp: %d, obs: %d)
+addr: 20002e14
+string: CHECK-fail: dif_gpio_irq_is_pending_all failed
+addr: 20002e43
+string: CHECK-fail: Incorrect GPIO irqs status {exp: %x, obs: %x}
+addr: 20002e7d
+string: CHECK-fail: dif_gpio_read failed
+addr: 20002e9e
+string: CHECK-fail: Incorrect GPIO %d pin value (exp: %b)
+addr: 20002ed0
+string: CHECK-fail: dif_gpio_irq_acknowledge failed
+addr: 20002efc
+string: CHECK-fail: dif_plic_irq_complete failed
+addr: 20002f25
+string: CHECK-fail: dif_gpio_init failed
+addr: 20002f46
+string: Initializing the PLIC.
+addr: 20002f5d
+string: CHECK-fail: dif_plic_init failed
+addr: 20002f7e
+string: CHECK-fail: dif_plic_irq_set_trigger failed
+addr: 20002faa
+string: CHECK-fail: dif_plic_irq_set_priority failed
+addr: 20002fd7
+string: CHECK-fail: dif_plic_irq_set_enabled failed
+addr: 20003003
+string: CHECK-fail: dif_plic_target_set_threshold failed
+addr: 20003034
+string: Starting GPIO output test
+addr: 2000304e
+string: CHECK-fail: dif_gpio_output_set_enabled_all failed
+addr: 20003081
+string: CHECK-fail: dif_gpio_write_all failed
+addr: 200030a7
+string: CHECK-fail: dif_gpio_read_all failed
+addr: 200030cc
+string: CHECK-fail: GPIOs mismatched (written = %x, read = %x)
+addr: 20003103
+string: Starting GPIO input test
+addr: 2000311c
+string: CHECK-fail: dif_gpio_input_noise_filter_set_enabled failed
+addr: 20003157
+string: CHECK-fail: dif_gpio_irq_set_trigger failed
+addr: 20003183
+string: CHECK-fail: dif_gpio_irq_set_enabled_masked failed
+addr: 200031b6
+string: %s%5d %s:%d]
+addr: 200031c4
+string: 
+addr: 200031c7
+string: I
+addr: 200031c9
+string: W
+addr: 200031cb
+string: E
+addr: 200031cd
+string: F
+addr: 200031cf
+string: ?
+addr: 200031d1
+string: %
+addr: 200031d3
+string: -
+addr: 200031d5
+string: 0x
+addr: 200031d8
+string: ../sw/device/lib/testing/test_status.c
+addr: 200031ff
+string: PASS!
+addr: 20003205
+string: FAIL!
+addr: 2000320b
+string: ../sw/device/lib/handler.c
+addr: 20003226
+string: Software IRQ triggered!
+addr: 2000323e
+string: Timer IRQ triggered!
+addr: 20003253
+string: External IRQ triggered!
+addr: 2000326b
+string: Instruction access fault, mtval shows fault address
+addr: 2000329f
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200032da
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20003312
+string: Load/Store fault, mtval shows the fault address
+addr: 20003342
+string: Environment call encountered
+addr: 2000335f
+string: %s
+addr: 20003362
+string: MTVAL value is 0x%x
+addr: 20003376
+string: ../sw/device/lib/testing/test_main.c
+addr: 2000339b
+string: CHECK-fail: failed to init UART
+addr: 200033bb
+string: CHECK-fail: failed to configure UART

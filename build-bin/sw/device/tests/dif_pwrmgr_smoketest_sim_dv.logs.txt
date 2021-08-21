@@ -1,0 +1,168 @@
+addr: 10000
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10028
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1003c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10050
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10064
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 100a0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 100b4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 35
+nargs: 0
+format: CHECK-fail: dif_aon_timer_wakeup_stop(aon_timer) == kDifAonTimerOk
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 39
+nargs: 0
+format: CHECK-fail: dif_aon_timer_irq_acknowledge( aon_timer, kDifAonTimerIrqWakeupThreshold) == kDifAonTimerOk
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 43
+nargs: 0
+format: CHECK-fail: dif_aon_timer_irq_is_pending(aon_timer, kDifAonTimerIrqWakeupThreshold, &is_pending) == kDifAonTimerOk
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 44
+nargs: 0
+format: CHECK-fail: !is_pending
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 47
+nargs: 0
+format: CHECK-fail: dif_aon_timer_wakeup_start(aon_timer, wakeup_threshold, 0) == kDifAonTimerOk
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 60
+nargs: 0
+format: CHECK-fail: dif_pwrmgr_init( (dif_pwrmgr_params_t){ .base_addr = mmio_region_from_addr(TOP_EARLGREY_PWRMGR_AON_BASE_ADDR), }, &pwrmgr) == kDifPwrmgrOk
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 64
+nargs: 0
+format: CHECK-fail: dif_pwrmgr_wakeup_reason_get(&pwrmgr, &wakeup_reason) == kDifPwrmgrOk
+str_arg_idx: 
+addr: 10154
+severity: 0
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 67
+nargs: 0
+format: Powered up for the first time, begin test
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 74
+nargs: 0
+format: CHECK-fail: dif_aon_timer_init(params, &aon_timer) == kDifAonTimerOk
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 99
+nargs: 0
+format: CHECK-fail: dif_pwrmgr_set_request_sources(&pwrmgr, kDifPwrmgrReqTypeWakeup, kDifPwrmgrWakeupRequestSourceFive) == kDifPwrmgrConfigOk
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 100
+nargs: 0
+format: CHECK-fail: dif_pwrmgr_set_domain_config(&pwrmgr, config) == kDifPwrmgrConfigOk
+str_arg_idx: 
+addr: 101a4
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 102
+nargs: 0
+format: CHECK-fail: dif_pwrmgr_low_power_set_enabled(&pwrmgr, kDifPwrmgrToggleEnabled) == kDifPwrmgrConfigOk
+str_arg_idx: 
+addr: 101b8
+severity: 0
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 108
+nargs: 0
+format: Aon timer wakeup detected
+str_arg_idx: 
+addr: 101cc
+severity: 2
+file: sw/device/tests/dif/dif_pwrmgr_smoketest.c
+line: 113
+nargs: 2
+format: Unexpected wakeup detected: type = %0d, request_source = %0d
+str_arg_idx:

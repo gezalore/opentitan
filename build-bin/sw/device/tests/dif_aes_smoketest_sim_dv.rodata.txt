@@ -1,0 +1,330 @@
+addr: 20001cbc
+string: P
+addr: 20001cbf
+string: E
+addr: 20001cc8
+string: k
+addr: 20001ccb
+string: 
+addr: 20001cd0
+string: P
+addr: 20001cd3
+string: K
+addr: 20001cdc
+string: �
+addr: 20001cdf
+string: 
+addr: 20001ce4
+string: P
+addr: 20001ce7
+string: Q
+addr: 20001cf0
+string: �
+addr: 20001cf3
+string: 
+addr: 20001cf8
+string: P
+addr: 20001cfb
+string: n
+addr: 20001d04
+string: �!
+addr: 20001d07
+string: 
+addr: 20001d0c
+string: P
+addr: 20001d0f
+string: 
+addr: 20001d14
+string: 
+addr: 20001d18
+string: �!
+addr: 20001d1b
+string: 
+addr: 20001d20
+string: P
+addr: 20001d23
+string: 
+addr: 20001d28
+string: 
+addr: 20001d2c
+string: �!
+addr: 20001d2f
+string: 
+addr: 20001d34
+string: �!
+addr: 20001d37
+string: 
+addr: 20001d40
+string: �!
+addr: 20001d43
+string: 
+addr: 20001d48
+string: �!
+addr: 20001d4b
+string: !
+addr: 20001d55
+string: "
+addr: 20001d57
+string: 
+addr: 20001d61
+string: ��
+addr: 20001d69
+string: 6n
+addr: 20001d71
+string: l�
+addr: 20001d78
+string: @B
+addr: 20001d80
+string: ��
+addr: 20001d87
+string: 0
+addr: 20001d8b
+string: 0
+addr: 20001d90
+string: %"
+addr: 20001d93
+string: G
+addr: 20001d9c
+string: P"
+addr: 20001d9f
+string: 
+addr: 20001da4
+string: %"
+addr: 20001da7
+string: U
+addr: 20001db0
+string: a"
+addr: 20001db3
+string: 
+addr: 20001db8
+string: %"
+addr: 20001dbb
+string: V
+addr: 20001dc4
+string: �"
+addr: 20001dc7
+string: 
+addr: 20001dcc
+string: %"
+addr: 20001dcf
+string: j
+addr: 20001dd8
+string: �"
+addr: 20001ddb
+string: 
+addr: 20001de0
+string: %"
+addr: 20001de3
+string: s
+addr: 20001dec
+string: #
+addr: 20001def
+string: 
+addr: 20001df4
+string: %"
+addr: 20001df7
+string: y
+addr: 20001e00
+string: F#
+addr: 20001e03
+string: 
+addr: 20001e08
+string: %"
+addr: 20001e0b
+string: |
+addr: 20001e14
+string: �#
+addr: 20001e17
+string: 
+addr: 20001e1c
+string: %"
+addr: 20001e1f
+string: �
+addr: 20001e24
+string: 
+addr: 20001e28
+string: �#
+addr: 20001e2b
+string: 
+addr: 20001e30
+string: %"
+addr: 20001e33
+string: �
+addr: 20001e3c
+string: �"
+addr: 20001e3f
+string: 
+addr: 20001e44
+string: %"
+addr: 20001e47
+string: �
+addr: 20001e50
+string: �#
+addr: 20001e53
+string: 
+addr: 20001e58
+string: %"
+addr: 20001e5b
+string: �
+addr: 20001e64
+string: <$
+addr: 20001e67
+string: 
+addr: 20001e6c
+string: %"
+addr: 20001e6f
+string: �
+addr: 20001e78
+string: �#
+addr: 20001e7b
+string: 
+addr: 20001e80
+string: %"
+addr: 20001e83
+string: �
+addr: 20001e88
+string: 
+addr: 20001e8c
+string: �$
+addr: 20001e8f
+string: 
+addr: 20001e94
+string: 
+addr: 20001e98
+string: %"
+addr: 20001e9b
+string: 7
+addr: 20001ea4
+string: �$
+addr: 20001ea7
+string: 
+addr: 20001eac
+string: %"
+addr: 20001eaf
+string: ?
+addr: 20001eb8
+string: %
+addr: 20001ebb
+string: �
+addr: 20001ec1
+string: 
+addr: 20001ec5
+string: 
+addr: 20001ec8
+string: �%
+addr: 20001ecb
+string: �%
+addr: 20001ecf
+string: �%
+addr: 20001ed3
+string: �%
+addr: 20001ed7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001f2c
+string: &
+addr: 20001f2f
+string: 
+addr: 20001f38
+string: -&
+addr: 20001f3b
+string: 
+addr: 20001f40
+string: &
+addr: 20001f43
+string: "
+addr: 20001f4c
+string: 3&
+addr: 20001f4f
+string: 
+addr: 20001f51
+string: ../sw/device/lib/handler.c
+addr: 2000206b
+string: Software IRQ triggered!
+addr: 20002083
+string: Timer IRQ triggered!
+addr: 20002098
+string: External IRQ triggered!
+addr: 200020b0
+string: Instruction access fault, mtval shows fault address
+addr: 200020e4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 2000211f
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002157
+string: Load/Store fault, mtval shows the fault address
+addr: 20002187
+string: Environment call encountered
+addr: 200021a4
+string: %s
+addr: 200021a7
+string: MTVAL value is 0x%x
+addr: 200021bb
+string: ../sw/device/lib/testing/test_main.c
+addr: 200021e0
+string: CHECK-fail: failed to init UART
+addr: 20002200
+string: CHECK-fail: failed to configure UART
+addr: 20002225
+string: ../sw/device/tests/dif/dif_aes_smoketest.c
+addr: 20002250
+string: Running AES test
+addr: 20002261
+string: CHECK-fail: dif_aes_init(params, &aes) == kDifAesOk
+addr: 20002295
+string: CHECK-fail: dif_aes_reset(&aes) == kDifAesOk
+addr: 200022c2
+string: CHECK-fail: dif_aes_start_ecb(&aes, &transaction, key) == kDifAesOk
+addr: 20002306
+string: CHECK-fail: dif_aes_load_data(&aes, in_data_plain) == kDifAesOk
+addr: 20002346
+string: CHECK-fail: dif_aes_read_output(&aes, &out_data_cipher) == kDifAesOk
+addr: 2000238b
+string: CHECK-fail: dif_aes_end(&aes) == kDifAesOk
+addr: 200023b6
+string: CHECK-fail: Encrypted cipher text mismatched: exp = %x, actual = %x
+addr: 200023fa
+string: CHECK-fail: dif_aes_load_data(&aes, out_data_cipher) == kDifAesOk
+addr: 2000243c
+string: CHECK-fail: dif_aes_read_output(&aes, &out_data_plain) == kDifAesOk
+addr: 20002480
+string: CHECK-fail: Decrypted text mismatched: exp = %x, actual = %x
+addr: 200024bd
+string: CHECK-fail: dif_aes_get_status(aes, kDifAesStatusInputReady, &status) == kDifAesOk
+addr: 20002510
+string: CHECK-fail: dif_aes_get_status(aes, kDifAesStatusOutputValid, &status) == kDifAesOk
+addr: 20002565
+string: 	/?O_o��������*:JZjz��������
+addr: 200025b5
+string: "3DUfw������������QgE���I�KI`�
+addr: 200025d8
+string: 
+addr: 200025dc
+string: 
+addr: 200025e0
+string: 
+addr: 200025e4
+string: %s%5d %s:%d]
+addr: 200025f2
+string: 
+addr: 200025f5
+string: I
+addr: 200025f7
+string: W
+addr: 200025f9
+string: E
+addr: 200025fb
+string: F
+addr: 200025fd
+string: ?
+addr: 200025ff
+string: %
+addr: 20002601
+string: -
+addr: 20002603
+string: 0x
+addr: 20002606
+string: ../sw/device/lib/testing/test_status.c
+addr: 2000262d
+string: PASS!
+addr: 20002633
+string: FAIL!

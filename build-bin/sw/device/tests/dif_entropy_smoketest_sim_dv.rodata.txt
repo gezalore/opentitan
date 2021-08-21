@@ -1,0 +1,218 @@
+addr: 200016c4
+string: �
+addr: 200016c7
+string: E
+addr: 200016d0
+string: �
+addr: 200016d3
+string: 
+addr: 200016d8
+string: �
+addr: 200016db
+string: K
+addr: 200016e4
+string: �
+addr: 200016e7
+string: 
+addr: 200016ec
+string: �
+addr: 200016ef
+string: Q
+addr: 200016f9
+string: 
+addr: 200016fb
+string: 
+addr: 20001700
+string: �
+addr: 20001703
+string: n
+addr: 2000170c
+string: �
+addr: 2000170f
+string: 
+addr: 20001714
+string: �
+addr: 20001717
+string: 
+addr: 2000171c
+string: 
+addr: 20001720
+string: 
+addr: 20001723
+string: 
+addr: 20001728
+string: �
+addr: 2000172b
+string: 
+addr: 20001730
+string: 
+addr: 20001734
+string: 
+addr: 20001737
+string: 
+addr: 2000173c
+string: #
+addr: 2000173f
+string: 
+addr: 20001748
+string: H
+addr: 2000174b
+string: 
+addr: 20001750
+string: #
+addr: 20001753
+string: !
+addr: 2000175c
+string: h
+addr: 2000175f
+string: 
+addr: 20001764
+string: �
+addr: 20001767
+string: 
+addr: 20001770
+string: �
+addr: 20001773
+string: 
+addr: 20001778
+string: �
+addr: 2000177b
+string: "
+addr: 20001784
+string: �
+addr: 20001787
+string: 
+addr: 20001791
+string: ��
+addr: 20001799
+string: 6n
+addr: 200017a1
+string: l�
+addr: 200017a8
+string: @B
+addr: 200017b0
+string: ��
+addr: 200017b7
+string: 0
+addr: 200017bb
+string: 0
+addr: 200017c0
+string: �TXe�Օ��t���\�M��'�%���0�Z�y����J/�6�5>a
+addr: 200017f4
+string: �
+addr: 200017f7
+string: 
+addr: 20001800
+string: �
+addr: 20001803
+string: 
+addr: 20001808
+string: �
+addr: 2000180b
+string: 
+addr: 20001814
+string: /
+addr: 20001817
+string: 
+addr: 2000181c
+string: �
+addr: 2000181f
+string: 3
+addr: 20001828
+string: j
+addr: 2000182b
+string: 
+addr: 20001830
+string: �
+addr: 20001833
+string: ;
+addr: 20001838
+string: 
+addr: 2000183c
+string: �
+addr: 2000183f
+string: 
+addr: 20001844
+string: �
+addr: 20001847
+string: <
+addr: 20001850
+string: �
+addr: 20001853
+string: 
+addr: 20001858
+string: 
+addr: 2000185b
+string: 
+addr: 2000185f
+string: 
+addr: 20001863
+string: 
+addr: 20001867
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 200018b9
+string: ../sw/device/lib/handler.c
+addr: 200019d3
+string: Software IRQ triggered!
+addr: 200019eb
+string: Timer IRQ triggered!
+addr: 20001a00
+string: External IRQ triggered!
+addr: 20001a18
+string: Instruction access fault, mtval shows fault address
+addr: 20001a4c
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001a87
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001abf
+string: Load/Store fault, mtval shows the fault address
+addr: 20001aef
+string: Environment call encountered
+addr: 20001b0c
+string: %s
+addr: 20001b0f
+string: MTVAL value is 0x%x
+addr: 20001b23
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001b48
+string: CHECK-fail: failed to init UART
+addr: 20001b68
+string: CHECK-fail: failed to configure UART
+addr: 20001b8d
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001bb4
+string: PASS!
+addr: 20001bba
+string: FAIL!
+addr: 20001bc0
+string: ../sw/device/tests/dif/dif_entropy_smoketest.c
+addr: 20001bef
+string: CHECK-fail: dif_entropy_init(params, &entropy) == kDifEntropyOk
+addr: 20001c2f
+string: CHECK-fail: dif_entropy_disable(&entropy) == kDifEntropyOk
+addr: 20001c6a
+string: CHECK-fail: dif_entropy_configure(&entropy, config) == kDifEntropyOk
+addr: 20001caf
+string: received %x, expectecd %x
+addr: 20001cc9
+string: CHECK-fail: entropy_data[i] == kExpectedEntropyData[i]
+addr: 20001d00
+string: %s%5d %s:%d]
+addr: 20001d0e
+string: 
+addr: 20001d11
+string: I
+addr: 20001d13
+string: W
+addr: 20001d15
+string: E
+addr: 20001d17
+string: F
+addr: 20001d19
+string: ?
+addr: 20001d1b
+string: %
+addr: 20001d1d
+string: -
+addr: 20001d1f
+string: 0x

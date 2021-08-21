@@ -1,0 +1,208 @@
+addr: 20001644
+string: �
+addr: 20001647
+string: E
+addr: 20001650
+string: �
+addr: 20001653
+string: 
+addr: 20001658
+string: �
+addr: 2000165b
+string: K
+addr: 20001664
+string: �
+addr: 20001667
+string: 
+addr: 2000166c
+string: �
+addr: 2000166f
+string: Q
+addr: 20001678
+string: �
+addr: 2000167b
+string: 
+addr: 20001680
+string: �
+addr: 20001683
+string: n
+addr: 2000168c
+string: �
+addr: 2000168f
+string: 
+addr: 20001694
+string: �
+addr: 20001697
+string: 
+addr: 2000169c
+string: 
+addr: 200016a0
+string: �
+addr: 200016a3
+string: 
+addr: 200016a8
+string: �
+addr: 200016ab
+string: 
+addr: 200016b0
+string: 
+addr: 200016b4
+string: �
+addr: 200016b7
+string: 
+addr: 200016bb
+string: "
+addr: 200016bf
+string: $
+addr: 200016c3
+string: &
+addr: 200016c7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001718
+string: 
+addr: 2000171c
+string: 1
+addr: 2000171f
+string: 
+addr: 20001728
+string: V
+addr: 2000172b
+string: 
+addr: 20001730
+string: 1
+addr: 20001733
+string: !
+addr: 2000173c
+string: v
+addr: 2000173f
+string: 
+addr: 20001744
+string: �
+addr: 20001747
+string: 
+addr: 20001750
+string: �
+addr: 20001753
+string: 
+addr: 20001758
+string: �
+addr: 2000175b
+string: "
+addr: 20001764
+string: �
+addr: 20001767
+string: 
+addr: 20001771
+string: ��
+addr: 20001779
+string: 6n
+addr: 20001781
+string: l�
+addr: 20001788
+string: @B
+addr: 20001790
+string: ��
+addr: 20001797
+string: 0
+addr: 2000179b
+string: 0Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+addr: 20001854
+string: �
+addr: 20001857
+string: 0
+addr: 2000185c
+string: 
+addr: 20001860
+string: 
+addr: 20001863
+string: 
+addr: 20001868
+string: �
+addr: 2000186b
+string: <
+addr: 20001874
+string: 
+addr: 20001877
+string: 
+addr: 2000187c
+string: �
+addr: 2000187f
+string: <
+addr: 20001888
+string: 3
+addr: 2000188b
+string: 
+addr: 20001890
+string: �
+addr: 20001893
+string: <
+addr: 20001898
+string: 
+addr: 2000189c
+string: P
+addr: 2000189f
+string: 
+addr: 200018a5
+string: ../sw/device/lib/handler.c
+addr: 200019bf
+string: Software IRQ triggered!
+addr: 200019d7
+string: Timer IRQ triggered!
+addr: 200019ec
+string: External IRQ triggered!
+addr: 20001a04
+string: Instruction access fault, mtval shows fault address
+addr: 20001a38
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001a73
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001aab
+string: Load/Store fault, mtval shows the fault address
+addr: 20001adb
+string: Environment call encountered
+addr: 20001af8
+string: %s
+addr: 20001afb
+string: MTVAL value is 0x%x
+addr: 20001b0f
+string: %s%5d %s:%d]
+addr: 20001b1d
+string: 
+addr: 20001b20
+string: I
+addr: 20001b22
+string: W
+addr: 20001b24
+string: E
+addr: 20001b26
+string: F
+addr: 20001b28
+string: ?
+addr: 20001b2a
+string: %
+addr: 20001b2c
+string: -
+addr: 20001b2e
+string: 0x
+addr: 20001b31
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001b56
+string: CHECK-fail: failed to init UART
+addr: 20001b76
+string: CHECK-fail: failed to configure UART
+addr: 20001b9b
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001bc2
+string: PASS!
+addr: 20001bc8
+string: FAIL!
+addr: 20001bce
+string: ../sw/device/silicon_creator/lib/drivers/hmac_functest.c
+addr: 20001c07
+string: word %d = 0x%08x
+addr: 20001c18
+string: Starting test hmac_test...
+addr: 20001c33
+string: Finished test hmac_test: ok.
+addr: 20001c50
+string: Finished test hmac_test: 0x%08x.

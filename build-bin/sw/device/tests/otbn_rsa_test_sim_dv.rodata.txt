@@ -1,0 +1,886 @@
+addr: 200021a4
+string: )
+addr: 200021a7
+string: E
+addr: 200021b0
+string: #)
+addr: 200021b3
+string: 
+addr: 200021b8
+string: )
+addr: 200021bb
+string: K
+addr: 200021c4
+string: ;)
+addr: 200021c7
+string: 
+addr: 200021cc
+string: )
+addr: 200021cf
+string: Q
+addr: 200021d8
+string: P)
+addr: 200021db
+string: 
+addr: 200021e0
+string: )
+addr: 200021e3
+string: n
+addr: 200021ec
+string: ?*
+addr: 200021ef
+string: 
+addr: 200021f4
+string: )
+addr: 200021f7
+string: 
+addr: 200021fc
+string: 
+addr: 20002200
+string: \*
+addr: 20002203
+string: 
+addr: 20002208
+string: )
+addr: 2000220b
+string: 
+addr: 20002210
+string: 
+addr: 20002214
+string: _*
+addr: 20002217
+string: 
+addr: 2000221c
+string: s*
+addr: 2000221f
+string: 
+addr: 20002228
+string: �*
+addr: 2000222b
+string: 
+addr: 20002230
+string: s*
+addr: 20002233
+string: !
+addr: 2000223c
+string: �*
+addr: 2000223f
+string: 
+addr: 20002244
+string: �*
+addr: 20002247
+string: 
+addr: 20002250
+string: +
+addr: 20002253
+string: 
+addr: 20002258
+string: �*
+addr: 2000225b
+string: "
+addr: 20002264
+string: +
+addr: 20002267
+string: 
+addr: 20002271
+string: ��
+addr: 20002279
+string: 6n
+addr: 20002281
+string: l�
+addr: 20002288
+string: @B
+addr: 20002290
+string: ��
+addr: 20002297
+string: 0
+addr: 2000229b
+string: 0
+addr: 2000229d
+string: ��n�W�c�k���@�؉'���J�.hဤO�����B��΢�?w��'m�\������[���]~��3��]�&�Ůx�L�C�W�2Ϥ�r S0Uz�ٮu2�	�&d(�,;nk\(�vl/��1�(�c^��UJ�C&�xf���)��ݐv?C�vQufa�<�ِ�YEzmX�u�c��K��D*Hello OTBN, can you encrypt and decrypt this for me?
+addr: 200023a4
+string: +
+addr: 200023a7
+string: @
+addr: 200023b0
+string: 8+
+addr: 200023b3
+string: 
+addr: 200023b8
+string: +
+addr: 200023bb
+string: 
+addr: 200023c4
+string: L+
+addr: 200023c7
+string: �/
+addr: 200023cb
+string: �4
+addr: 200023cf
+string: 
+addr: 200023d1
+string: 5
+addr: 200023d3
+string: A
+addr: 200023d7
+string: 
+addr: 200023dc
+string: +
+addr: 200023df
+string: 
+addr: 200023e8
+string: �+
+addr: 200023eb
+string: 
+addr: 200023f0
+string: +
+addr: 200023f3
+string: 
+addr: 200023fc
+string: �+
+addr: 200023ff
+string: 
+addr: 20002404
+string: +
+addr: 20002407
+string: 
+addr: 20002410
+string: �+
+addr: 20002413
+string: 
+addr: 20002418
+string: +
+addr: 2000241b
+string: �
+addr: 20002420
+string: 
+addr: 20002424
+string: �+
+addr: 20002427
+string: 
+addr: 2000242c
+string: +
+addr: 2000242f
+string: �
+addr: 20002438
+string: #,
+addr: 2000243b
+string: 
+addr: 20002440
+string: +
+addr: 20002443
+string: �
+addr: 2000244c
+string: D,
+addr: 2000244f
+string: 
+addr: 20002454
+string: +
+addr: 20002457
+string: �
+addr: 20002460
+string: n,
+addr: 20002463
+string: 
+addr: 20002468
+string: +
+addr: 2000246b
+string: �
+addr: 20002474
+string: �,
+addr: 20002477
+string: 
+addr: 2000247c
+string: +
+addr: 2000247f
+string: �
+addr: 20002488
+string: 5-
+addr: 2000248b
+string: 
+addr: 20002490
+string: +
+addr: 20002493
+string: �
+addr: 2000249c
+string: �-
+addr: 2000249f
+string: 
+addr: 200024a4
+string: +
+addr: 200024a7
+string: �
+addr: 200024b0
+string: �-
+addr: 200024b3
+string: 
+addr: 200024b8
+string: +
+addr: 200024bb
+string: �
+addr: 200024c4
+string: .
+addr: 200024c7
+string: 
+addr: 200024cc
+string: +
+addr: 200024cf
+string: �
+addr: 200024d4
+string: 
+addr: 200024d8
+string: l.
+addr: 200024db
+string: 
+addr: 200024e0
+string: +
+addr: 200024e3
+string: �
+addr: 200024ec
+string: #,
+addr: 200024ef
+string: 
+addr: 200024f4
+string: +
+addr: 200024f7
+string: �
+addr: 20002500
+string: D,
+addr: 20002503
+string: 
+addr: 20002508
+string: +
+addr: 2000250b
+string: �
+addr: 20002514
+string: n,
+addr: 20002517
+string: 
+addr: 2000251c
+string: +
+addr: 2000251f
+string: �
+addr: 20002528
+string: �,
+addr: 2000252b
+string: 
+addr: 20002530
+string: +
+addr: 20002533
+string: �
+addr: 2000253c
+string: �.
+addr: 2000253f
+string: 
+addr: 20002544
+string: +
+addr: 20002547
+string: �
+addr: 20002550
+string: 5-
+addr: 20002553
+string: 
+addr: 20002558
+string: +
+addr: 2000255b
+string: �
+addr: 20002564
+string: /
+addr: 20002567
+string: 
+addr: 2000256c
+string: +
+addr: 2000256f
+string: �
+addr: 20002578
+string: �-
+addr: 2000257b
+string: 
+addr: 20002580
+string: +
+addr: 20002583
+string: �
+addr: 2000258c
+string: .
+addr: 2000258f
+string: i�p]���k��+v<n�j	��*$°26g������<唅�Ȥy5w8t��k��]�W����x��	�M(l�U�5D��p��`;|���u@+j5!s�,鴌|vŅ���୮��Ĉ~�f�'�}�AN�G1���]��m1������!���ϔ�t���8o���WX��K�I.\��f
+addr: 20002650
+string: ����F���2�����w�Ġ���mL��zf�/�Tި����6!����k��j����֬]N.{=vq�8:�ʞ�^�h�?xnC|�$�>J�<��:n菞k�=�HQ ��6��*���$��}��o��\py;g���.�Ʊ�my�)��'��n�H��u��	璻0�Eh�miu˻��Qn��FW�'�!��/Hello OTBN, can you encrypt and decrypt this for me?
+addr: 20002794
+string: +
+addr: 20002797
+string: r
+addr: 200027a0
+string: e/
+addr: 200027a3
+string: 
+addr: 200027a8
+string: �/
+addr: 200027ab
+string: �/
+addr: 200027af
+string: �/
+addr: 200027b3
+string: �/
+addr: 200027b7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002809
+string: ../sw/device/lib/handler.c
+addr: 20002923
+string: Software IRQ triggered!
+addr: 2000293b
+string: Timer IRQ triggered!
+addr: 20002950
+string: External IRQ triggered!
+addr: 20002968
+string: Instruction access fault, mtval shows fault address
+addr: 2000299c
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200029d7
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002a0f
+string: Load/Store fault, mtval shows the fault address
+addr: 20002a3f
+string: Environment call encountered
+addr: 20002a5c
+string: %s
+addr: 20002a5f
+string: MTVAL value is 0x%x
+addr: 20002a73
+string: ../sw/device/lib/testing/test_main.c
+addr: 20002a98
+string: CHECK-fail: failed to init UART
+addr: 20002ab8
+string: CHECK-fail: failed to configure UART
+addr: 20002add
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002b04
+string: PASS!
+addr: 20002b0a
+string: FAIL!
+addr: 20002b10
+string: ../sw/device/tests/otbn/otbn_rsa_test.c
+addr: 20002b38
+string: Running RSA512 test
+addr: 20002b4c
+string: CHECK-fail: otbn_init(&otbn_ctx, otbn_config) == kOtbnOk
+addr: 20002b85
+string: CHECK-fail: otbn_load_app(&otbn_ctx, kOtbnAppRsa) == kOtbnOk
+addr: 20002bc2
+string: Initialization
+addr: 20002bd1
+string: Encrypting
+addr: 20002bdc
+string: Encryption
+addr: 20002be7
+string: Decrypting
+addr: 20002bf2
+string: Decryption
+addr: 20002bfd
+string: %s took %u cycles or %u us @ 100 MHz.
+addr: 20002c23
+string: CHECK-fail: size_bytes % 32 == 0
+addr: 20002c44
+string: CHECK-fail: n_limbs != 0 && n_limbs <= 16
+addr: 20002c6e
+string: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, sizeof(n_limbs), &n_limbs, kOtbnVarRsaNLimbs) == kOtbnOk
+addr: 20002cd4
+string: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, modulus, kOtbnVarRsaModulus) == kOtbnOk
+addr: 20002d35
+string: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, in, kOtbnVarRsaIn) == kOtbnOk
+addr: 20002d8c
+string: CHECK-fail: otbn_call_function(otbn_ctx, kOtbnFuncRsaRsaEncrypt) == kOtbnOk
+addr: 20002dd8
+string: CHECK-fail: otbn_busy_wait_for_done(otbn_ctx) == kOtbnOk
+addr: 20002e11
+string: CHECK-fail: otbn_copy_data_from_otbn(otbn_ctx, size_bytes, kOtbnVarRsaOut, out) == kOtbnOk
+addr: 20002e6c
+string: CHECK-fail: Data mismatch at byte %d: 0x%x (actual) != 0x%x (expected)
+addr: 20002eb3
+string: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, private_exponent, kOtbnVarRsaExp) == kOtbnOk
+addr: 20002f19
+string: CHECK-fail: otbn_call_function(otbn_ctx, kOtbnFuncRsaRsaDecrypt) == kOtbnOk
+addr: 20002f65
+string: Running RSA1024 test
+addr: 20002f7a
+string: %s%5d %s:%d]
+addr: 20002f88
+string: 
+addr: 20002f8b
+string: I
+addr: 20002f8d
+string: W
+addr: 20002f8f
+string: E
+addr: 20002f91
+string: F
+addr: 20002f93
+string: ?
+addr: 20002f95
+string: %
+addr: 20002f97
+string: -
+addr: 20002f99
+string: 0x
+addr: 20002f9c
+string: �
+addr: 20002f9e
+string: �Q�
+addr: 20002fa2
+string: @Bs
+addr: 20002fa8
+string: �
+addr: 20002faa
+string: �P�
+addr: 20002fae
+string: @5s
+addr: 20002fb4
+string: {`
+addr: 20002fb8
+string: +@
+addr: 20002fbc
+string: �n
+addr: 20002fc0
+string: {�
+addr: 20002fc4
+string: ;�; �� �I;
+addr: 20002fd2
+string: �;
+addr: 20002fd6
+string: �;
+addr: 20002fda
+string: �; �; �; �� �y��
+addr: 20002ff0
+string: ��
+addr: 20002ff4
+string: +
+addr: 20002ff8
+string: ���g�
+addr: 20003000
+string: P
+addr: 20003004
+string: 0
+addr: 20003008
+string: �
+addr: 2000300c
+string: ���{
+addr: 20003012
+string: O
+addr: 20003014
+string: A�
+addr: 20003018
+string: `��+21
+addr: 20003020
+string: �"��`��g�
+addr: 2000302c
+string: 
+addr: 20003030
+string: ��1
+addr: 20003034
+string: �
+addr: 20003038
+string: P
+addr: 2000303c
+string: 0
+addr: 20003040
+string: ��1
+addr: 20003044
+string: {
+addr: 20003046
+string: 
+addr: 20003048
+string: �`��+�
+addr: 20003050
+string: ���
+addr: 20003058
+string: ���{
+addr: 2000305e
+string: P
+addr: 20003064
+string: ��1�{
+addr: 2000306a
+string: /
+addr: 2000306c
+string: `��+!!�����
+addr: 2000307c
+string: ��_�P
+addr: 20003084
+string: 
+addr: 20003088
+string: ��1�{
+addr: 2000308e
+string: /
+addr: 20003090
+string: A�
+addr: 20003094
+string: b���!�
+addr: 200030a0
+string: ���
+addr: 200030a8
+string: P
+addr: 200030ac
+string: {
+addr: 200030ae
+string: 
+addr: 200030b0
+string: Q�
+addr: 200030b4
+string: 
+addr: 200030b8
+string: g�
+addr: 200030bc
+string: ;�; ��-�I;
+addr: 200030ca
+string: �;
+addr: 200030ce
+string: �;
+addr: 200030d2
+string: �; �; �; ��-�y;
+addr: 200030e6
+string: �;
+addr: 200030ea
+string: �;
+addr: 200030ee
+string: �; �;-�];�g�
+addr: 20003100
+string: ;/
+addr: 20003104
+string: ; /�-/H;
+addr: 2000310e
+string: /;
+addr: 20003112
+string: /;
+addr: 20003116
+string: /; /; /; /�-/x;
+addr: 2000312a
+string: /;
+addr: 2000312e
+string: /;
+addr: 20003132
+string: /; /;-/\;/~g�
+addr: 20003144
+string: ���{
+addr: 2000314e
+string: _
+addr: 20003150
+string: A�
+addr: 20003154
+string: `Ā�>��������g�
+addr: 2000316c
+string: 
+addr: 20003170
+string: ���@
+addr: 2000317c
+string: @
+addr: 20003180
+string: ��
+addr: 20003184
+string: ����bԀ+���.���
+addr: 20003198
+string: ��_��
+addr: 200031a0
+string: n
+addr: 200031a4
+string: l
+addr: 200031a8
+string: A�
+addr: 200031ac
+string: ��񫍍+.�{��
+addr: 200031bc
+string: ��
+addr: 200031c0
+string: ���bԀ���+-�+���.�A�
+addr: 200031dc
+string: ���+-�+�́�ঀ+.��+�΁�ঀ
+addr: 20003200
+string: @
+addr: 20003204
+string: @
+addr: 20003208
+string: ����@
+addr: 20003210
+string: g�
+addr: 20003214
+string: {
+addr: 20003216
+string: O
+addr: 20003218
+string: A�
+addr: 2000321c
+string: b���11
+addr: 20003224
+string: �!�Ѻ
+addr: 2000322c
+string: g�
+addr: 20003230
+string: ��
+addr: 20003234
+string: �
+addr: 20003238
+string: {
+addr: 2000323a
+string: 
+addr: 2000323c
+string: �ी{a!
+addr: 20003244
+string: +A
+addr: 20003248
+string: 
+addr: 2000324c
+string: ��
+addr: 20003250
+string: {
+addr: 20003252
+string: ?
+addr: 20003254
+string: 
+addr: 20003258
+string: ��
+addr: 2000325c
+string: ����
+addr: 20003264
+string: 
+addr: 20003268
+string: ��
+addr: 2000326c
+string: +!�{
+addr: 20003272
+string: /
+addr: 20003274
+string: A�
+addr: 20003278
+string: b���!�@
+addr: 20003284
+string: @
+addr: 20003288
+string: 
+addr: 2000328c
+string: ��
+addr: 20003290
+string: ��_�
+addr: 20003298
+string: ��
+addr: 2000329c
+string: g�
+addr: 200032a0
+string: ��
+addr: 200032a4
+string: �
+addr: 200032a8
+string: {
+addr: 200032aa
+string: 
+addr: 200032ac
+string: �ी{
+addr: 200032b2
+string: 
+addr: 200032b4
+string: A�
+addr: 200032b8
+string: �
+addr: 200032bc
+string: 
+addr: 200032c0
+string: ��
+addr: 200032c4
+string: ����
+addr: 200032cc
+string: 
+addr: 200032d0
+string: ��
+addr: 200032d4
+string: @
+addr: 200032d8
+string: @
+addr: 200032dc
+string: g�
+addr: 200032e0
+string: {
+addr: 200032e2
+string: _
+addr: 200032e4
+string: ��
+addr: 200032e8
+string: к
+addr: 200032ec
+string: b��`
+addr: 200032f4
+string: 0
+addr: 200032f8
+string: Ѻ
+addr: 200032fc
+string: g�
+addr: 20003300
+string: @
+addr: 20003304
+string: �0
+addr: 20003308
+string: @
+addr: 2000330c
+string: �
+addr: 20003310
+string: (
+addr: 20003313
+string: �(�
+addr: 20003318
+string: /@
+addr: 2000331c
+string: ����)@*�
+addr: 20003328
+string: �*@��_�{
+addr: 20003332
+string: 
+addr: 20003334
+string: ъ
+addr: 20003338
+string: 
+addr: 2000333c
+string: +!
+addr: 20003340
+string: (
+addr: 20003343
+string: �*�{
+addr: 2000334a
+string: /
+addr: 2000334c
+string: A�
+addr: 20003350
+string: +�/
+addr: 20003354
+string: Ѻ
+addr: 20003358
+string: (
+addr: 2000335b
+string: �
+addr: 20003360
+string: {
+addr: 20003362
+string: <�)�*��*����{
+addr: 20003376
+string: 
+addr: 20003378
+string: ъ
+addr: 2000337c
+string: 
+addr: 20003380
+string: �)@*��*���_�+!
+addr: 20003394
+string: *�{
+addr: 2000339a
+string: /
+addr: 2000339c
+string: @�
+addr: 200033a0
+string: +!!
+addr: 200033a4
+string: Q�
+addr: 200033a8
+string: �*���_�
+addr: 200033b4
+string: �)��*���_�g�
+addr: 200033c4
+string: @
+addr: 200033c8
+string: �0
+addr: 200033cc
+string: @
+addr: 200033d0
+string: �
+addr: 200033d4
+string: (
+addr: 200033d7
+string: �(�
+addr: 200033dc
+string: /@
+addr: 200033e0
+string: ����)@*�
+addr: 200033ec
+string: �*@���{
+addr: 200033f6
+string: 
+addr: 200033f8
+string: ъ
+addr: 200033fc
+string: 
+addr: 20003400
+string: �*�+!
+addr: 20003408
+string: {
+addr: 2000340a
+string: /
+addr: 2000340c
+string: A�
+addr: 20003410
+string: +�/
+addr: 20003414
+string: Ѻ
+addr: 20003418
+string: (
+addr: 2000341b
+string: �)�*��*����{
+addr: 2000342e
+string: 
+addr: 20003430
+string: ъ
+addr: 20003434
+string: 
+addr: 20003438
+string: �)@*�*�����*�@
+addr: 20003450
+string: {
+addr: 20003452
+string: 
+addr: 20003454
+string: ъ
+addr: 20003458
+string: 
+addr: 2000345c
+string: {p
+addr: 20003460
+string: �)�*��*���_�{
+addr: 20003472
+string: 
+addr: 20003474
+string: ъ
+addr: 20003478
+string: 
+addr: 2000347c
+string: 
+addr: 20003480
+string: �)@*��*���_�*�@
+addr: 20003498
+string: {
+addr: 2000349a
+string: 
+addr: 2000349c
+string: ъ
+addr: 200034a0
+string: 
+addr: 200034a4
+string: �)��*���_�g�
+addr: 200034b4
+string: ���(
+addr: 200034bb
+string: �(�
+addr: 200034c0
+string: )�
+addr: 200034c4
+string: /@
+addr: 200034c8
+string: �@�
+addr: 200034d0
+string: ��_���И
+addr: 200034dc
+string: ���g�
+addr: 20003508
+string: 
+addr: 2000350c
+string: 
+addr: 20003510
+string: 
+addr: 20003514
+string: 
+addr: 20003518
+string: 
+addr: 2000351c
+string:

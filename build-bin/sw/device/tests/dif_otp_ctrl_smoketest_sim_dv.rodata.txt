@@ -1,0 +1,360 @@
+addr: 20001d24
+string: 0!
+addr: 20001d27
+string: E
+addr: 20001d30
+string: K!
+addr: 20001d33
+string: 
+addr: 20001d38
+string: 0!
+addr: 20001d3b
+string: K
+addr: 20001d44
+string: c!
+addr: 20001d47
+string: 
+addr: 20001d4c
+string: 0!
+addr: 20001d4f
+string: Q
+addr: 20001d58
+string: x!
+addr: 20001d5b
+string: 
+addr: 20001d60
+string: 0!
+addr: 20001d63
+string: n
+addr: 20001d6c
+string: g"
+addr: 20001d6f
+string: 
+addr: 20001d74
+string: 0!
+addr: 20001d77
+string: 
+addr: 20001d7c
+string: 
+addr: 20001d80
+string: �"
+addr: 20001d83
+string: 
+addr: 20001d88
+string: 0!
+addr: 20001d8b
+string: 
+addr: 20001d90
+string: 
+addr: 20001d94
+string: �"
+addr: 20001d97
+string: 
+addr: 20001d9c
+string: �"
+addr: 20001d9f
+string: 
+addr: 20001da8
+string: �"
+addr: 20001dab
+string: 
+addr: 20001db0
+string: �"
+addr: 20001db3
+string: !
+addr: 20001dbc
+string: �"
+addr: 20001dbf
+string: 
+addr: 20001dc4
+string: #
+addr: 20001dc7
+string: 
+addr: 20001dd0
+string: ,#
+addr: 20001dd3
+string: 
+addr: 20001dd8
+string: #
+addr: 20001ddb
+string: "
+addr: 20001de4
+string: 2#
+addr: 20001de7
+string: 
+addr: 20001df1
+string: ��
+addr: 20001df9
+string: 6n
+addr: 20001e01
+string: l�
+addr: 20001e08
+string: @B
+addr: 20001e10
+string: ��
+addr: 20001e17
+string: 0
+addr: 20001e1b
+string: 0
+addr: 20001e20
+string: 8#
+addr: 20001e23
+string: /
+addr: 20001e2c
+string: h#
+addr: 20001e2f
+string: ��
+addr: 20001e34
+string: ��
+addr: 20001e38
+string: ���
+addr: 20001e40
+string: 8#
+addr: 20001e43
+string: 6
+addr: 20001e4c
+string: �#
+addr: 20001e4f
+string: abcdefghijklmno
+addr: 20001e60
+string: 
+addr: 20001e64
+string: 8#
+addr: 20001e67
+string: @
+addr: 20001e6c
+string: 
+addr: 20001e70
+string: $
+addr: 20001e73
+string: 
+addr: 20001e78
+string: 8#
+addr: 20001e7b
+string: G
+addr: 20001e84
+string: P$
+addr: 20001e87
+string: 
+addr: 20001e8c
+string: 8#
+addr: 20001e8f
+string: I
+addr: 20001e98
+string: �$
+addr: 20001e9b
+string: 
+addr: 20001ea0
+string: 
+addr: 20001ea4
+string: 8#
+addr: 20001ea7
+string: 
+addr: 20001eb0
+string: �$
+addr: 20001eb3
+string: 
+addr: 20001eb8
+string: 8#
+addr: 20001ebb
+string: #
+addr: 20001ec4
+string: %
+addr: 20001ec7
+string: 
+addr: 20001ecc
+string: 
+addr: 20001ed0
+string: 
+addr: 20001ed4
+string: 
+addr: 20001ed8
+string: 
+addr: 20001edc
+string: 
+addr: 20001ee0
+string: 
+addr: 20001ee4
+string: 
+addr: 20001ee8
+string: 
+addr: 20001eec
+string: 
+addr: 20001ef0
+string: 
+addr: 20001ef4
+string: 
+addr: 20001ef8
+string: 
+addr: 20001efc
+string: 
+addr: 20001f00
+string: 
+addr: 20001f09
+string: 
+addr: 20001f0c
+string: 
+addr: 20001f10
+string: 
+addr: 20001f15
+string: 
+addr: 20001f19
+string: 
+addr: 20001f1c
+string: 
+addr: 20001f20
+string: 
+addr: 20001f25
+string: 
+addr: 20001f28
+string: �
+addr: 20001f2c
+string: 
+addr: 20001f34
+string: �
+addr: 20001f38
+string: X
+addr: 20001f3c
+string: 
+addr: 20001f44
+string: �
+addr: 20001f48
+string: (
+addr: 20001f4c
+string: 
+addr: 20001f54
+string: �
+addr: 20001f58
+string: X
+addr: 20001f5c
+string: 
+addr: 20001f64
+string: 0
+addr: 20001f68
+string: X
+addr: 20001f6c
+string: 
+addr: 20001f78
+string: 
+addr: 20001f7c
+string: 
+addr: 20001f80
+string: 
+addr: 20001f84
+string: 
+addr: 20001f88
+string: 
+addr: 20001f8c
+string: 
+addr: 20001f90
+string: 
+addr: 20001f94
+string: 
+addr: 20001f98
+string: 
+addr: 20001f9c
+string: 
+addr: 20001fa0
+string: 
+addr: 20001fa4
+string: 
+addr: 20001fa8
+string: 
+addr: 20001fac
+string: 
+addr: 20001fb0
+string: 
+addr: 20001fb4
+string: 
+addr: 20001fb8
+string: 
+addr: 20001fbc
+string: 
+addr: 20001fc0
+string: 
+addr: 20001fc4
+string: 
+addr: 20001fc8
+string: 
+addr: 20001fcc
+string: 
+addr: 20001fd0
+string: .%
+addr: 20001fd3
+string: 0%
+addr: 20001fd7
+string: 2%
+addr: 20001fdb
+string: 4%
+addr: 20001fdf
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002031
+string: ../sw/device/lib/handler.c
+addr: 2000214b
+string: Software IRQ triggered!
+addr: 20002163
+string: Timer IRQ triggered!
+addr: 20002178
+string: External IRQ triggered!
+addr: 20002190
+string: Instruction access fault, mtval shows fault address
+addr: 200021c4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200021ff
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002237
+string: Load/Store fault, mtval shows the fault address
+addr: 20002267
+string: Environment call encountered
+addr: 20002284
+string: %s
+addr: 20002287
+string: MTVAL value is 0x%x
+addr: 2000229b
+string: ../sw/device/lib/testing/test_main.c
+addr: 200022c0
+string: CHECK-fail: failed to init UART
+addr: 200022e0
+string: CHECK-fail: failed to configure UART
+addr: 20002305
+string: ../sw/device/lib/testing/test_status.c
+addr: 2000232c
+string: PASS!
+addr: 20002332
+string: FAIL!
+addr: 20002338
+string: ../sw/device/tests/dif/dif_otp_ctrl_smoketest.c
+addr: 20002368
+string: CHECK-fail: dif_otp_ctrl_init((dif_otp_ctrl_params_t){.base_addr = otp_reg}, &otp) == kDifOtpCtrlOk
+addr: 200023cc
+string: CHECK-fail: dif_otp_ctrl_configure(&otp, config) == kDifOtpCtrlLockableOk
+addr: 20002416
+string: CHECK-fail: Failed to program word kTestData[%d] = 0x%8x.
+addr: 20002450
+string: CHECK-fail: Failed to perform OTP blocking readout.
+addr: 20002484
+string: CHECK-fail: memcmp(kTestData, readout, ARRAYSIZE(kTestData)) == 0
+addr: 200024c6
+string: CHECK-fail: dif_otp_ctrl_get_status(&otp, &status) == kDifOtpCtrlOk
+addr: 2000250a
+string: Waiting for DAI...
+addr: 2000251d
+string: %s%5d %s:%d]
+addr: 2000252b
+string: 
+addr: 2000252e
+string: I
+addr: 20002530
+string: W
+addr: 20002532
+string: E
+addr: 20002534
+string: F
+addr: 20002536
+string: ?
+addr: 20002538
+string: %
+addr: 2000253a
+string: -
+addr: 2000253c
+string: 0x

@@ -1,0 +1,324 @@
+addr: 20001c9c
+string: H
+addr: 20001c9f
+string: E
+addr: 20001ca8
+string: c
+addr: 20001cab
+string: 
+addr: 20001cb0
+string: H
+addr: 20001cb3
+string: K
+addr: 20001cbc
+string: {
+addr: 20001cbf
+string: 
+addr: 20001cc4
+string: H
+addr: 20001cc7
+string: Q
+addr: 20001cd0
+string: �
+addr: 20001cd3
+string: 
+addr: 20001cd8
+string: H
+addr: 20001cdb
+string: n
+addr: 20001ce4
+string: !
+addr: 20001ce7
+string: 
+addr: 20001cec
+string: H
+addr: 20001cef
+string: 
+addr: 20001cf4
+string: 
+addr: 20001cf8
+string: �!
+addr: 20001cfb
+string: 
+addr: 20001d00
+string: H
+addr: 20001d03
+string: 
+addr: 20001d08
+string: 
+addr: 20001d0c
+string: �!
+addr: 20001d0f
+string: 
+addr: 20001d14
+string: �!
+addr: 20001d17
+string: 
+addr: 20001d20
+string: �!
+addr: 20001d23
+string: 
+addr: 20001d28
+string: �!
+addr: 20001d2b
+string: !
+addr: 20001d34
+string: �!
+addr: 20001d37
+string: 
+addr: 20001d3c
+string: "
+addr: 20001d3f
+string: 
+addr: 20001d48
+string: D"
+addr: 20001d4b
+string: 
+addr: 20001d50
+string: "
+addr: 20001d53
+string: "
+addr: 20001d5c
+string: J"
+addr: 20001d5f
+string: 
+addr: 20001d69
+string: ��
+addr: 20001d71
+string: 6n
+addr: 20001d79
+string: l�
+addr: 20001d80
+string: @B
+addr: 20001d88
+string: ��
+addr: 20001d8f
+string: 0
+addr: 20001d93
+string: 0
+addr: 20001d98
+string: P"
+addr: 20001d9b
+string: #
+addr: 20001da4
+string: ~"
+addr: 20001da7
+string: 
+addr: 20001dac
+string: P"
+addr: 20001daf
+string: '
+addr: 20001db8
+string: �"
+addr: 20001dbb
+string: 
+addr: 20001dc0
+string: P"
+addr: 20001dc3
+string: +
+addr: 20001dcc
+string: )#
+addr: 20001dcf
+string: 
+addr: 20001dd4
+string: P"
+addr: 20001dd7
+string: ,
+addr: 20001de0
+string: �#
+addr: 20001de3
+string: 
+addr: 20001de8
+string: P"
+addr: 20001deb
+string: /
+addr: 20001df4
+string: �#
+addr: 20001df7
+string: 
+addr: 20001dfc
+string: P"
+addr: 20001dff
+string: <
+addr: 20001e08
+string: $
+addr: 20001e0b
+string: 
+addr: 20001e10
+string: P"
+addr: 20001e13
+string: @
+addr: 20001e1c
+string: �$
+addr: 20001e1f
+string: 
+addr: 20001e24
+string: P"
+addr: 20001e27
+string: C
+addr: 20001e30
+string: �$
+addr: 20001e33
+string: 
+addr: 20001e38
+string: P"
+addr: 20001e3b
+string: J
+addr: 20001e44
+string: %
+addr: 20001e47
+string: 
+addr: 20001e4c
+string: P"
+addr: 20001e4f
+string: c
+addr: 20001e58
+string: e%
+addr: 20001e5b
+string: 
+addr: 20001e60
+string: P"
+addr: 20001e63
+string: d
+addr: 20001e6c
+string: �%
+addr: 20001e6f
+string: 
+addr: 20001e74
+string: P"
+addr: 20001e77
+string: f
+addr: 20001e80
+string: ;&
+addr: 20001e83
+string: 
+addr: 20001e88
+string: P"
+addr: 20001e8b
+string: l
+addr: 20001e94
+string: �&
+addr: 20001e97
+string: 
+addr: 20001e9c
+string: P"
+addr: 20001e9f
+string: q
+addr: 20001ea4
+string: 
+addr: 20001ea8
+string: �&
+addr: 20001eab
+string: 
+addr: 20001eb0
+string: 
+addr: 20001eb8
+string: 
+addr: 20001ebc
+string: 
+addr: 20001ec0
+string: 
+addr: 20001ec8
+string: $
+addr: 20001ed0
+string: (
+addr: 20001ed4
+string: ,
+addr: 20001ed8
+string: 
+addr: 20001ee4
+string: 
+addr: 20001ee8
+string: '
+addr: 20001eeb
+string: '
+addr: 20001eef
+string: '
+addr: 20001ef3
+string: '
+addr: 20001ef7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001f49
+string: ../sw/device/lib/handler.c
+addr: 20002063
+string: Software IRQ triggered!
+addr: 2000207b
+string: Timer IRQ triggered!
+addr: 20002090
+string: External IRQ triggered!
+addr: 200020a8
+string: Instruction access fault, mtval shows fault address
+addr: 200020dc
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20002117
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 2000214f
+string: Load/Store fault, mtval shows the fault address
+addr: 2000217f
+string: Environment call encountered
+addr: 2000219c
+string: %s
+addr: 2000219f
+string: MTVAL value is 0x%x
+addr: 200021b3
+string: ../sw/device/lib/testing/test_main.c
+addr: 200021d8
+string: CHECK-fail: failed to init UART
+addr: 200021f8
+string: CHECK-fail: failed to configure UART
+addr: 2000221d
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002244
+string: PASS!
+addr: 2000224a
+string: FAIL!
+addr: 20002250
+string: ../sw/device/tests/dif/dif_pwrmgr_smoketest.c
+addr: 2000227e
+string: CHECK-fail: dif_aon_timer_wakeup_stop(aon_timer) == kDifAonTimerOk
+addr: 200022c1
+string: CHECK-fail: dif_aon_timer_irq_acknowledge( aon_timer, kDifAonTimerIrqWakeupThreshold) == kDifAonTimerOk
+addr: 20002329
+string: CHECK-fail: dif_aon_timer_irq_is_pending(aon_timer, kDifAonTimerIrqWakeupThreshold, &is_pending) == kDifAonTimerOk
+addr: 2000239c
+string: CHECK-fail: !is_pending
+addr: 200023b4
+string: CHECK-fail: dif_aon_timer_wakeup_start(aon_timer, wakeup_threshold, 0) == kDifAonTimerOk
+addr: 2000240d
+string: CHECK-fail: dif_pwrmgr_init( (dif_pwrmgr_params_t){ .base_addr = mmio_region_from_addr(TOP_EARLGREY_PWRMGR_AON_BASE_ADDR), }, &pwrmgr) == kDifPwrmgrOk
+addr: 200024a4
+string: CHECK-fail: dif_pwrmgr_wakeup_reason_get(&pwrmgr, &wakeup_reason) == kDifPwrmgrOk
+addr: 200024f6
+string: Powered up for the first time, begin test
+addr: 20002520
+string: CHECK-fail: dif_aon_timer_init(params, &aon_timer) == kDifAonTimerOk
+addr: 20002565
+string: CHECK-fail: dif_pwrmgr_set_request_sources(&pwrmgr, kDifPwrmgrReqTypeWakeup, kDifPwrmgrWakeupRequestSourceFive) == kDifPwrmgrConfigOk
+addr: 200025eb
+string: CHECK-fail: dif_pwrmgr_set_domain_config(&pwrmgr, config) == kDifPwrmgrConfigOk
+addr: 2000263b
+string: CHECK-fail: dif_pwrmgr_low_power_set_enabled(&pwrmgr, kDifPwrmgrToggleEnabled) == kDifPwrmgrConfigOk
+addr: 200026a0
+string: Aon timer wakeup detected
+addr: 200026ba
+string: Unexpected wakeup detected: type = %d, request_source = %d
+addr: 200026f5
+string: %s%5d %s:%d]
+addr: 20002703
+string: 
+addr: 20002706
+string: I
+addr: 20002708
+string: W
+addr: 2000270a
+string: E
+addr: 2000270c
+string: F
+addr: 2000270e
+string: ?
+addr: 20002710
+string: %
+addr: 20002712
+string: -
+addr: 20002714
+string: 0x

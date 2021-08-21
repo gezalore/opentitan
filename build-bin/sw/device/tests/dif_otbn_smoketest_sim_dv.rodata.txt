@@ -1,0 +1,426 @@
+addr: 20001de4
+string: P"
+addr: 20001de7
+string: E
+addr: 20001df0
+string: k"
+addr: 20001df3
+string: 
+addr: 20001df8
+string: P"
+addr: 20001dfb
+string: K
+addr: 20001e04
+string: �"
+addr: 20001e07
+string: 
+addr: 20001e0c
+string: P"
+addr: 20001e0f
+string: Q
+addr: 20001e18
+string: �"
+addr: 20001e1b
+string: 
+addr: 20001e20
+string: P"
+addr: 20001e23
+string: n
+addr: 20001e2c
+string: �#
+addr: 20001e2f
+string: 
+addr: 20001e34
+string: P"
+addr: 20001e37
+string: 
+addr: 20001e3c
+string: 
+addr: 20001e40
+string: �#
+addr: 20001e43
+string: 
+addr: 20001e48
+string: P"
+addr: 20001e4b
+string: 
+addr: 20001e50
+string: 
+addr: 20001e54
+string: �#
+addr: 20001e57
+string: �#
+addr: 20001e5b
+string: �#
+addr: 20001e5f
+string: �#
+addr: 20001e63
+string: �#
+addr: 20001e67
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001eb8
+string: 
+addr: 20001ebc
+string: �#
+addr: 20001ebf
+string: 
+addr: 20001ec8
+string: $
+addr: 20001ecb
+string: 
+addr: 20001ed0
+string: �#
+addr: 20001ed3
+string: !
+addr: 20001edc
+string: "$
+addr: 20001edf
+string: 
+addr: 20001ee4
+string: G$
+addr: 20001ee7
+string: 
+addr: 20001ef0
+string: n$
+addr: 20001ef3
+string: 
+addr: 20001ef8
+string: G$
+addr: 20001efb
+string: "
+addr: 20001f04
+string: t$
+addr: 20001f07
+string: 
+addr: 20001f11
+string: ��
+addr: 20001f19
+string: 6n
+addr: 20001f21
+string: l�
+addr: 20001f28
+string: @B
+addr: 20001f30
+string: ��
+addr: 20001f37
+string: 0
+addr: 20001f3b
+string: 0
+addr: 20001f40
+string: z$
+addr: 20001f43
+string: �
+addr: 20001f4c
+string: �$
+addr: 20001f4f
+string: 
+addr: 20001f54
+string: 
+addr: 20001f58
+string: z$
+addr: 20001f5b
+string: I
+addr: 20001f64
+string: �$
+addr: 20001f67
+string: �(
+addr: 20001f6b
+string: �)
+addr: 20001f6f
+string: 
+addr: 20001f71
+string: *
+addr: 20001f73
+string: 
+addr: 20001f75
+string: *
+addr: 20001f77
+string: 
+addr: 20001f7c
+string: z$
+addr: 20001f7f
+string: J
+addr: 20001f88
+string: %
+addr: 20001f8b
+string: 
+addr: 20001fbc
+string: ������������������������������������
+addr: 20001fe8
+string: ����
+addr: 2000200b
+string: 
+addr: 20002010
+string: ��������
+addr: 2000201b
+string: �
+addr: 2000204c
+string: 
+addr: 20002050
+string: z$
+addr: 20002053
+string: l
+addr: 2000205c
+string: R%
+addr: 2000205f
+string: 
+addr: 20002064
+string: z$
+addr: 20002067
+string: n
+addr: 20002070
+string: �%
+addr: 20002073
+string: 
+addr: 20002078
+string: z$
+addr: 2000207b
+string: p
+addr: 20002084
+string: �%
+addr: 20002087
+string: 
+addr: 2000208c
+string: z$
+addr: 2000208f
+string: r
+addr: 20002098
+string: E&
+addr: 2000209b
+string: 
+addr: 200020a0
+string: z$
+addr: 200020a3
+string: t
+addr: 200020ac
+string: �&
+addr: 200020af
+string: 
+addr: 200020b4
+string: z$
+addr: 200020b7
+string: u
+addr: 200020c0
+string: �&
+addr: 200020c3
+string: 
+addr: 200020c8
+string: z$
+addr: 200020cb
+string: }
+addr: 200020d0
+string: 
+addr: 200020d4
+string: '
+addr: 200020d7
+string: 
+addr: 200020d9
+string: *
+addr: 200020db
+string: *
+addr: 200020df
+string: *
+addr: 200020e3
+string: *
+addr: 200020e7
+string: 
+addr: 200020ec
+string: z$
+addr: 200020ef
+string: �
+addr: 200020f8
+string: f'
+addr: 200020fb
+string: 
+addr: 20002100
+string: z$
+addr: 20002103
+string: �
+addr: 2000210c
+string: �'
+addr: 2000210f
+string: 
+addr: 20002114
+string: z$
+addr: 20002117
+string: �
+addr: 20002120
+string: �'
+addr: 20002123
+string: 
+addr: 20002128
+string: z$
+addr: 2000212b
+string: 5
+addr: 20002130
+string: 
+addr: 20002134
+string: .(
+addr: 20002137
+string: 
+addr: 2000213c
+string: z$
+addr: 2000213f
+string: 8
+addr: 20002144
+string: 
+addr: 20002148
+string: ](
+addr: 2000214b
+string: 
+addr: 20002151
+string: ../sw/device/lib/handler.c
+addr: 2000226b
+string: Software IRQ triggered!
+addr: 20002283
+string: Timer IRQ triggered!
+addr: 20002298
+string: External IRQ triggered!
+addr: 200022b0
+string: Instruction access fault, mtval shows fault address
+addr: 200022e4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 2000231f
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002357
+string: Load/Store fault, mtval shows the fault address
+addr: 20002387
+string: Environment call encountered
+addr: 200023a4
+string: %s
+addr: 200023a7
+string: MTVAL value is 0x%x
+addr: 200023bb
+string: %s%5d %s:%d]
+addr: 200023c9
+string: 
+addr: 200023cc
+string: I
+addr: 200023ce
+string: W
+addr: 200023d0
+string: E
+addr: 200023d2
+string: F
+addr: 200023d4
+string: ?
+addr: 200023d6
+string: %
+addr: 200023d8
+string: -
+addr: 200023da
+string: 0x
+addr: 200023dd
+string: ../sw/device/lib/testing/test_main.c
+addr: 20002402
+string: CHECK-fail: failed to init UART
+addr: 20002422
+string: CHECK-fail: failed to configure UART
+addr: 20002447
+string: ../sw/device/lib/testing/test_status.c
+addr: 2000246e
+string: PASS!
+addr: 20002474
+string: FAIL!
+addr: 2000247a
+string: ../sw/device/tests/dif/dif_otbn_smoketest.c
+addr: 200024a6
+string: CHECK-fail: otbn_init(&otbn_ctx, otbn_config) == kOtbnOk
+addr: 200024df
+string: CHECK-fail: otbn_zero_data_memory(otbn_ctx) == kOtbnOk
+addr: 20002516
+string: CHECK-fail: otbn_load_app(otbn_ctx, kAppBarrett) == kOtbnOk
+addr: 20002552
+string: CHECK-fail: dif_otbn_dmem_write(&otbn_ctx->dif, 0, &a, sizeof(a)) == kDifOtbnOk
+addr: 200025a2
+string: CHECK-fail: dif_otbn_dmem_write(&otbn_ctx->dif, 64, &b, sizeof(b)) == kDifOtbnOk
+addr: 200025f3
+string: CHECK-fail: dif_otbn_dmem_write(&otbn_ctx->dif, 256, &m, sizeof(m)) == kDifOtbnOk
+addr: 20002645
+string: CHECK-fail: dif_otbn_dmem_write(&otbn_ctx->dif, 320, &u, sizeof(u)) == kDifOtbnOk
+addr: 20002697
+string: CHECK-fail: otbn_call_function(otbn_ctx, kFuncWrapBarrett384) == kOtbnOk
+addr: 200026e0
+string: CHECK-fail: otbn_busy_wait_for_done(otbn_ctx) == kOtbnOk
+addr: 20002719
+string: CHECK-fail: Unexpected result c at byte %d: 0x%x (actual) != 0x%x (expected)
+addr: 20002766
+string: CHECK-fail: otbn_load_app(otbn_ctx, kAppErrTest) == kOtbnOk
+addr: 200027a2
+string: CHECK-fail: otbn_call_function(otbn_ctx, kFuncWrapErrTest) == kOtbnOk
+addr: 200027e8
+string: CHECK-fail: otbn_busy_wait_for_done(otbn_ctx) == kOtbnExecutionFailed
+addr: 2000282e
+string: CHECK-fail: dif_otbn_get_err_bits() failed: %d
+addr: 2000285d
+string: CHECK-fail: dif_otbn_get_err_bits() produced unexpected error bits: %x
+addr: 200028a4
+string: ;�
+addr: 200028a8
+string: ; �;(�B;
+addr: 200028b2
+string: �;
+addr: 200028b6
+string: �;
+addr: 200028ba
+string: �; �; �; �;(�f;
+addr: 200028ce
+string: �
+addr: 200028d0
+string: ;
+addr: 200028d2
+string: �;
+addr: 200028d6
+string: �;
+addr: 200028da
+string: �;��
+addr: 200028e0
+string: ; �; �; �; �;�����B;
+addr: 200028fa
+string: �;
+addr: 200028fe
+string: �;
+addr: 20002902
+string: �;��;��; �; �;�����r;
+addr: 2000291e
+string: �;��
+addr: 20002924
+string: ;��;��;��B;��j+	�g�
+addr: 2000293c
+string: ��������j
+addr: 2000294c
+string: �
+addr: 20002950
+string: ��/{te
+addr: 2000295c
+string: ��
+addr: 20002960
+string: ��_�{�/��9����
+addr: 20002970
+string: +*�
+addr: 20002974
+string: ���+*���O{t:e
+addr: 20002988
+string: ��
+addr: 2000298c
+string: ���+;���
+addr: 2000299c
+string: +?�
+addr: 200029a0
+string: �������
+addr: 200029ac
+string: +?�
+addr: 200029b0
+string: ����g�
+addr: 200029bc
+string: ����
+addr: 200029c4
+string: �@@
+addr: 200029c8
+string: �@@�@@�@@�@@�@@�@@�@@�����P@ �P@"s
+addr: 20002a00
+string: 0
+addr: 20002a04
+string: �!
+addr: 20002a08
+string: s

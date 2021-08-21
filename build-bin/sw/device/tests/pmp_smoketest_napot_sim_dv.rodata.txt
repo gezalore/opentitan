@@ -1,0 +1,228 @@
+addr: 20001b6c
+string: @
+addr: 20001b6f
+string: E
+addr: 20001b78
+string: [
+addr: 20001b7b
+string: 
+addr: 20001b80
+string: @
+addr: 20001b83
+string: K
+addr: 20001b8c
+string: s
+addr: 20001b8f
+string: 
+addr: 20001b94
+string: @
+addr: 20001b97
+string: Q
+addr: 20001ba0
+string: �
+addr: 20001ba3
+string: 
+addr: 20001ba8
+string: @
+addr: 20001bab
+string: n
+addr: 20001bb4
+string: w
+addr: 20001bb7
+string: 
+addr: 20001bbc
+string: @
+addr: 20001bbf
+string: 
+addr: 20001bc4
+string: 
+addr: 20001bc8
+string: �
+addr: 20001bcb
+string: 
+addr: 20001bd0
+string: @
+addr: 20001bd3
+string: 
+addr: 20001bd8
+string: 
+addr: 20001bdc
+string: �
+addr: 20001bdf
+string: 
+addr: 20001be4
+string: �
+addr: 20001be7
+string: 
+addr: 20001bf0
+string: �
+addr: 20001bf3
+string: 
+addr: 20001bf8
+string: �
+addr: 20001bfb
+string: !
+addr: 20001c04
+string: �
+addr: 20001c07
+string: 
+addr: 20001c11
+string: ��
+addr: 20001c19
+string: 6n
+addr: 20001c21
+string: l�
+addr: 20001c28
+string: @B
+addr: 20001c30
+string: ��
+addr: 20001c37
+string: 0
+addr: 20001c3b
+string: 0
+addr: 20001c40
+string: 
+addr: 20001c43
+string: -
+addr: 20001c48
+string: 
+addr: 20001c4c
+string: >
+addr: 20001c4f
+string: 
+addr: 20001c54
+string: 
+addr: 20001c58
+string: 
+addr: 20001c5b
+string: V
+addr: 20001c64
+string: h
+addr: 20001c67
+string: 
+addr: 20001c6c
+string: 
+addr: 20001c6f
+string: ]
+addr: 20001c78
+string: �
+addr: 20001c7b
+string: 
+addr: 20001c80
+string: 
+addr: 20001c83
+string: b
+addr: 20001c8c
+string: �
+addr: 20001c8f
+string: 
+addr: 20001c94
+string: 
+addr: 20001c97
+string: f
+addr: 20001ca0
+string: *!
+addr: 20001ca3
+string: 
+addr: 20001ca8
+string: 
+addr: 20001cab
+string: L
+addr: 20001cb0
+string: 
+addr: 20001cb4
+string: d!
+addr: 20001cb7
+string: �!
+addr: 20001cbb
+string: �!
+addr: 20001cbf
+string: �!
+addr: 20001cc3
+string: �!
+addr: 20001cc7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001d1c
+string: �!
+addr: 20001d1f
+string: 
+addr: 20001d28
+string: �!
+addr: 20001d2b
+string: 
+addr: 20001d30
+string: �!
+addr: 20001d33
+string: "
+addr: 20001d3c
+string: �!
+addr: 20001d3f
+string: 
+addr: 20001d41
+string: ../sw/device/lib/handler.c
+addr: 20001e5b
+string: Software IRQ triggered!
+addr: 20001e73
+string: Timer IRQ triggered!
+addr: 20001e88
+string: External IRQ triggered!
+addr: 20001ea0
+string: Instruction access fault, mtval shows fault address
+addr: 20001ed4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001f0f
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001f47
+string: Load/Store fault, mtval shows the fault address
+addr: 20001f77
+string: Environment call encountered
+addr: 20001f94
+string: %s
+addr: 20001f97
+string: MTVAL value is 0x%x
+addr: 20001fab
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001fd0
+string: CHECK-fail: failed to init UART
+addr: 20001ff0
+string: CHECK-fail: failed to configure UART
+addr: 20002015
+string: ../sw/device/tests/pmp_smoketest_napot.c
+addr: 2000203e
+string: Load fault exception handler: mepc = 0x%x
+addr: 20002068
+string: CHECK-fail: Load access violation before PMP configuration
+addr: 200020a3
+string: CHECK-fail: No load access violation on the bottom of the range load
+addr: 200020e8
+string: CHECK-fail: No load access violation on the top of the range load
+addr: 2000212a
+string: CHECK-fail: Load access violation on top of the range + 1
+addr: 20002164
+string: CHECK-fail: Load configuration failed, error code = %d
+addr: 2000219b
+string: %s%5d %s:%d]
+addr: 200021a9
+string: 
+addr: 200021ac
+string: I
+addr: 200021ae
+string: W
+addr: 200021b0
+string: E
+addr: 200021b2
+string: F
+addr: 200021b4
+string: ?
+addr: 200021b6
+string: %
+addr: 200021b8
+string: -
+addr: 200021ba
+string: 0x
+addr: 200021bd
+string: ../sw/device/lib/testing/test_status.c
+addr: 200021e4
+string: PASS!
+addr: 200021ea
+string: FAIL!

@@ -1,0 +1,262 @@
+addr: 20001d24
+string: P
+addr: 20001d27
+string: E
+addr: 20001d30
+string: k
+addr: 20001d33
+string: 
+addr: 20001d38
+string: P
+addr: 20001d3b
+string: K
+addr: 20001d44
+string: �
+addr: 20001d47
+string: 
+addr: 20001d4c
+string: P
+addr: 20001d4f
+string: Q
+addr: 20001d58
+string: �
+addr: 20001d5b
+string: 
+addr: 20001d60
+string: P
+addr: 20001d63
+string: n
+addr: 20001d6c
+string: �!
+addr: 20001d6f
+string: 
+addr: 20001d74
+string: P
+addr: 20001d77
+string: 
+addr: 20001d7c
+string: 
+addr: 20001d80
+string: �!
+addr: 20001d83
+string: 
+addr: 20001d88
+string: P
+addr: 20001d8b
+string: 
+addr: 20001d90
+string: 
+addr: 20001d94
+string: �!
+addr: 20001d97
+string: 
+addr: 20001d9c
+string: �!
+addr: 20001d9f
+string: 
+addr: 20001da8
+string: �!
+addr: 20001dab
+string: 
+addr: 20001db0
+string: �!
+addr: 20001db3
+string: !
+addr: 20001dbd
+string: "
+addr: 20001dbf
+string: 
+addr: 20001dc4
+string: %"
+addr: 20001dc7
+string: 
+addr: 20001dd0
+string: L"
+addr: 20001dd3
+string: 
+addr: 20001dd8
+string: %"
+addr: 20001ddb
+string: "
+addr: 20001de4
+string: R"
+addr: 20001de7
+string: 
+addr: 20001df1
+string: ��
+addr: 20001df9
+string: 6n
+addr: 20001e01
+string: l�
+addr: 20001e08
+string: @B
+addr: 20001e10
+string: ��
+addr: 20001e17
+string: 0
+addr: 20001e1b
+string: 0
+addr: 20001e20
+string: X"
+addr: 20001e23
+string: '
+addr: 20001e2c
+string: �"
+addr: 20001e2f
+string: 
+addr: 20001e34
+string: X"
+addr: 20001e37
+string: +
+addr: 20001e40
+string: ##
+addr: 20001e43
+string: 
+addr: 20001e48
+string: X"
+addr: 20001e4b
+string: 9
+addr: 20001e54
+string: u#
+addr: 20001e57
+string: 
+addr: 20001e5c
+string: X"
+addr: 20001e5f
+string: <
+addr: 20001e68
+string: �#
+addr: 20001e6b
+string: 
+addr: 20001e70
+string: X"
+addr: 20001e73
+string: ?
+addr: 20001e78
+string: 
+addr: 20001e7c
+string: �#
+addr: 20001e7f
+string: 
+addr: 20001e84
+string: X"
+addr: 20001e87
+string: N
+addr: 20001e90
+string: �#
+addr: 20001e93
+string: 
+addr: 20001e98
+string: X"
+addr: 20001e9b
+string: Q
+addr: 20001ea4
+string: n$
+addr: 20001ea7
+string: 
+addr: 20001eac
+string: X"
+addr: 20001eaf
+string: S
+addr: 20001eb8
+string: �$
+addr: 20001ebb
+string: 
+addr: 20001ec0
+string: 
+addr: 20001ec8
+string: 
+addr: 20001ecc
+string: 
+addr: 20001ed0
+string: 
+addr: 20001ed8
+string: $
+addr: 20001ee0
+string: (
+addr: 20001ee4
+string: ,
+addr: 20001ee8
+string: 
+addr: 20001ef0
+string: Z%
+addr: 20001ef3
+string: \%
+addr: 20001ef7
+string: ^%
+addr: 20001efb
+string: `%
+addr: 20001eff
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001f51
+string: ../sw/device/lib/handler.c
+addr: 2000206b
+string: Software IRQ triggered!
+addr: 20002083
+string: Timer IRQ triggered!
+addr: 20002098
+string: External IRQ triggered!
+addr: 200020b0
+string: Instruction access fault, mtval shows fault address
+addr: 200020e4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 2000211f
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002157
+string: Load/Store fault, mtval shows the fault address
+addr: 20002187
+string: Environment call encountered
+addr: 200021a4
+string: %s
+addr: 200021a7
+string: MTVAL value is 0x%x
+addr: 200021bb
+string: ../sw/device/lib/testing/test_main.c
+addr: 200021e0
+string: CHECK-fail: failed to init UART
+addr: 20002200
+string: CHECK-fail: failed to configure UART
+addr: 20002225
+string: ../sw/device/lib/testing/test_status.c
+addr: 2000224c
+string: PASS!
+addr: 20002252
+string: FAIL!
+addr: 20002258
+string: ../sw/device/tests/sim_dv/pwrmgr_usbdev_smoketest.c
+addr: 2000228c
+string: CHECK-fail: dif_pwrmgr_init( (dif_pwrmgr_params_t){ .base_addr = mmio_region_from_addr(TOP_EARLGREY_PWRMGR_AON_BASE_ADDR), }, &pwrmgr) == kDifPwrmgrOk
+addr: 20002323
+string: CHECK-fail: dif_pwrmgr_wakeup_reason_get(&pwrmgr, &wakeup_reason) == kDifPwrmgrOk
+addr: 20002375
+string: Powered up for the first time, begin test
+addr: 2000239f
+string: USB wakeup detected
+addr: 200023b3
+string: Unexpected wakeup reason (types: %2x, sources: %8x)
+addr: 200023e7
+string: CHECK-fail: dif_pwrmgr_set_request_sources(&pwrmgr, kDifPwrmgrReqTypeWakeup, kDifPwrmgrWakeupRequestSourceThree) == kDifPwrmgrConfigOk
+addr: 2000246e
+string: CHECK-fail: dif_pwrmgr_set_domain_config( &pwrmgr, kDifPwrmgrDomainOptionUsbClockInActivePower) == kDifPwrmgrConfigOk
+addr: 200024e4
+string: CHECK-fail: dif_pwrmgr_low_power_set_enabled(&pwrmgr, kDifPwrmgrToggleEnabled) == kDifPwrmgrConfigOk
+addr: 20002549
+string: %s%5d %s:%d]
+addr: 20002557
+string: 
+addr: 2000255a
+string: I
+addr: 2000255c
+string: W
+addr: 2000255e
+string: E
+addr: 20002560
+string: F
+addr: 20002562
+string: ?
+addr: 20002564
+string: %
+addr: 20002566
+string: -
+addr: 20002568
+string: 0x

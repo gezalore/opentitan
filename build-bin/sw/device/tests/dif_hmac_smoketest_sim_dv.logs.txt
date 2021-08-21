@@ -1,0 +1,231 @@
+addr: 10000
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10028
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1003c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10050
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10064
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 100a0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 100b4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 100c8
+severity: 0
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 193
+nargs: 0
+format: Running HMAC DIF test...
+str_arg_idx: 
+addr: 100dc
+severity: 0
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 202
+nargs: 0
+format: Running test SHA256 pass 1...
+str_arg_idx: 
+addr: 100f0
+severity: 0
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 205
+nargs: 0
+format: Running test SHA256 pass 2...
+str_arg_idx: 
+addr: 10104
+severity: 0
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 208
+nargs: 0
+format: Running test HMAC pass 1...
+str_arg_idx: 
+addr: 10118
+severity: 0
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 212
+nargs: 0
+format: Running test HMAC pass 2...
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 57
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered in HMAC init.
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 58
+nargs: 0
+format: CHECK-fail: Unknown error encountered in HMAC init.
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 74
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered in HMAC start.
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 75
+nargs: 0
+format: CHECK-fail: Unknown error encountered in HMAC start.
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 92
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered while pushing to FIFO.
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 98
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered while pushing to FIFO.
+str_arg_idx: 
+addr: 101a4
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 100
+nargs: 0
+format: CHECK-fail: Unknown error encountered while pushing to FIFO.
+str_arg_idx: 
+addr: 101b8
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 104
+nargs: 0
+format: CHECK-fail: FIFO filled up too may times, giving up.
+str_arg_idx: 
+addr: 101cc
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 119
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered checking FIFO depth.
+str_arg_idx: 
+addr: 101e0
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 120
+nargs: 0
+format: CHECK-fail: Unknown error encountered checking FIFO depth.
+str_arg_idx: 
+addr: 101f4
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 134
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered checking message length.
+str_arg_idx: 
+addr: 10208
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 136
+nargs: 0
+format: CHECK-fail: Unknown error encountered checking message length.
+str_arg_idx: 
+addr: 1021c
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 141
+nargs: 2
+format: CHECK-fail: Message length mismatch. Expected %0d bits but got %0d bits.
+str_arg_idx: 
+addr: 10230
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 150
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered running HMAC.
+str_arg_idx: 
+addr: 10244
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 151
+nargs: 0
+format: CHECK-fail: Unknown error encountered running HMAC.
+str_arg_idx: 
+addr: 10258
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 165
+nargs: 0
+format: CHECK-fail: Invalid arguments encountered reading HMAC digest.
+str_arg_idx: 
+addr: 1026c
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 171
+nargs: 0
+format: CHECK-fail: Unknown error encountered reading HMAC digest.
+str_arg_idx: 
+addr: 10280
+severity: 2
+file: sw/device/tests/dif/dif_hmac_smoketest.c
+line: 178
+nargs: 3
+format: CHECK-fail: Digest mismatch, expected: 0x%0H at index [%0d] but got: 0x%0H.
+str_arg_idx:

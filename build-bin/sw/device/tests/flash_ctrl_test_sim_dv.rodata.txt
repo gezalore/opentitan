@@ -1,0 +1,402 @@
+addr: 200020bc
+string: %
+addr: 200020bf
+string: E
+addr: 200020c8
+string: '%
+addr: 200020cb
+string: 
+addr: 200020d0
+string: %
+addr: 200020d3
+string: K
+addr: 200020dc
+string: ?%
+addr: 200020df
+string: 
+addr: 200020e4
+string: %
+addr: 200020e7
+string: Q
+addr: 200020f0
+string: T%
+addr: 200020f3
+string: 
+addr: 200020f8
+string: %
+addr: 200020fb
+string: n
+addr: 20002104
+string: C&
+addr: 20002107
+string: 
+addr: 2000210c
+string: %
+addr: 2000210f
+string: 
+addr: 20002114
+string: 
+addr: 20002118
+string: `&
+addr: 2000211b
+string: 
+addr: 20002120
+string: %
+addr: 20002123
+string: 
+addr: 20002128
+string: 
+addr: 2000212c
+string: c&
+addr: 2000212f
+string: 
+addr: 20002134
+string: w&
+addr: 20002137
+string: 
+addr: 20002140
+string: �&
+addr: 20002143
+string: 
+addr: 20002148
+string: w&
+addr: 2000214b
+string: !
+addr: 20002154
+string: �&
+addr: 20002157
+string: 
+addr: 2000215c
+string: �&
+addr: 2000215f
+string: 
+addr: 20002168
+string: '
+addr: 2000216b
+string: 
+addr: 20002170
+string: �&
+addr: 20002173
+string: "
+addr: 2000217c
+string: '
+addr: 2000217f
+string: 
+addr: 20002189
+string: ��
+addr: 20002191
+string: 6n
+addr: 20002199
+string: l�
+addr: 200021a0
+string: @B
+addr: 200021a8
+string: ��
+addr: 200021af
+string: 0
+addr: 200021b3
+string: 0
+addr: 200021b8
+string: '
+addr: 200021bb
+string: �
+addr: 200021c4
+string: 9'
+addr: 200021c7
+string: 
+addr: 200021cc
+string: 
+addr: 200021d0
+string: '
+addr: 200021d3
+string: D
+addr: 200021dc
+string: E'
+addr: 200021df
+string: 
+addr: 200021e4
+string: '
+addr: 200021e7
+string: F
+addr: 200021f0
+string: �'
+addr: 200021f3
+string: 
+addr: 200021f8
+string: '
+addr: 200021fb
+string: J
+addr: 20002204
+string: �'
+addr: 20002207
+string: 
+addr: 2000220c
+string: '
+addr: 2000220f
+string: W
+addr: 20002218
+string: E'
+addr: 2000221b
+string: 
+addr: 20002220
+string: '
+addr: 20002223
+string: Y
+addr: 2000222c
+string: (
+addr: 2000222f
+string: 
+addr: 20002234
+string: '
+addr: 20002237
+string: [
+addr: 20002240
+string: �(
+addr: 20002243
+string: 
+addr: 20002248
+string: '
+addr: 2000224b
+string: \
+addr: 20002254
+string: �(
+addr: 20002257
+string: 
+addr: 2000225c
+string: '
+addr: 2000225f
+string: b
+addr: 20002268
+string: �(
+addr: 2000226b
+string: 
+addr: 20002270
+string: '
+addr: 20002273
+string: e
+addr: 2000227c
+string: �'
+addr: 2000227f
+string: 
+addr: 20002284
+string: '
+addr: 20002287
+string: g
+addr: 20002290
+string: )
+addr: 20002293
+string: 
+addr: 20002298
+string: '
+addr: 2000229b
+string: i
+addr: 200022a4
+string: y)
+addr: 200022a7
+string: 
+addr: 200022ac
+string: '
+addr: 200022af
+string: j
+addr: 200022b8
+string: �(
+addr: 200022bb
+string: 
+addr: 200022c0
+string: '
+addr: 200022c3
+string: o
+addr: 200022cc
+string: �)
+addr: 200022cf
+string: 
+addr: 200022d4
+string: '
+addr: 200022d7
+string: r
+addr: 200022e0
+string: 4*
+addr: 200022e3
+string: 
+addr: 200022e8
+string: '
+addr: 200022eb
+string: v
+addr: 200022f4
+string: �*
+addr: 200022f7
+string: 
+addr: 200022fc
+string: '
+addr: 200022ff
+string: x
+addr: 20002308
+string: �*
+addr: 2000230b
+string: 
+addr: 20002310
+string: '
+addr: 20002313
+string: z
+addr: 2000231c
+string: �(
+addr: 2000231f
+string: 
+addr: 20002324
+string: '
+addr: 20002327
+string: �
+addr: 20002330
+string: q+
+addr: 20002333
+string: 
+addr: 20002338
+string: '
+addr: 2000233b
+string: �
+addr: 20002344
+string: �+
+addr: 20002347
+string: 
+addr: 2000234c
+string: '
+addr: 2000234f
+string: �
+addr: 20002358
+string: �+
+addr: 2000235b
+string: 
+addr: 20002360
+string: '
+addr: 20002363
+string: �
+addr: 2000236c
+string: m,
+addr: 2000236f
+string: 
+addr: 20002374
+string: '
+addr: 20002377
+string: �
+addr: 20002380
+string: �,
+addr: 20002383
+string: 
+addr: 20002388
+string: '
+addr: 2000238b
+string: �
+addr: 20002394
+string: q+
+addr: 20002397
+string: 
+addr: 2000239c
+string: '
+addr: 2000239f
+string: �
+addr: 200023a8
+string: -
+addr: 200023ab
+string: ^-
+addr: 200023af
+string: `-
+addr: 200023b3
+string: b-
+addr: 200023b7
+string: d-
+addr: 200023bb
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 2000240d
+string: ../sw/device/lib/handler.c
+addr: 20002527
+string: Software IRQ triggered!
+addr: 2000253f
+string: Timer IRQ triggered!
+addr: 20002554
+string: External IRQ triggered!
+addr: 2000256c
+string: Instruction access fault, mtval shows fault address
+addr: 200025a0
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200025db
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002613
+string: Load/Store fault, mtval shows the fault address
+addr: 20002643
+string: Environment call encountered
+addr: 20002660
+string: %s
+addr: 20002663
+string: MTVAL value is 0x%x
+addr: 20002677
+string: ../sw/device/lib/testing/test_main.c
+addr: 2000269c
+string: CHECK-fail: failed to init UART
+addr: 200026bc
+string: CHECK-fail: failed to configure UART
+addr: 200026e1
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002708
+string: PASS!
+addr: 2000270e
+string: FAIL!
+addr: 20002714
+string: ../sw/device/tests/flash_ctrl_test.c
+addr: 20002739
+string: flash test!
+addr: 20002745
+string: CHECK-fail: (flash_page_erase(flash_bank_1_addr, kDataPartition)) == 0
+addr: 2000278c
+string: CHECK-fail: (~mmio_region_read32(flash_bank_1, i * sizeof(uint32_t))) == 0
+addr: 200027d7
+string: CHECK-fail: (flash_page_erase(flash_bank_1_addr, kInfoPartition)) == 0
+addr: 2000281e
+string: CHECK-fail: (flash_write(flash_bank_1_addr, kDataPartition, input_page, flash_get_words_per_page())) == 0
+addr: 20002888
+string: CHECK-fail: (flash_read(flash_bank_1_addr, kDataPartition, flash_get_words_per_page(), output_page)) == 0
+addr: 200028f2
+string: CHECK-fail: xs_[i] == ys_[i]
+addr: 2000290f
+string: CHECK-fail: (flash_write(flash_bank_1_addr, kInfoPartition, input_page, flash_get_words_per_page())) == 0
+addr: 20002979
+string: CHECK-fail: (flash_read(flash_bank_1_addr, kInfoPartition, flash_get_words_per_page(), output_page)) == 0
+addr: 200029e3
+string: CHECK-fail: (flash_page_erase(flash_bank_0_last_page_addr, kDataPartition)) == 0
+addr: 20002a34
+string: CHECK-fail: (~mmio_region_read32(flash_bank_0_last_page, i * sizeof(uint32_t))) == 0
+addr: 20002a89
+string: CHECK-fail: (flash_write(flash_bank_0_last_page_addr, kDataPartition, input_page, flash_get_words_per_page())) == 0
+addr: 20002afd
+string: CHECK-fail: (flash_read(flash_bank_0_last_page_addr, kDataPartition, flash_get_words_per_page(), output_page)) == 0
+addr: 20002b71
+string: CHECK-fail: (flash_page_erase(ok_region_start, kDataPartition)) == 0
+addr: 20002bb6
+string: CHECK-fail: (flash_page_erase(bad_region_start, kDataPartition)) == 0
+addr: 20002bfc
+string: CHECK-fail: (flash_write(region_boundary_start, kDataPartition, words, (sizeof(words) / sizeof(words[0])))) != 0
+addr: 20002c6d
+string: CHECK-fail: mmio_region_read32(region_boundary, i * sizeof(uint32_t)) == expected
+addr: 20002cbf
+string: CHECK-fail: (flash_page_erase(bad_region_start, kDataPartition)) != 0
+addr: 20002d05
+string: CHECK-fail: (~mmio_region_read32(ok_region, i * sizeof(uint32_t))) == 0
+addr: 20002d4d
+string: %s%5d %s:%d]
+addr: 20002d5b
+string: 
+addr: 20002d5e
+string: I
+addr: 20002d60
+string: W
+addr: 20002d62
+string: E
+addr: 20002d64
+string: F
+addr: 20002d66
+string: ?
+addr: 20002d68
+string: %
+addr: 20002d6a
+string: -
+addr: 20002d6c
+string: 0x

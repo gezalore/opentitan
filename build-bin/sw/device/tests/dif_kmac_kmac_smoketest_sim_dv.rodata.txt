@@ -1,0 +1,418 @@
+addr: 20001dd5
+string: -
+addr: 20001dd7
+string: E
+addr: 20001de0
+string: -
+addr: 20001de3
+string: 
+addr: 20001de9
+string: -
+addr: 20001deb
+string: K
+addr: 20001df4
+string: 3-
+addr: 20001df7
+string: 
+addr: 20001dfd
+string: -
+addr: 20001dff
+string: Q
+addr: 20001e08
+string: H-
+addr: 20001e0b
+string: 
+addr: 20001e11
+string: -
+addr: 20001e13
+string: n
+addr: 20001e1c
+string: 7.
+addr: 20001e1f
+string: 
+addr: 20001e25
+string: -
+addr: 20001e27
+string: 
+addr: 20001e2c
+string: 
+addr: 20001e30
+string: T.
+addr: 20001e33
+string: 
+addr: 20001e39
+string: -
+addr: 20001e3b
+string: 
+addr: 20001e40
+string: 
+addr: 20001e44
+string: W.
+addr: 20001e47
+string: 
+addr: 20001e4c
+string: k.
+addr: 20001e4f
+string: 
+addr: 20001e58
+string: �.
+addr: 20001e5b
+string: 
+addr: 20001e60
+string: k.
+addr: 20001e63
+string: !
+addr: 20001e6c
+string: �.
+addr: 20001e6f
+string: 
+addr: 20001e74
+string: �.
+addr: 20001e77
+string: 
+addr: 20001e80
+string: �.
+addr: 20001e83
+string: 
+addr: 20001e88
+string: �.
+addr: 20001e8b
+string: "
+addr: 20001e94
+string: /
+addr: 20001e97
+string: 
+addr: 20001ea1
+string: ��
+addr: 20001ea9
+string: 6n
+addr: 20001eb1
+string: l�
+addr: 20001eb8
+string: @B
+addr: 20001ec0
+string: ��
+addr: 20001ec7
+string: 0
+addr: 20001ecb
+string: 0
+addr: 20001ed1
+string: 
+addr: 20001ed6
+string: 	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~������������������������������������������������������������������������
+addr: 20001f9f
+string: 	
+addr: 20001fc4
+string: @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+addr: 20002044
+string: 
+addr: 20002048
+string: �
+addr: 2000204b
+string: 
+addr: 20002050
+string: t2
+addr: 20002053
+string: 
+addr: 20002058
+string: �x>��Ӥ)�pj�:
+addr: 20002068
+string: ���Ԗ(��1�$?En�N
+addr: 200021e8
+string: 
+addr: 200021ec
+string: 
+addr: 200021f0
+string: 
+addr: 200021f4
+string: @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+addr: 20002274
+string: 
+addr: 20002278
+string: �
+addr: 2000227b
+string: �
+addr: 20002280
+string: /
+addr: 20002283
+string: 
+addr: 20002288
+string: ������l�U�������M���i��}���p����
+addr: 200022ae
+string: 3����p��-��(��Ghv��e
+addr: 20002418
+string: 
+addr: 2000241c
+string: 
+addr: 20002428
+string: 
+addr: 2000242c
+string: 
+addr: 20002430
+string: 
+addr: 20002434
+string: 
+addr: 20002438
+string: 
+addr: 2000243c
+string: 
+addr: 20002440
+string: 
+addr: 20002444
+string: 
+addr: 20002448
+string: 
+addr: 2000244c
+string: 
+addr: 20002450
+string: 
+addr: 20002454
+string: 
+addr: 20002458
+string: 
+addr: 2000245c
+string: 
+addr: 20002460
+string: 
+addr: 200024a4
+string: 
+addr: 200024a8
+string: /
+addr: 200024ab
+string: 
+addr: 200024b0
+string: �
+addr: 200024b3
+string: 
+addr: 200024b8
+string: � w�|y��ajl�&���4X��L����~ٿ��]���AT��!�:ʳ���955�Z"ͥw����8�a<��՟.c/+�2ƫ`SN���a:��y^�z8�Z�Ȍ�?2�/�'��l\nR���0�V�Z���.Y��Am~�%vq�o.�S2u{��˫���K�{_�2��,]����+A9��/���)�C[�oR97����ԅ�J�{�@�����(�A��Ņ�+~-Iȟ�=&�t���{��q|����I��{��U=�U�H�S� eɔ�/t��)Ԗ�:mKF'��4Uo��COt�9�_|��;q�5�c�ο��&�!w�%O���m�k������s�醌�yo�0hE̢��c:�8~e��%�|8Mw��g�������B��d
+addr: 2000264c
+string: 
+addr: 20002654
+string: @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+addr: 200026d4
+string: 
+addr: 200026d8
+string: �
+addr: 200026db
+string: 
+addr: 200026e0
+string: t2
+addr: 200026e3
+string: 
+addr: 200026e8
+string: ̓t�����+���F|����@1����5
+addr: 20002878
+string: 
+addr: 20002880
+string: 
+addr: 20002884
+string: @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+addr: 20002904
+string: 
+addr: 20002908
+string: �
+addr: 2000290b
+string: �
+addr: 20002910
+string: /
+addr: 20002913
+string: 
+addr: 20002918
+string: վs�N�s(F�Y�����zK�DY��´���g��.��W�-I�ѻ'ghx�0j��(�00]
+addr: 20002aa8
+string: 
+addr: 20002ab4
+string: (/
+addr: 20002ab7
+string: �
+addr: 20002ac0
+string: Y/
+addr: 20002ac3
+string: 
+addr: 20002ac8
+string: (/
+addr: 20002acb
+string: �
+addr: 20002ad4
+string: r/
+addr: 20002ad7
+string: 
+addr: 20002ae0
+string: ��
+addr: 20002af0
+string: 
+addr: 20002af4
+string: (/
+addr: 20002af7
+string: �
+addr: 20002b00
+string: �/
+addr: 20002b03
+string: 
+addr: 20002b08
+string: (/
+addr: 20002b0b
+string: �
+addr: 20002b14
+string: 40
+addr: 20002b17
+string: 
+addr: 20002b1c
+string: (/
+addr: 20002b1f
+string: �
+addr: 20002b28
+string: �0
+addr: 20002b2b
+string: 
+addr: 20002b30
+string: (/
+addr: 20002b33
+string: �
+addr: 20002b3c
+string: 1
+addr: 20002b3f
+string: 
+addr: 20002b44
+string: (/
+addr: 20002b47
+string: �
+addr: 20002b50
+string: ]1
+addr: 20002b53
+string: 
+addr: 20002b58
+string: (/
+addr: 20002b5b
+string: �
+addr: 20002b64
+string: �1
+addr: 20002b67
+string: 
+addr: 20002b6c
+string: (/
+addr: 20002b6f
+string: �
+addr: 20002b78
+string: �1
+addr: 20002b7b
+string: 
+addr: 20002b80
+string: (/
+addr: 20002b83
+string: �
+addr: 20002b88
+string: 
+addr: 20002b8c
+string: 2
+addr: 20002b8f
+string: 
+addr: 20002b9b
+string: 
+addr: 20002ba0
+string: u2
+addr: 20002ba3
+string: w2
+addr: 20002ba7
+string: y2
+addr: 20002bab
+string: {2
+addr: 20002baf
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002c01
+string: ../sw/device/lib/handler.c
+addr: 20002d1b
+string: Software IRQ triggered!
+addr: 20002d33
+string: Timer IRQ triggered!
+addr: 20002d48
+string: External IRQ triggered!
+addr: 20002d60
+string: Instruction access fault, mtval shows fault address
+addr: 20002d94
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20002dcf
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002e07
+string: Load/Store fault, mtval shows the fault address
+addr: 20002e37
+string: Environment call encountered
+addr: 20002e54
+string: %s
+addr: 20002e57
+string: MTVAL value is 0x%x
+addr: 20002e6b
+string: ../sw/device/lib/testing/test_main.c
+addr: 20002e90
+string: CHECK-fail: failed to init UART
+addr: 20002eb0
+string: CHECK-fail: failed to configure UART
+addr: 20002ed5
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002efc
+string: PASS!
+addr: 20002f02
+string: FAIL!
+addr: 20002f08
+string: My Tagged Application
+addr: 20002f1e
+string: OpenTitan
+addr: 20002f28
+string: ../sw/device/tests/dif/dif_kmac_kmac_smoketest.c
+addr: 20002f59
+string: Running KMAC DIF test...
+addr: 20002f72
+string: CHECK-fail: dif_kmac_init((dif_kmac_params_t){.base_addr = mmio_region_from_addr( TOP_EARLGREY_KMAC_BASE_ADDR)}, &kmac) == kDifKmacOk
+addr: 20002ff8
+string: CHECK-fail: dif_kmac_configure(&kmac, config) == kDifKmacOk
+addr: 20003034
+string: CHECK-fail: dif_kmac_customization_string_init(test.customization_string, test.customization_string_len, &s) == kDifKmacOk
+addr: 200030af
+string: CHECK-fail: dif_kmac_mode_kmac_start(&kmac, test.mode, l, &test.key, sp) == kDifKmacOk
+addr: 20003106
+string: CHECK-fail: dif_kmac_absorb(&kmac, test.message, test.message_len, NULL) == kDifKmacOk
+addr: 2000315d
+string: CHECK-fail: DIGEST_LEN_KMAC_MAX >= test.digest_len
+addr: 20003190
+string: CHECK-fail: dif_kmac_squeeze(&kmac, out, test.digest_len, NULL) == kDifKmacOk
+addr: 200031de
+string: CHECK-fail: dif_kmac_end(&kmac) == kDifKmacOk
+addr: 2000320c
+string: CHECK-fail: test %d: mismatch at %d got=0x%x want=0x%x
+addr: 20003244
+string: $
+addr: 20003248
+string: "
+addr: 2000324c
+string: 
+addr: 20003250
+string: 
+addr: 20003254
+string: 
+addr: 20003258
+string: 
+addr: 2000325c
+string: 
+addr: 20003260
+string: 
+addr: 20003264
+string: %s%5d %s:%d]
+addr: 20003272
+string: 
+addr: 20003275
+string: I
+addr: 20003277
+string: W
+addr: 20003279
+string: E
+addr: 2000327b
+string: F
+addr: 2000327d
+string: ?
+addr: 2000327f
+string: %
+addr: 20003281
+string: -
+addr: 20003283
+string: 0x

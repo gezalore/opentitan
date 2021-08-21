@@ -1,0 +1,396 @@
+addr: 20001f5c
+string: 4(
+addr: 20001f5f
+string: E
+addr: 20001f68
+string: O(
+addr: 20001f6b
+string: 
+addr: 20001f70
+string: 4(
+addr: 20001f73
+string: K
+addr: 20001f7c
+string: g(
+addr: 20001f7f
+string: 
+addr: 20001f84
+string: 4(
+addr: 20001f87
+string: Q
+addr: 20001f90
+string: |(
+addr: 20001f93
+string: 
+addr: 20001f98
+string: 4(
+addr: 20001f9b
+string: n
+addr: 20001fa4
+string: k)
+addr: 20001fa7
+string: 
+addr: 20001fac
+string: 4(
+addr: 20001faf
+string: 
+addr: 20001fb4
+string: 
+addr: 20001fb8
+string: �)
+addr: 20001fbb
+string: 
+addr: 20001fc0
+string: 4(
+addr: 20001fc3
+string: 
+addr: 20001fc8
+string: 
+addr: 20001fcc
+string: �)
+addr: 20001fcf
+string: 
+addr: 20001fd4
+string: �)
+addr: 20001fd7
+string: 
+addr: 20001fe0
+string: �)
+addr: 20001fe3
+string: 
+addr: 20001fe8
+string: �)
+addr: 20001feb
+string: !
+addr: 20001ff4
+string: �)
+addr: 20001ff7
+string: 
+addr: 20001ffc
+string: *
+addr: 20001fff
+string: 
+addr: 20002008
+string: 0*
+addr: 2000200b
+string: 
+addr: 20002010
+string: *
+addr: 20002013
+string: "
+addr: 2000201c
+string: 6*
+addr: 2000201f
+string: 
+addr: 20002029
+string: ��
+addr: 20002031
+string: 6n
+addr: 20002039
+string: l�
+addr: 20002040
+string: @B
+addr: 20002048
+string: ��
+addr: 2000204f
+string: 0
+addr: 20002053
+string: 0
+addr: 20002058
+string: fN����X�� �"~��˃�ŔW�,P�OOi�&�����\��z��a��ip
+addr: 2000208b
+string: R��!�e�np�����4�<�D���q�G��u�;E��i�>����+{/�0�}�2,=>��|,3�;�LF���;�L�nԳu���`:v
+addr: 200020f8
+string: kNB6g۷;nEO���Y��?[Zk�
+addr: 20002138
+string: 
+addr: 2000213c
+string: 
+addr: 20002140
+string: <*
+addr: 20002143
+string: 
+addr: 20002148
+string: :B���y�L��R)o'���x��yىw@F�
+addr: 20002188
+string: 
+addr: 2000218c
+string: 
+addr: 20002190
+string: A*
+addr: 20002193
+string: 
+addr: 20002198
+string: ۦ�)�U��l_g��;��{�X�gR�\?��x�i���ݙP���g
+addr: 200021d8
+string: 
+addr: 200021dc
+string: 
+addr: 200021e0
+string: X
+addr: 200021e3
+string: �
+addr: 200021e8
+string: �_��pե/���JDT)_�zyi�y�c���R�v�{V����V����'�K؈"2T��N
+addr: 20002230
+string: S*
+addr: 20002233
+string: 
+addr: 20002238
+string: "eZ#�5�;G"�w)�����Z�0��%��L���0�4L�����5��i6�F<K�
+addr: 20002270
+string: ��mU�|���I95������.Z_y��{m�X3R�~#S��L��)��Yl��T�0��t����ⲋ�r댉_�xҸ{�ZJ�&Q���嗼���7�e���X�B��1�'^�n����J�������u�m=�/
+addr: 200023d0
+string: 2
+addr: 200023d4
+string: 
+addr: 200023d8
+string: S*
+addr: 200023db
+string: 
+addr: 200023e0
+string: ͬj�)��1�6��{]��f�A.'e^�*۾�x�����婬O��g���۹��\�-�A!�L��$]��cPo#���������t��D�ee�}^��HT�d����ph���G$[����<.�-ׯ���İKѺCq>�q@K��!9PA�A>б�й�ʪUo�u��{�%�KejYT�WcȈK������J������o����my:D.���o��Řȕ!��(0bC�O:L�{�/Դ��B�*��2/��d�x�{>��a�]J���@Nx��I�cj�m�BM�+ۣ4���`�}��rK���+�#����B���j�D�/���_DD]��l8��P��F�#3B��{��n�6[�O
+addr: 2000255a
+string: ��߱���j�0�"�@��\���j�f
+addr: 20002580
+string: ]*
+addr: 20002583
+string: �
+addr: 2000258c
+string: �*
+addr: 2000258f
+string: 
+addr: 20002594
+string: ]*
+addr: 20002597
+string: �
+addr: 200025a0
+string: �*
+addr: 200025a3
+string: 
+addr: 200025a8
+string: 
+addr: 200025b0
+string: ��
+addr: 200025c0
+string: 
+addr: 200025c4
+string: ]*
+addr: 200025c7
+string: �
+addr: 200025d0
+string: (+
+addr: 200025d3
+string: 
+addr: 200025d8
+string: ]*
+addr: 200025db
+string: �
+addr: 200025e4
+string: d+
+addr: 200025e7
+string: 
+addr: 200025ec
+string: ]*
+addr: 200025ef
+string: �
+addr: 200025f8
+string: �+
+addr: 200025fb
+string: 
+addr: 20002600
+string: ]*
+addr: 20002603
+string: �
+addr: 2000260d
+string: ,
+addr: 2000260f
+string: 
+addr: 20002614
+string: ]*
+addr: 20002617
+string: �
+addr: 20002620
+string: 3,
+addr: 20002623
+string: 
+addr: 20002628
+string: ]*
+addr: 2000262b
+string: �
+addr: 20002634
+string: �,
+addr: 20002637
+string: 
+addr: 2000263c
+string: ]*
+addr: 2000263f
+string: �
+addr: 20002644
+string: 
+addr: 20002648
+string: �,
+addr: 2000264b
+string: 
+addr: 20002650
+string: ]*
+addr: 20002653
+string: �
+addr: 2000265c
+string: �,
+addr: 2000265f
+string: 
+addr: 20002664
+string: ]*
+addr: 20002667
+string: �
+addr: 20002670
+string: �+
+addr: 20002673
+string: 
+addr: 20002678
+string: ]*
+addr: 2000267b
+string: �
+addr: 20002684
+string: ,-
+addr: 20002687
+string: 
+addr: 2000268c
+string: ]*
+addr: 2000268f
+string: �
+addr: 20002698
+string: 3,
+addr: 2000269b
+string: 
+addr: 200026a0
+string: ]*
+addr: 200026a3
+string: �
+addr: 200026ac
+string: �,
+addr: 200026af
+string: 
+addr: 200026b4
+string: ]*
+addr: 200026b7
+string: �
+addr: 200026bc
+string: 
+addr: 200026c0
+string: �,
+addr: 200026c3
+string: 
+addr: 200026cf
+string: 
+addr: 200026d4
+string: �-
+addr: 200026d7
+string: �-
+addr: 200026db
+string: �-
+addr: 200026df
+string: �-
+addr: 200026e3
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002735
+string: ../sw/device/lib/handler.c
+addr: 2000284f
+string: Software IRQ triggered!
+addr: 20002867
+string: Timer IRQ triggered!
+addr: 2000287c
+string: External IRQ triggered!
+addr: 20002894
+string: Instruction access fault, mtval shows fault address
+addr: 200028c8
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20002903
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 2000293b
+string: Load/Store fault, mtval shows the fault address
+addr: 2000296b
+string: Environment call encountered
+addr: 20002988
+string: %s
+addr: 2000298b
+string: MTVAL value is 0x%x
+addr: 2000299f
+string: ../sw/device/lib/testing/test_main.c
+addr: 200029c4
+string: CHECK-fail: failed to init UART
+addr: 200029e4
+string: CHECK-fail: failed to configure UART
+addr: 20002a09
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002a30
+string: PASS!
+addr: 20002a36
+string: FAIL!
+addr: 20002a3c
+string: �7!
+addr: 20002a41
+string: �HG���s���0��
+addr: 20002a53
+string: OpenTitan
+addr: 20002a5d
+string: ../sw/device/tests/dif/dif_kmac_smoketest.c
+addr: 20002a89
+string: Running KMAC DIF test...
+addr: 20002aa2
+string: CHECK-fail: dif_kmac_init((dif_kmac_params_t){.base_addr = mmio_region_from_addr( TOP_EARLGREY_KMAC_BASE_ADDR)}, &kmac) == kDifKmacOk
+addr: 20002b28
+string: CHECK-fail: dif_kmac_configure(&kmac, config) == kDifKmacOk
+addr: 20002b64
+string: CHECK-fail: dif_kmac_mode_sha3_start(&kmac, test.mode) == kDifKmacOk
+addr: 20002ba9
+string: CHECK-fail: dif_kmac_absorb(&kmac, test.message, test.message_len, NULL) == kDifKmacOk
+addr: 20002c00
+string: CHECK-fail: DIGEST_LEN_SHA3_MAX >= test.digest_len
+addr: 20002c33
+string: CHECK-fail: dif_kmac_squeeze(&kmac, out, test.digest_len, NULL) == kDifKmacOk
+addr: 20002c81
+string: CHECK-fail: dif_kmac_end(&kmac) == kDifKmacOk
+addr: 20002caf
+string: CHECK-fail: test %d: mismatch at %d got=0x%x want=0x%x
+addr: 20002ce6
+string: CHECK-fail: dif_kmac_mode_shake_start(&kmac, test.mode) == kDifKmacOk
+addr: 20002d2c
+string: CHECK-fail: DIGEST_LEN_SHAKE_MAX >= test.digest_len
+addr: 20002d60
+string: $
+addr: 20002d64
+string: "
+addr: 20002d68
+string: 
+addr: 20002d6c
+string: 
+addr: 20002d70
+string: 
+addr: 20002d74
+string: 
+addr: 20002d78
+string: 
+addr: 20002d7c
+string: 
+addr: 20002d80
+string: %s%5d %s:%d]
+addr: 20002d8e
+string: 
+addr: 20002d91
+string: I
+addr: 20002d93
+string: W
+addr: 20002d95
+string: E
+addr: 20002d97
+string: F
+addr: 20002d99
+string: ?
+addr: 20002d9b
+string: %
+addr: 20002d9d
+string: -
+addr: 20002d9f
+string: 0x

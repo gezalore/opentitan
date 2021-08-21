@@ -1,0 +1,245 @@
+addr: 10000
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10028
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1003c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10050
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10064
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 100a0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 100b4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 100c8
+severity: 0
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 320
+nargs: 0
+format: Running RSA512 test
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 268
+nargs: 0
+format: CHECK-fail: otbn_init(&otbn_ctx, otbn_config) == kOtbnOk
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 269
+nargs: 0
+format: CHECK-fail: otbn_load_app(&otbn_ctx, kOtbnAppRsa) == kOtbnOk
+str_arg_idx: 
+addr: 10104
+severity: 0
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 273
+nargs: 0
+format: Encrypting
+str_arg_idx: 
+addr: 10118
+severity: 0
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 281
+nargs: 0
+format: Decrypting
+str_arg_idx: 
+addr: 1012c
+severity: 0
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 235
+nargs: 3
+format: %0s took %0d cycles or %0d us @ 100 MHz.
+str_arg_idx: 0
+addr: 10140
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 131
+nargs: 0
+format: CHECK-fail: size_bytes % 32 == 0
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 134
+nargs: 0
+format: CHECK-fail: n_limbs != 0 && n_limbs <= 16
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 138
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, sizeof(n_limbs), &n_limbs, kOtbnVarRsaNLimbs) == kOtbnOk
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 140
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, modulus, kOtbnVarRsaModulus) == kOtbnOk
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 142
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, in, kOtbnVarRsaIn) == kOtbnOk
+str_arg_idx: 
+addr: 101a4
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 145
+nargs: 0
+format: CHECK-fail: otbn_call_function(otbn_ctx, kOtbnFuncRsaRsaEncrypt) == kOtbnOk
+str_arg_idx: 
+addr: 101b8
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 146
+nargs: 0
+format: CHECK-fail: otbn_busy_wait_for_done(otbn_ctx) == kOtbnOk
+str_arg_idx: 
+addr: 101cc
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 150
+nargs: 0
+format: CHECK-fail: otbn_copy_data_from_otbn(otbn_ctx, size_bytes, kOtbnVarRsaOut, out) == kOtbnOk
+str_arg_idx: 
+addr: 101e0
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 206
+nargs: 3
+format: CHECK-fail: Data mismatch at byte %0d: 0x%0h (actual) != 0x%0h (expected)
+str_arg_idx: 
+addr: 101f4
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 169
+nargs: 0
+format: CHECK-fail: size_bytes % 32 == 0
+str_arg_idx: 
+addr: 10208
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 173
+nargs: 0
+format: CHECK-fail: n_limbs != 0 && n_limbs <= 16
+str_arg_idx: 
+addr: 1021c
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 177
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, sizeof(n_limbs), &n_limbs, kOtbnVarRsaNLimbs) == kOtbnOk
+str_arg_idx: 
+addr: 10230
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 179
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, modulus, kOtbnVarRsaModulus) == kOtbnOk
+str_arg_idx: 
+addr: 10244
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 181
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, private_exponent, kOtbnVarRsaExp) == kOtbnOk
+str_arg_idx: 
+addr: 10258
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 183
+nargs: 0
+format: CHECK-fail: otbn_copy_data_to_otbn(otbn_ctx, size_bytes, in, kOtbnVarRsaIn) == kOtbnOk
+str_arg_idx: 
+addr: 1026c
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 186
+nargs: 0
+format: CHECK-fail: otbn_call_function(otbn_ctx, kOtbnFuncRsaRsaDecrypt) == kOtbnOk
+str_arg_idx: 
+addr: 10280
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 187
+nargs: 0
+format: CHECK-fail: otbn_busy_wait_for_done(otbn_ctx) == kOtbnOk
+str_arg_idx: 
+addr: 10294
+severity: 2
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 191
+nargs: 0
+format: CHECK-fail: otbn_copy_data_from_otbn(otbn_ctx, size_bytes, kOtbnVarRsaOut, out) == kOtbnOk
+str_arg_idx: 
+addr: 102a8
+severity: 0
+file: sw/device/tests/otbn/otbn_rsa_test.c
+line: 370
+nargs: 0
+format: Running RSA1024 test
+str_arg_idx:

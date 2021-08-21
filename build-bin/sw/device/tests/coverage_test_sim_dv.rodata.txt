@@ -1,0 +1,178 @@
+addr: 2000149c
+string: 
+addr: 2000149f
+string: E
+addr: 200014a8
+string: '
+addr: 200014ab
+string: 
+addr: 200014b0
+string: 
+addr: 200014b3
+string: K
+addr: 200014bc
+string: ?
+addr: 200014bf
+string: 
+addr: 200014c4
+string: 
+addr: 200014c7
+string: Q
+addr: 200014d0
+string: T
+addr: 200014d3
+string: 
+addr: 200014d8
+string: 
+addr: 200014db
+string: n
+addr: 200014e4
+string: C
+addr: 200014e7
+string: 
+addr: 200014ec
+string: 
+addr: 200014ef
+string: 
+addr: 200014f4
+string: 
+addr: 200014f8
+string: `
+addr: 200014fb
+string: 
+addr: 20001500
+string: 
+addr: 20001503
+string: 
+addr: 20001508
+string: 
+addr: 2000150c
+string: c
+addr: 2000150f
+string: �
+addr: 20001513
+string: �
+addr: 20001517
+string: �
+addr: 2000151b
+string: �
+addr: 2000151f
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001570
+string: 
+addr: 20001574
+string: �
+addr: 20001577
+string: 
+addr: 20001580
+string: �
+addr: 20001583
+string: 
+addr: 20001588
+string: �
+addr: 2000158b
+string: !
+addr: 20001594
+string: �
+addr: 20001597
+string: 
+addr: 2000159c
+string: 
+addr: 2000159f
+string: 
+addr: 200015a8
+string: *
+addr: 200015ab
+string: 
+addr: 200015b0
+string: 
+addr: 200015b3
+string: "
+addr: 200015bc
+string: 0
+addr: 200015bf
+string: 
+addr: 200015c9
+string: ��
+addr: 200015d1
+string: 6n
+addr: 200015d9
+string: l�
+addr: 200015e0
+string: @B
+addr: 200015e8
+string: ��
+addr: 200015ef
+string: 0
+addr: 200015f3
+string: 0
+addr: 200015f8
+string: 6
+addr: 200015fb
+string: $
+addr: 20001604
+string: Y
+addr: 20001607
+string: 
+addr: 2000160d
+string: ../sw/device/lib/handler.c
+addr: 20001727
+string: Software IRQ triggered!
+addr: 2000173f
+string: Timer IRQ triggered!
+addr: 20001754
+string: External IRQ triggered!
+addr: 2000176c
+string: Instruction access fault, mtval shows fault address
+addr: 200017a0
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200017db
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001813
+string: Load/Store fault, mtval shows the fault address
+addr: 20001843
+string: Environment call encountered
+addr: 20001860
+string: %s
+addr: 20001863
+string: MTVAL value is 0x%x
+addr: 20001877
+string: %s%5d %s:%d]
+addr: 20001885
+string: 
+addr: 20001888
+string: I
+addr: 2000188a
+string: W
+addr: 2000188c
+string: E
+addr: 2000188e
+string: F
+addr: 20001890
+string: ?
+addr: 20001892
+string: %
+addr: 20001894
+string: -
+addr: 20001896
+string: 0x
+addr: 20001899
+string: ../sw/device/lib/testing/test_main.c
+addr: 200018be
+string: CHECK-fail: failed to init UART
+addr: 200018de
+string: CHECK-fail: failed to configure UART
+addr: 20001903
+string: ../sw/device/lib/testing/test_status.c
+addr: 2000192a
+string: PASS!
+addr: 20001930
+string: FAIL!
+addr: 20001936
+string: ../sw/device/tests/coverage_test.c
+addr: 20001959
+string: Collecting coverage data.
+addr: 20001973
+string: |/-\
+addr: 20001978
+string: %c

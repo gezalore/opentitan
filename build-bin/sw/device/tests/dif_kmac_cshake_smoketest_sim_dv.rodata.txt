@@ -1,0 +1,368 @@
+addr: 20001dcc
+string: "
+addr: 20001dcf
+string: E
+addr: 20001dd8
+string: /"
+addr: 20001ddb
+string: 
+addr: 20001de0
+string: "
+addr: 20001de3
+string: K
+addr: 20001dec
+string: G"
+addr: 20001def
+string: 
+addr: 20001df4
+string: "
+addr: 20001df7
+string: Q
+addr: 20001e00
+string: \"
+addr: 20001e03
+string: 
+addr: 20001e08
+string: "
+addr: 20001e0b
+string: n
+addr: 20001e14
+string: K#
+addr: 20001e17
+string: 
+addr: 20001e1c
+string: "
+addr: 20001e1f
+string: 
+addr: 20001e24
+string: 
+addr: 20001e28
+string: h#
+addr: 20001e2b
+string: 
+addr: 20001e30
+string: "
+addr: 20001e33
+string: 
+addr: 20001e38
+string: 
+addr: 20001e3c
+string: k#
+addr: 20001e3f
+string: 
+addr: 20001e44
+string: #
+addr: 20001e47
+string: 
+addr: 20001e50
+string: �#
+addr: 20001e53
+string: 
+addr: 20001e58
+string: #
+addr: 20001e5b
+string: !
+addr: 20001e64
+string: �#
+addr: 20001e67
+string: 
+addr: 20001e6c
+string: �#
+addr: 20001e6f
+string: 
+addr: 20001e78
+string: $
+addr: 20001e7b
+string: 
+addr: 20001e80
+string: �#
+addr: 20001e83
+string: "
+addr: 20001e8c
+string: $
+addr: 20001e8f
+string: 
+addr: 20001e99
+string: ��
+addr: 20001ea1
+string: 6n
+addr: 20001ea9
+string: l�
+addr: 20001eb0
+string: @B
+addr: 20001eb8
+string: ��
+addr: 20001ebf
+string: 0
+addr: 20001ec3
+string: 0
+addr: 20001ec9
+string: 	
+addr: 20001ef0
+string: $
+addr: 20001ef3
+string: 
+addr: 20001ef8
+string: �'
+addr: 20001efb
+string: 
+addr: 20001f00
+string: �'
+addr: 20001f03
+string: 
+addr: 20001f08
+string: "eZ#�5�;G"�w)��
+addr: 20001f20
+string: $
+addr: 20001f23
+string: 
+addr: 20001f28
+string: &$
+addr: 20001f2b
+string: 
+addr: 20001f30
+string: �'
+addr: 20001f33
+string: 
+addr: 20001f38
+string: (	��Y*]]��8�
+addr: 20001f4c
+string: 
+addr: 20001f50
+string: $
+addr: 20001f53
+string: 
+addr: 20001f58
+string: �'
+addr: 20001f5b
+string: 
+addr: 20001f60
+string: ($
+addr: 20001f63
+string: 
+addr: 20001f68
+string: V-X�`��Y)L4��wvU
+addr: 20001f7c
+string: 
+addr: 20001f80
+string: $
+addr: 20001f83
+string: 
+addr: 20001f88
+string: ($
+addr: 20001f8b
+string: 
+addr: 20001f90
+string: �
+addr: 20001f93
+string: 
+addr: 20001f98
+string: 35�p����bl�nq
+addr: 20001fb0
+string: -$
+addr: 20001fb3
+string: \
+addr: 20001fbc
+string: `$
+addr: 20001fbf
+string: 
+addr: 20001fc4
+string: -$
+addr: 20001fc7
+string: b
+addr: 20001fd0
+string: �$
+addr: 20001fd3
+string: 
+addr: 20001fd8
+string: 
+addr: 20001fe0
+string: ��
+addr: 20001ff0
+string: 
+addr: 20001ff4
+string: -$
+addr: 20001ff7
+string: j
+addr: 20002000
+string: %
+addr: 20002003
+string: 
+addr: 20002008
+string: -$
+addr: 2000200b
+string: r
+addr: 20002014
+string: B%
+addr: 20002017
+string: 
+addr: 2000201c
+string: -$
+addr: 2000201f
+string: w
+addr: 20002028
+string: �%
+addr: 2000202b
+string: 
+addr: 20002030
+string: -$
+addr: 20002033
+string: ~
+addr: 2000203c
+string: $&
+addr: 2000203f
+string: 
+addr: 20002044
+string: -$
+addr: 20002047
+string: �
+addr: 20002050
+string: s&
+addr: 20002053
+string: 
+addr: 20002058
+string: -$
+addr: 2000205b
+string: �
+addr: 20002064
+string: �&
+addr: 20002067
+string: 
+addr: 2000206c
+string: -$
+addr: 2000206f
+string: �
+addr: 20002078
+string: �&
+addr: 2000207b
+string: 
+addr: 20002080
+string: -$
+addr: 20002083
+string: �
+addr: 2000208c
+string: M'
+addr: 2000208f
+string: 
+addr: 20002094
+string: -$
+addr: 20002097
+string: �
+addr: 2000209c
+string: 
+addr: 200020a0
+string: {'
+addr: 200020a3
+string: 
+addr: 200020af
+string: 
+addr: 200020b4
+string: �'
+addr: 200020b7
+string: �'
+addr: 200020bb
+string: �'
+addr: 200020bf
+string: �'
+addr: 200020c3
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002115
+string: ../sw/device/lib/handler.c
+addr: 2000222f
+string: Software IRQ triggered!
+addr: 20002247
+string: Timer IRQ triggered!
+addr: 2000225c
+string: External IRQ triggered!
+addr: 20002274
+string: Instruction access fault, mtval shows fault address
+addr: 200022a8
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200022e3
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 2000231b
+string: Load/Store fault, mtval shows the fault address
+addr: 2000234b
+string: Environment call encountered
+addr: 20002368
+string: %s
+addr: 2000236b
+string: MTVAL value is 0x%x
+addr: 2000237f
+string: ../sw/device/lib/testing/test_main.c
+addr: 200023a4
+string: CHECK-fail: failed to init UART
+addr: 200023c4
+string: CHECK-fail: failed to configure UART
+addr: 200023e9
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002410
+string: PASS!
+addr: 20002416
+string: FAIL!
+addr: 2000241c
+string: OpenTitan
+addr: 20002426
+string: A
+addr: 20002428
+string: Ibex
+addr: 2000242d
+string: ../sw/device/tests/dif/dif_kmac_cshake_smoketest.c
+addr: 20002460
+string: Running KMAC DIF cSHAKE test...
+addr: 20002480
+string: CHECK-fail: dif_kmac_init((dif_kmac_params_t){.base_addr = mmio_region_from_addr( TOP_EARLGREY_KMAC_BASE_ADDR)}, &kmac) == kDifKmacOk
+addr: 20002506
+string: CHECK-fail: dif_kmac_configure(&kmac, config) == kDifKmacOk
+addr: 20002542
+string: CHECK-fail: dif_kmac_function_name_init( test.function_name, test.function_name_len, &n) == kDifKmacOk
+addr: 200025a9
+string: CHECK-fail: dif_kmac_customization_string_init(test.customization_string, test.customization_string_len, &s) == kDifKmacOk
+addr: 20002624
+string: CHECK-fail: dif_kmac_mode_cshake_start(&kmac, test.mode, np, sp) == kDifKmacOk
+addr: 20002673
+string: CHECK-fail: dif_kmac_absorb(&kmac, test.message, test.message_len, NULL) == kDifKmacOk
+addr: 200026ca
+string: CHECK-fail: DIGEST_LEN_CSHAKE_MAX >= test.digest_len
+addr: 200026ff
+string: CHECK-fail: dif_kmac_squeeze(&kmac, out, test.digest_len, NULL) == kDifKmacOk
+addr: 2000274d
+string: CHECK-fail: dif_kmac_end(&kmac) == kDifKmacOk
+addr: 2000277b
+string: CHECK-fail: test %d: mismatch at %d got=0x%x want=0x%x
+addr: 200027b4
+string: $
+addr: 200027b8
+string: "
+addr: 200027bc
+string: 
+addr: 200027c0
+string: 
+addr: 200027c4
+string: 
+addr: 200027c8
+string: 
+addr: 200027cc
+string: 
+addr: 200027d0
+string: 
+addr: 200027d4
+string: %s%5d %s:%d]
+addr: 200027e2
+string: 
+addr: 200027e5
+string: I
+addr: 200027e7
+string: W
+addr: 200027e9
+string: E
+addr: 200027eb
+string: F
+addr: 200027ed
+string: ?
+addr: 200027ef
+string: %
+addr: 200027f1
+string: -
+addr: 200027f3
+string: 0x

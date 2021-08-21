@@ -1,0 +1,194 @@
+addr: 20001644
+string: �
+addr: 20001647
+string: E
+addr: 20001650
+string: �
+addr: 20001653
+string: 
+addr: 20001658
+string: �
+addr: 2000165b
+string: K
+addr: 20001664
+string: 
+addr: 20001667
+string: 
+addr: 2000166c
+string: �
+addr: 2000166f
+string: Q
+addr: 20001678
+string: $
+addr: 2000167b
+string: 
+addr: 20001680
+string: �
+addr: 20001683
+string: n
+addr: 2000168c
+string: 
+addr: 2000168f
+string: 
+addr: 20001694
+string: �
+addr: 20001697
+string: 
+addr: 2000169c
+string: 
+addr: 200016a0
+string: 0
+addr: 200016a3
+string: 
+addr: 200016a8
+string: �
+addr: 200016ab
+string: 
+addr: 200016b0
+string: 
+addr: 200016b4
+string: 3
+addr: 200016b7
+string: X
+addr: 200016bb
+string: Z
+addr: 200016bf
+string: \
+addr: 200016c3
+string: ^
+addr: 200016c7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001718
+string: 
+addr: 2000171c
+string: i
+addr: 2000171f
+string: 
+addr: 20001728
+string: �
+addr: 2000172b
+string: 
+addr: 20001730
+string: i
+addr: 20001733
+string: !
+addr: 2000173c
+string: �
+addr: 2000173f
+string: 
+addr: 20001744
+string: �
+addr: 20001747
+string: 
+addr: 20001750
+string: �
+addr: 20001753
+string: 
+addr: 20001758
+string: �
+addr: 2000175b
+string: "
+addr: 20001765
+string: 
+addr: 20001767
+string: 
+addr: 20001771
+string: ��
+addr: 20001779
+string: 6n
+addr: 20001781
+string: l�
+addr: 20001788
+string: @B
+addr: 20001790
+string: ��
+addr: 20001797
+string: 0
+addr: 2000179b
+string: 0
+addr: 200017a0
+string: 
+addr: 200017a3
+string: 
+addr: 200017ac
+string: 4
+addr: 200017af
+string: 
+addr: 200017b4
+string: 
+addr: 200017b7
+string: 
+addr: 200017c0
+string: q
+addr: 200017c3
+string: 
+addr: 200017c8
+string: 
+addr: 200017cb
+string: 
+addr: 200017d4
+string: �
+addr: 200017d7
+string: 
+addr: 200017dd
+string: ../sw/device/lib/handler.c
+addr: 200018f7
+string: Software IRQ triggered!
+addr: 2000190f
+string: Timer IRQ triggered!
+addr: 20001924
+string: External IRQ triggered!
+addr: 2000193c
+string: Instruction access fault, mtval shows fault address
+addr: 20001970
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200019ab
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 200019e3
+string: Load/Store fault, mtval shows the fault address
+addr: 20001a13
+string: Environment call encountered
+addr: 20001a30
+string: %s
+addr: 20001a33
+string: MTVAL value is 0x%x
+addr: 20001a47
+string: %s%5d %s:%d]
+addr: 20001a55
+string: 
+addr: 20001a58
+string: I
+addr: 20001a5a
+string: W
+addr: 20001a5c
+string: E
+addr: 20001a5e
+string: F
+addr: 20001a60
+string: ?
+addr: 20001a62
+string: %
+addr: 20001a64
+string: -
+addr: 20001a66
+string: 0x
+addr: 20001a69
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001a8e
+string: CHECK-fail: failed to init UART
+addr: 20001aae
+string: CHECK-fail: failed to configure UART
+addr: 20001ad3
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001afa
+string: PASS!
+addr: 20001b00
+string: FAIL!
+addr: 20001b06
+string: ../sw/device/tests/dif/dif_rstmgr_smoketest.c
+addr: 20001b34
+string: CHECK-fail: dif_rstmgr_init(params, &rstmgr) == kDifRstmgrOk
+addr: 20001b71
+string: CHECK-fail: dif_rstmgr_reset_info_get(&rstmgr, &info) == kDifRstmgrOk
+addr: 20001bb7
+string: CHECK-fail: (info & kDifRstmgrResetInfoPor) == info

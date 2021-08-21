@@ -1,0 +1,175 @@
+addr: 10000
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10028
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1003c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10050
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10064
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 100a0
+severity: 0
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 71
+nargs: 0
+format: Running AES test
+str_arg_idx: 
+addr: 100b4
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 85
+nargs: 0
+format: CHECK-fail: dif_aes_init(params, &aes) == kDifAesOk
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 86
+nargs: 0
+format: CHECK-fail: dif_aes_reset(&aes) == kDifAesOk
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 106
+nargs: 0
+format: CHECK-fail: dif_aes_start_ecb(&aes, &transaction, key) == kDifAesOk
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 115
+nargs: 0
+format: CHECK-fail: dif_aes_load_data(&aes, in_data_plain) == kDifAesOk
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 121
+nargs: 0
+format: CHECK-fail: dif_aes_read_output(&aes, &out_data_cipher) == kDifAesOk
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 124
+nargs: 0
+format: CHECK-fail: dif_aes_end(&aes) == kDifAesOk
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 132
+nargs: 2
+format: CHECK-fail: Encrypted cipher text mismatched: exp = %0h, actual = %0h
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 137
+nargs: 0
+format: CHECK-fail: dif_aes_start_ecb(&aes, &transaction, key) == kDifAesOk
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 142
+nargs: 0
+format: CHECK-fail: dif_aes_load_data(&aes, out_data_cipher) == kDifAesOk
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 149
+nargs: 0
+format: CHECK-fail: dif_aes_read_output(&aes, &out_data_plain) == kDifAesOk
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 152
+nargs: 0
+format: CHECK-fail: dif_aes_end(&aes) == kDifAesOk
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 160
+nargs: 2
+format: CHECK-fail: Decrypted text mismatched: exp = %0h, actual = %0h
+str_arg_idx: 
+addr: 101a4
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 55
+nargs: 0
+format: CHECK-fail: dif_aes_get_status(aes, kDifAesStatusInputReady, &status) == kDifAesOk
+str_arg_idx: 
+addr: 101b8
+severity: 2
+file: sw/device/tests/dif/dif_aes_smoketest.c
+line: 63
+nargs: 0
+format: CHECK-fail: dif_aes_get_status(aes, kDifAesStatusOutputValid, &status) == kDifAesOk
+str_arg_idx: 
+addr: 101cc
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 101e0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx:

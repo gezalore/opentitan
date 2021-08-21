@@ -1,0 +1,210 @@
+addr: 20001df4
+string: �
+addr: 20001df7
+string: E
+addr: 20001e00
+string: �
+addr: 20001e03
+string: 
+addr: 20001e08
+string: �
+addr: 20001e0b
+string: K
+addr: 20001e14
+string: �
+addr: 20001e17
+string: 
+addr: 20001e1c
+string: �
+addr: 20001e1f
+string: Q
+addr: 20001e28
+string: �
+addr: 20001e2b
+string: 
+addr: 20001e30
+string: �
+addr: 20001e33
+string: n
+addr: 20001e3c
+string: �!
+addr: 20001e3f
+string: 
+addr: 20001e44
+string: �
+addr: 20001e47
+string: 
+addr: 20001e4c
+string: 
+addr: 20001e50
+string: �#
+addr: 20001e53
+string: 
+addr: 20001e58
+string: �
+addr: 20001e5b
+string: 
+addr: 20001e60
+string: 
+addr: 20001e64
+string: �!
+addr: 20001e67
+string: 
+addr: 20001e6c
+string: "
+addr: 20001e6f
+string: 
+addr: 20001e78
+string: -"
+addr: 20001e7b
+string: 
+addr: 20001e80
+string: "
+addr: 20001e83
+string: !
+addr: 20001e8c
+string: M"
+addr: 20001e8f
+string: 
+addr: 20001e94
+string: r"
+addr: 20001e97
+string: 
+addr: 20001ea0
+string: �"
+addr: 20001ea3
+string: 
+addr: 20001ea8
+string: r"
+addr: 20001eab
+string: "
+addr: 20001eb4
+string: �"
+addr: 20001eb7
+string: 
+addr: 20001ec1
+string: ��
+addr: 20001ec9
+string: 6n
+addr: 20001ed1
+string: l�
+addr: 20001ed8
+string: @B
+addr: 20001ee0
+string: ��
+addr: 20001ee7
+string: 0
+addr: 20001eeb
+string: 0
+addr: 20001ef0
+string: �"
+addr: 20001ef3
+string: U
+addr: 20001efc
+string: �"
+addr: 20001eff
+string: 
+addr: 20001f04
+string: �"
+addr: 20001f07
+string: W
+addr: 20001f10
+string: A#
+addr: 20001f13
+string: 
+addr: 20001f18
+string: �"
+addr: 20001f1b
+string: j
+addr: 20001f20
+string: 
+addr: 20001f24
+string: _#
+addr: 20001f27
+string: 
+addr: 20001f2c
+string: �"
+addr: 20001f2f
+string: l
+addr: 20001f34
+string: 
+addr: 20001f38
+string: �#
+addr: 20001f3b
+string: 
+addr: 20001f40
+string: �#
+addr: 20001f43
+string: �#
+addr: 20001f47
+string: �#
+addr: 20001f4b
+string: �#
+addr: 20001f4f
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001fa1
+string: ../sw/device/lib/handler.c
+addr: 200020bb
+string: Software IRQ triggered!
+addr: 200020d3
+string: Timer IRQ triggered!
+addr: 200020e8
+string: External IRQ triggered!
+addr: 20002100
+string: Instruction access fault, mtval shows fault address
+addr: 20002134
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 2000216f
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 200021a7
+string: Load/Store fault, mtval shows the fault address
+addr: 200021d7
+string: Environment call encountered
+addr: 200021f4
+string: MTVAL value is 0x%x
+addr: 20002208
+string: ../sw/device/lib/testing/test_main.c
+addr: 2000222d
+string: CHECK-fail: failed to init UART
+addr: 2000224d
+string: CHECK-fail: failed to configure UART
+addr: 20002272
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002299
+string: PASS!
+addr: 2000229f
+string: FAIL!
+addr: 200022a5
+string: ../sw/device/tests/usbdev_test.c
+addr: 200022c6
+string: CHECK-fail: This test is not expected to run on platforms other than the Verilator simulation. It needs the USB DPI model.
+addr: 20002341
+string: Running USBDEV test
+addr: 20002355
+string: 
+addr: 20002358
+string: Hi!Hi!
+addr: 2000235f
+string: CHECK-fail: Recieved char #%d mismatched: exp = %x, actual = %x
+addr: 2000239f
+string: USB recieved %d characters: %s
+addr: 200023be
+string: %c
+addr: 200023c1
+string: %s%5d %s:%d]
+addr: 200023cf
+string: I
+addr: 200023d1
+string: W
+addr: 200023d3
+string: E
+addr: 200023d5
+string: F
+addr: 200023d7
+string: ?
+addr: 200023d9
+string: %
+addr: 200023db
+string: -
+addr: 200023dd
+string: 0x

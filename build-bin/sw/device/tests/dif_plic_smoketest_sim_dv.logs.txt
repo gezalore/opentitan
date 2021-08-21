@@ -1,0 +1,231 @@
+addr: 10000
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 78
+nargs: 0
+format: CHECK-fail: ISR is not implemented!
+str_arg_idx: 
+addr: 10014
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 84
+nargs: 0
+format: CHECK-fail: ISR interrupted peripheral is not UART!
+str_arg_idx: 
+addr: 10028
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 90
+nargs: 0
+format: CHECK-fail: Unable to complete the IRQ request!
+str_arg_idx: 
+addr: 1003c
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 45
+nargs: 0
+format: CHECK-fail: UART RX overflow IRQ asserted more than once
+str_arg_idx: 
+addr: 10050
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 52
+nargs: 0
+format: CHECK-fail: UART TX empty IRQ asserted more than once
+str_arg_idx: 
+addr: 10064
+severity: 3
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 58
+nargs: 0
+format: ISR is not implemented!
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 63
+nargs: 0
+format: CHECK-fail: ISR failed to clear IRQ!
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 98
+nargs: 0
+format: CHECK-fail: dif_uart_init( (dif_uart_params_t){ .base_addr = base_addr, }, uart) == kDifUartOk
+str_arg_idx: 
+addr: 100a0
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 106
+nargs: 0
+format: CHECK-fail: UART config failed!
+str_arg_idx: 
+addr: 100b4
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 112
+nargs: 0
+format: CHECK-fail: PLIC init failed!
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 121
+nargs: 0
+format: CHECK-fail: RX overflow IRQ enable failed!
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 124
+nargs: 0
+format: CHECK-fail: TX empty IRQ enable failed!
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 134
+nargs: 0
+format: CHECK-fail: RX overflow trigger type set failed!
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 137
+nargs: 0
+format: CHECK-fail: TX empty trigger type set failed!
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 142
+nargs: 0
+format: CHECK-fail: priority set for RX overflow failed!
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 146
+nargs: 0
+format: CHECK-fail: priority set for TX empty failed!
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 151
+nargs: 0
+format: CHECK-fail: threshold set failed!
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 157
+nargs: 0
+format: CHECK-fail: interrupt Enable for RX overflow failed!
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 162
+nargs: 0
+format: CHECK-fail: interrupt Enable for TX empty failed!
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 169
+nargs: 0
+format: CHECK-fail: failed to force RX overflow IRQ!
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 174
+nargs: 0
+format: CHECK-fail: RX overflow IRQ has not been handled!
+str_arg_idx: 
+addr: 101a4
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 179
+nargs: 0
+format: CHECK-fail: failed to force TX empty IRQ!
+str_arg_idx: 
+addr: 101b8
+severity: 2
+file: sw/device/tests/dif/dif_plic_smoketest.c
+line: 184
+nargs: 0
+format: CHECK-fail: TX empty IRQ has not been handled!
+str_arg_idx: 
+addr: 101cc
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 101e0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 101f4
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10208
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 1021c
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 10230
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10244
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10258
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 1026c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 10280
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx:

@@ -1,0 +1,326 @@
+addr: 20001fac
+string: L#
+addr: 20001faf
+string: 1
+addr: 20001fb8
+string: |#
+addr: 20001fbb
+string: 
+addr: 20001fc0
+string: L#
+addr: 20001fc3
+string: 3
+addr: 20001fcc
+string: �#
+addr: 20001fcf
+string: 
+addr: 20001fd4
+string: L#
+addr: 20001fd7
+string: A
+addr: 20001fe0
+string: �#
+addr: 20001fe3
+string: 
+addr: 20001fe8
+string: L#
+addr: 20001feb
+string: F
+addr: 20001ff4
+string: 9$
+addr: 20001ff7
+string: 
+addr: 20001ffc
+string: L#
+addr: 20001fff
+string: H
+addr: 20002008
+string: �$
+addr: 2000200b
+string: 
+addr: 20002010
+string: L#
+addr: 20002013
+string: J
+addr: 2000201c
+string: %
+addr: 2000201f
+string: 
+addr: 20002024
+string: L#
+addr: 20002027
+string: T
+addr: 20002030
+string: ~%
+addr: 20002033
+string: 
+addr: 20002038
+string: L#
+addr: 2000203b
+string: V
+addr: 20002040
+string: 
+addr: 20002044
+string: �%
+addr: 20002047
+string: 
+addr: 2000204c
+string: L#
+addr: 2000204f
+string: X
+addr: 20002058
+string: �%
+addr: 2000205b
+string: 
+addr: 20002060
+string: L#
+addr: 20002063
+string: \
+addr: 2000206c
+string: \&
+addr: 2000206f
+string: 
+addr: 20002074
+string: L#
+addr: 20002077
+string: ^
+addr: 20002080
+string: �&
+addr: 20002083
+string: 
+addr: 20002088
+string: 
+addr: 2000208c
+string: L#
+addr: 2000208f
+string: !
+addr: 20002098
+string: �&
+addr: 2000209b
+string: 
+addr: 200020a0
+string: L#
+addr: 200020a3
+string: %
+addr: 200020ac
+string: '
+addr: 200020af
+string: 
+addr: 200020b4
+string: L#
+addr: 200020b7
+string: &
+addr: 200020c0
+string: a'
+addr: 200020c3
+string: 
+addr: 200020c8
+string: L#
+addr: 200020cb
+string: )
+addr: 200020d4
+string: �'
+addr: 200020d7
+string: 
+addr: 200020dc
+string: L#
+addr: 200020df
+string: *
+addr: 200020e8
+string: (
+addr: 200020eb
+string: j(
+addr: 200020ef
+string: l(
+addr: 200020f3
+string: n(
+addr: 200020f7
+string: p(
+addr: 200020fb
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002150
+string: {(
+addr: 20002153
+string: E
+addr: 2000215c
+string: �(
+addr: 2000215f
+string: 
+addr: 20002164
+string: {(
+addr: 20002167
+string: K
+addr: 20002170
+string: �(
+addr: 20002173
+string: 
+addr: 20002178
+string: {(
+addr: 2000217b
+string: Q
+addr: 20002184
+string: �(
+addr: 20002187
+string: 
+addr: 2000218c
+string: {(
+addr: 2000218f
+string: n
+addr: 20002198
+string: �)
+addr: 2000219b
+string: 
+addr: 200021a0
+string: {(
+addr: 200021a3
+string: 
+addr: 200021a8
+string: 
+addr: 200021ac
+string: �)
+addr: 200021af
+string: 
+addr: 200021b4
+string: {(
+addr: 200021b7
+string: 
+addr: 200021bc
+string: 
+addr: 200021c0
+string: �)
+addr: 200021c3
+string: 
+addr: 200021c8
+string: �)
+addr: 200021cb
+string: 
+addr: 200021d4
+string: *
+addr: 200021d7
+string: 
+addr: 200021dc
+string: �)
+addr: 200021df
+string: !
+addr: 200021e8
+string: +*
+addr: 200021eb
+string: 
+addr: 200021f0
+string: P*
+addr: 200021f3
+string: 
+addr: 200021fc
+string: w*
+addr: 200021ff
+string: 
+addr: 20002204
+string: P*
+addr: 20002207
+string: "
+addr: 20002210
+string: }*
+addr: 20002213
+string: 
+addr: 20002221
+string: ��
+addr: 20002229
+string: 6n
+addr: 20002231
+string: l�
+addr: 20002238
+string: @B
+addr: 20002240
+string: ��
+addr: 20002247
+string: 0
+addr: 2000224b
+string: 0
+addr: 2000224d
+string: ../sw/device/tests/dif/dif_rv_timer_smoketest.c
+addr: 2000237c
+string: Entering handler_irq_timer()
+addr: 20002399
+string: Exiting handler_irq_timer()
+addr: 200023b5
+string: CHECK-fail: dif_rv_timer_init( timer_reg, (dif_rv_timer_config_t){.hart_count = 1, .comparator_count = 1}, &timer) == kDifRvTimerOk
+addr: 20002439
+string: CHECK-fail: dif_rv_timer_approximate_tick_params(kClockFreqPeripheralHz, kTickFreqHz, &tick_params) == kDifRvTimerApproximateTickParamsOk
+addr: 200024c3
+string: CHECK-fail: dif_rv_timer_set_tick_params(&timer, kHart, tick_params) == kDifRvTimerOk
+addr: 20002519
+string: CHECK-fail: dif_rv_timer_irq_enable(&timer, kHart, kComparator, kDifRvTimerEnabled) == kDifRvTimerOk
+addr: 2000257e
+string: CHECK-fail: dif_rv_timer_counter_read(&timer, kHart, &current_time) == kDifRvTimerOk
+addr: 200025d3
+string: Current time: %d; timer theshold: %d
+addr: 200025f8
+string: CHECK-fail: dif_rv_timer_arm(&timer, kHart, kComparator, current_time + kDeadline) == kDifRvTimerOk
+addr: 2000265c
+string: CHECK-fail: dif_rv_timer_counter_set_enabled(&timer, kHart, kDifRvTimerEnabled) == kDifRvTimerOk
+addr: 200026bd
+string: Waiting...
+addr: 200026c8
+string: CHECK-fail: Entered IRQ handler, but `irq_fired` was not false!
+addr: 20002708
+string: CHECK-fail: dif_rv_timer_irq_get(&timer, kHart, kComparator, &irq_flag) == kDifRvTimerOk
+addr: 20002761
+string: CHECK-fail: Entered IRQ handler but the expected IRQ flag wasn't set!
+addr: 200027a7
+string: CHECK-fail: dif_rv_timer_counter_set_enabled(&timer, kHart, kDifRvTimerDisabled) == kDifRvTimerOk
+addr: 20002809
+string: CHECK-fail: dif_rv_timer_irq_clear(&timer, kHart, kComparator) == kDifRvTimerOk
+addr: 20002859
+string: %s%5d %s:%d]
+addr: 20002867
+string: 
+addr: 2000286a
+string: I
+addr: 2000286c
+string: W
+addr: 2000286e
+string: E
+addr: 20002870
+string: F
+addr: 20002872
+string: ?
+addr: 20002874
+string: %
+addr: 20002876
+string: -
+addr: 20002878
+string: 0x
+addr: 2000287b
+string: ../sw/device/lib/handler.c
+addr: 20002896
+string: Software IRQ triggered!
+addr: 200028ae
+string: Timer IRQ triggered!
+addr: 200028c3
+string: External IRQ triggered!
+addr: 200028db
+string: Instruction access fault, mtval shows fault address
+addr: 2000290f
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 2000294a
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20002982
+string: Load/Store fault, mtval shows the fault address
+addr: 200029b2
+string: Environment call encountered
+addr: 200029cf
+string: %s
+addr: 200029d2
+string: MTVAL value is 0x%x
+addr: 200029e6
+string: ../sw/device/lib/testing/test_main.c
+addr: 20002a0b
+string: CHECK-fail: failed to init UART
+addr: 20002a2b
+string: CHECK-fail: failed to configure UART
+addr: 20002a50
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002a77
+string: PASS!
+addr: 20002a7d
+string: FAIL!

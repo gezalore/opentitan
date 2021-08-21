@@ -1,0 +1,182 @@
+addr: 10000
+severity: 0
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 49
+nargs: 0
+format: Entering handler_irq_timer()
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 51
+nargs: 0
+format: Exiting handler_irq_timer()
+str_arg_idx: 
+addr: 10028
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 65
+nargs: 0
+format: CHECK-fail: dif_rv_timer_init( timer_reg, (dif_rv_timer_config_t){.hart_count = 1, .comparator_count = 1}, &timer) == kDifRvTimerOk
+str_arg_idx: 
+addr: 1003c
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 70
+nargs: 0
+format: CHECK-fail: dif_rv_timer_approximate_tick_params(kClockFreqPeripheralHz, kTickFreqHz, &tick_params) == kDifRvTimerApproximateTickParamsOk
+str_arg_idx: 
+addr: 10050
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 72
+nargs: 0
+format: CHECK-fail: dif_rv_timer_set_tick_params(&timer, kHart, tick_params) == kDifRvTimerOk
+str_arg_idx: 
+addr: 10064
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 74
+nargs: 0
+format: CHECK-fail: dif_rv_timer_irq_enable(&timer, kHart, kComparator, kDifRvTimerEnabled) == kDifRvTimerOk
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 84
+nargs: 0
+format: CHECK-fail: dif_rv_timer_counter_read(&timer, kHart, &current_time) == kDifRvTimerOk
+str_arg_idx: 
+addr: 1008c
+severity: 0
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 86
+nargs: 2
+format: Current time: %0d; timer theshold: %0d
+str_arg_idx: 
+addr: 100a0
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 88
+nargs: 0
+format: CHECK-fail: dif_rv_timer_arm(&timer, kHart, kComparator, current_time + kDeadline) == kDifRvTimerOk
+str_arg_idx: 
+addr: 100b4
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 92
+nargs: 0
+format: CHECK-fail: dif_rv_timer_counter_set_enabled(&timer, kHart, kDifRvTimerEnabled) == kDifRvTimerOk
+str_arg_idx: 
+addr: 100c8
+severity: 0
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 94
+nargs: 0
+format: Waiting...
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 33
+nargs: 0
+format: CHECK-fail: Entered IRQ handler, but `irq_fired` was not false!
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 37
+nargs: 0
+format: CHECK-fail: dif_rv_timer_irq_get(&timer, kHart, kComparator, &irq_flag) == kDifRvTimerOk
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 38
+nargs: 0
+format: CHECK-fail: Entered IRQ handler but the expected IRQ flag wasn't set!
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 41
+nargs: 0
+format: CHECK-fail: dif_rv_timer_counter_set_enabled(&timer, kHart, kDifRvTimerDisabled) == kDifRvTimerOk
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/dif/dif_rv_timer_smoketest.c
+line: 42
+nargs: 0
+format: CHECK-fail: dif_rv_timer_irq_clear(&timer, kHart, kComparator) == kDifRvTimerOk
+str_arg_idx: 
+addr: 10140
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10154
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10168
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1017c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10190
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 101a4
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 101b8
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 101cc
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 101e0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 101f4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx:

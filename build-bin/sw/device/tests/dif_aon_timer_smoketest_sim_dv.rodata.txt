@@ -1,0 +1,352 @@
+addr: 20001a3c
+string: 0
+addr: 20001a3f
+string: E
+addr: 20001a48
+string: K
+addr: 20001a4b
+string: 
+addr: 20001a50
+string: 0
+addr: 20001a53
+string: K
+addr: 20001a5c
+string: c
+addr: 20001a5f
+string: 
+addr: 20001a64
+string: 0
+addr: 20001a67
+string: Q
+addr: 20001a70
+string: x
+addr: 20001a73
+string: 
+addr: 20001a78
+string: 0
+addr: 20001a7b
+string: n
+addr: 20001a84
+string: g
+addr: 20001a87
+string: 
+addr: 20001a8c
+string: 0
+addr: 20001a8f
+string: 
+addr: 20001a94
+string: 
+addr: 20001a98
+string: �
+addr: 20001a9b
+string: 
+addr: 20001aa0
+string: 0
+addr: 20001aa3
+string: 
+addr: 20001aa8
+string: 
+addr: 20001aac
+string: �
+addr: 20001aaf
+string: 
+addr: 20001ab4
+string: �
+addr: 20001ab7
+string: 
+addr: 20001ac0
+string: �
+addr: 20001ac3
+string: 
+addr: 20001ac8
+string: �
+addr: 20001acb
+string: !
+addr: 20001ad4
+string: �
+addr: 20001ad7
+string: 
+addr: 20001adc
+string: 
+addr: 20001adf
+string: 
+addr: 20001ae8
+string: ,
+addr: 20001aeb
+string: 
+addr: 20001af0
+string: 
+addr: 20001af3
+string: "
+addr: 20001afc
+string: 2
+addr: 20001aff
+string: 
+addr: 20001b09
+string: ��
+addr: 20001b11
+string: 6n
+addr: 20001b19
+string: l�
+addr: 20001b20
+string: @B
+addr: 20001b28
+string: ��
+addr: 20001b2f
+string: 0
+addr: 20001b33
+string: 0
+addr: 20001b38
+string: 8
+addr: 20001b3b
+string: O
+addr: 20001b44
+string: i
+addr: 20001b47
+string: 
+addr: 20001b4c
+string: 8
+addr: 20001b4f
+string: U
+addr: 20001b58
+string: �
+addr: 20001b5b
+string: 
+addr: 20001b60
+string: 
+addr: 20001b64
+string: 8
+addr: 20001b67
+string: 
+addr: 20001b70
+string: �
+addr: 20001b73
+string: 
+addr: 20001b78
+string: 8
+addr: 20001b7b
+string: 
+addr: 20001b84
+string: �
+addr: 20001b87
+string: 
+addr: 20001b8c
+string: 8
+addr: 20001b8f
+string: 
+addr: 20001b98
+string: ]!
+addr: 20001b9b
+string: 
+addr: 20001ba0
+string: 8
+addr: 20001ba3
+string: 
+addr: 20001bac
+string: �!
+addr: 20001baf
+string: 
+addr: 20001bb4
+string: 8
+addr: 20001bb7
+string: 
+addr: 20001bc0
+string: �!
+addr: 20001bc3
+string: 
+addr: 20001bc8
+string: 8
+addr: 20001bcb
+string: %
+addr: 20001bd4
+string: ]!
+addr: 20001bd7
+string: 
+addr: 20001bdc
+string: 8
+addr: 20001bdf
+string: &
+addr: 20001be8
+string: &"
+addr: 20001beb
+string: 
+addr: 20001bf0
+string: 8
+addr: 20001bf3
+string: (
+addr: 20001bfc
+string: �
+addr: 20001bff
+string: 
+addr: 20001c04
+string: 8
+addr: 20001c07
+string: +
+addr: 20001c10
+string: �
+addr: 20001c13
+string: 
+addr: 20001c18
+string: 8
+addr: 20001c1b
+string: 0
+addr: 20001c24
+string: ="
+addr: 20001c27
+string: 
+addr: 20001c2c
+string: 8
+addr: 20001c2f
+string: 4
+addr: 20001c38
+string: �"
+addr: 20001c3b
+string: 
+addr: 20001c40
+string: 8
+addr: 20001c43
+string: 7
+addr: 20001c4c
+string: �"
+addr: 20001c4f
+string: 
+addr: 20001c54
+string: 8
+addr: 20001c57
+string: 8
+addr: 20001c60
+string: �!
+addr: 20001c63
+string: 
+addr: 20001c68
+string: 8
+addr: 20001c6b
+string: >
+addr: 20001c74
+string: _#
+addr: 20001c77
+string: 
+addr: 20001c7c
+string: 8
+addr: 20001c7f
+string: C
+addr: 20001c88
+string: �"
+addr: 20001c8b
+string: 
+addr: 20001c90
+string: 8
+addr: 20001c93
+string: D
+addr: 20001c9c
+string: &"
+addr: 20001c9f
+string: 
+addr: 20001ca4
+string: 8
+addr: 20001ca7
+string: F
+addr: 20001cb0
+string: ="
+addr: 20001cb3
+string: 
+addr: 20001cb8
+string: 8
+addr: 20001cbb
+string: I
+addr: 20001cc4
+string: �"
+addr: 20001cc7
+string: 
+addr: 20001ccc
+string: 
+addr: 20001cd0
+string: �#
+addr: 20001cd3
+string: �#
+addr: 20001cd7
+string: �#
+addr: 20001cdb
+string: �#
+addr: 20001cdf
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001d31
+string: ../sw/device/lib/handler.c
+addr: 20001e4b
+string: Software IRQ triggered!
+addr: 20001e63
+string: Timer IRQ triggered!
+addr: 20001e78
+string: External IRQ triggered!
+addr: 20001e90
+string: Instruction access fault, mtval shows fault address
+addr: 20001ec4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001eff
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001f37
+string: Load/Store fault, mtval shows the fault address
+addr: 20001f67
+string: Environment call encountered
+addr: 20001f84
+string: %s
+addr: 20001f87
+string: MTVAL value is 0x%x
+addr: 20001f9b
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001fc0
+string: CHECK-fail: failed to init UART
+addr: 20001fe0
+string: CHECK-fail: failed to configure UART
+addr: 20002005
+string: ../sw/device/lib/testing/test_status.c
+addr: 2000202c
+string: PASS!
+addr: 20002032
+string: FAIL!
+addr: 20002038
+string: ../sw/device/tests/dif/dif_aon_timer_smoketest.c
+addr: 20002069
+string: Running AON timer test
+addr: 20002080
+string: CHECK-fail: dif_aon_timer_init(params, &aon) == kDifAonTimerOk
+addr: 200020bf
+string: CHECK-fail: dif_aon_timer_wakeup_stop(aon) == kDifAonTimerOk
+addr: 200020fc
+string: CHECK-fail: dif_aon_timer_irq_acknowledge(aon, kDifAonTimerIrqWakeupThreshold) == kDifAonTimerOk
+addr: 2000215d
+string: CHECK-fail: dif_aon_timer_irq_is_pending(aon, kDifAonTimerIrqWakeupThreshold, &is_pending) == kDifAonTimerOk
+addr: 200021ca
+string: CHECK-fail: !is_pending
+addr: 200021e2
+string: CHECK-fail: dif_aon_timer_wakeup_start(aon, 1, 0) == kDifAonTimerOk
+addr: 20002226
+string: CHECK-fail: is_pending
+addr: 2000223d
+string: CHECK-fail: dif_aon_timer_watchdog_stop(aon) == kDifAonTimerWatchdogOk
+addr: 20002284
+string: CHECK-fail: dif_aon_timer_irq_acknowledge( aon, kDifAonTimerIrqWatchdogBarkThreshold) == kDifAonTimerOk
+addr: 200022ec
+string: CHECK-fail: dif_aon_timer_irq_is_pending(aon, kDifAonTimerIrqWatchdogBarkThreshold, &is_pending) == kDifAonTimerOk
+addr: 2000235f
+string: CHECK-fail: dif_aon_timer_watchdog_start(aon, 1, 0xffffffff, false, false) == kDifAonTimerWatchdogOk
+addr: 200023c4
+string: %s%5d %s:%d]
+addr: 200023d2
+string: 
+addr: 200023d5
+string: I
+addr: 200023d7
+string: W
+addr: 200023d9
+string: E
+addr: 200023db
+string: F
+addr: 200023dd
+string: ?
+addr: 200023df
+string: %
+addr: 200023e1
+string: -
+addr: 200023e3
+string: 0x

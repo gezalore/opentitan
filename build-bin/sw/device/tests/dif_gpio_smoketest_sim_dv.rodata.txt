@@ -1,0 +1,218 @@
+addr: 200018c4
+string: �
+addr: 200018c7
+string: E
+addr: 200018d0
+string: �
+addr: 200018d3
+string: 
+addr: 200018d8
+string: �
+addr: 200018db
+string: K
+addr: 200018e4
+string: �
+addr: 200018e7
+string: 
+addr: 200018ec
+string: �
+addr: 200018ef
+string: Q
+addr: 200018f8
+string: �
+addr: 200018fb
+string: 
+addr: 20001900
+string: �
+addr: 20001903
+string: n
+addr: 2000190c
+string: �
+addr: 2000190f
+string: 
+addr: 20001914
+string: �
+addr: 20001917
+string: 
+addr: 2000191c
+string: 
+addr: 20001920
+string: �
+addr: 20001923
+string: 
+addr: 20001928
+string: �
+addr: 2000192b
+string: 
+addr: 20001930
+string: 
+addr: 20001934
+string: �
+addr: 20001937
+string: 
+addr: 2000193c
+string: �
+addr: 2000193f
+string: 
+addr: 20001948
+string: 
+addr: 2000194b
+string: 
+addr: 20001950
+string: �
+addr: 20001953
+string: !
+addr: 2000195c
+string: 4
+addr: 2000195f
+string: 
+addr: 20001964
+string: Y
+addr: 20001967
+string: 
+addr: 20001970
+string: �
+addr: 20001973
+string: 
+addr: 20001978
+string: Y
+addr: 2000197b
+string: "
+addr: 20001984
+string: �
+addr: 20001987
+string: 
+addr: 20001991
+string: ��
+addr: 20001999
+string: 6n
+addr: 200019a1
+string: l�
+addr: 200019a8
+string: @B
+addr: 200019b0
+string: ��
+addr: 200019b7
+string: 0
+addr: 200019bb
+string: 0
+addr: 200019c0
+string: �
+addr: 200019c3
+string: G
+addr: 200019cc
+string: �
+addr: 200019cf
+string: 
+addr: 200019d4
+string: �
+addr: 200019d7
+string: H
+addr: 200019e0
+string: A
+addr: 200019e3
+string: 
+addr: 200019e8
+string: 
+addr: 200019ec
+string: �
+addr: 200019ef
+string: 2
+addr: 200019f8
+string: �
+addr: 200019fb
+string: 
+addr: 20001a00
+string: �
+addr: 20001a03
+string: 5
+addr: 20001a0c
+string: �
+addr: 20001a0f
+string: 
+addr: 20001a14
+string: �
+addr: 20001a17
+string: 9
+addr: 20001a1c
+string: 
+addr: 20001a20
+string: 
+addr: 20001a23
+string: E
+addr: 20001a27
+string: G
+addr: 20001a2b
+string: I
+addr: 20001a2f
+string: K
+addr: 20001a33
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001a85
+string: ../sw/device/lib/handler.c
+addr: 20001b9f
+string: Software IRQ triggered!
+addr: 20001bb7
+string: Timer IRQ triggered!
+addr: 20001bcc
+string: External IRQ triggered!
+addr: 20001be4
+string: Instruction access fault, mtval shows fault address
+addr: 20001c18
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001c53
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001c8b
+string: Load/Store fault, mtval shows the fault address
+addr: 20001cbb
+string: Environment call encountered
+addr: 20001cd8
+string: %s
+addr: 20001cdb
+string: MTVAL value is 0x%x
+addr: 20001cef
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001d14
+string: CHECK-fail: failed to init UART
+addr: 20001d34
+string: CHECK-fail: failed to configure UART
+addr: 20001d59
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001d80
+string: PASS!
+addr: 20001d86
+string: FAIL!
+addr: 20001d8c
+string: ../sw/device/tests/dif/dif_gpio_smoketest.c
+addr: 20001db8
+string: CHECK-fail: dif_gpio_init( (dif_gpio_params_t){ .base_addr = mmio_region_from_addr(TOP_EARLGREY_GPIO_BASE_ADDR), }, &gpio) == kDifGpioOk
+addr: 20001e41
+string: CHECK-fail: dif_gpio_output_set_enabled_all(&gpio, kGpioMask) == kDifGpioOk
+addr: 20001e8d
+string: CHECK-fail: dif_gpio_write_all(&gpio, write_val) == kDifGpioOk
+addr: 20001ecc
+string: CHECK-fail: dif_gpio_read_all(&gpio, &read_val) == kDifGpioOk
+addr: 20001f0a
+string: CHECK-fail: %X != %X
+addr: 20001f20
+string: ����UUUU��������
+addr: 20001f34
+string: %s%5d %s:%d]
+addr: 20001f42
+string: 
+addr: 20001f45
+string: I
+addr: 20001f47
+string: W
+addr: 20001f49
+string: E
+addr: 20001f4b
+string: F
+addr: 20001f4d
+string: ?
+addr: 20001f4f
+string: %
+addr: 20001f51
+string: -
+addr: 20001f53
+string: 0x

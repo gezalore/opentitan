@@ -1,0 +1,448 @@
+addr: 10000
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 106
+nargs: 0
+format: CHECK-fail: dif_plic_irq_claim failed
+str_arg_idx: 
+addr: 10014
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 112
+nargs: 1
+format: CHECK-fail: Interurpt from unexpected peripheral: %0d
+str_arg_idx: 
+addr: 10028
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 118
+nargs: 0
+format: CHECK-fail: Unexpected TX watermark interrupt
+str_arg_idx: 
+addr: 1003c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 123
+nargs: 0
+format: CHECK-fail: Unexpected RX watermark interrupt
+str_arg_idx: 
+addr: 10050
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 128
+nargs: 0
+format: CHECK-fail: Unexpected TX empty interrupt
+str_arg_idx: 
+addr: 10064
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 133
+nargs: 0
+format: CHECK-fail: Unexpected RX overflow interrupt
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 138
+nargs: 1
+format: Unexpected interrupt (at PLIC): %0d
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 149
+nargs: 0
+format: CHECK-fail: dif_uart_irq_is_pending failed
+str_arg_idx: 
+addr: 100a0
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 150
+nargs: 0
+format: CHECK-fail: UART interrupt fired at PLIC did not fire at UART
+str_arg_idx: 
+addr: 100b4
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 154
+nargs: 0
+format: CHECK-fail: dif_uart_irq_acknowledge failed
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 159
+nargs: 0
+format: CHECK-fail: dif_plic_irq_complete failed
+str_arg_idx: 
+addr: 100dc
+severity: 0
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 447
+nargs: 0
+format: UART TX RX test
+str_arg_idx: 
+addr: 100f0
+severity: 0
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 166
+nargs: 0
+format: Initializing the UART.
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 173
+nargs: 0
+format: CHECK-fail: dif_uart_init failed
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 181
+nargs: 0
+format: CHECK-fail: dif_uart_configure failed
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 185
+nargs: 0
+format: CHECK-fail: dif_uart_watermark_tx_set failed
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 187
+nargs: 0
+format: CHECK-fail: dif_uart_watermark_rx_set failed
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 192
+nargs: 0
+format: CHECK-fail: dif_uart_irq_set_enabled failed
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 195
+nargs: 0
+format: CHECK-fail: dif_uart_irq_set_enabled failed
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 198
+nargs: 0
+format: CHECK-fail: dif_uart_irq_set_enabled failed
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 201
+nargs: 0
+format: CHECK-fail: dif_uart_irq_set_enabled failed
+str_arg_idx: 
+addr: 101a4
+severity: 0
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 208
+nargs: 0
+format: Initializing the PLIC.
+str_arg_idx: 
+addr: 101b8
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 212
+nargs: 0
+format: CHECK-fail: dif_plic_init failed
+str_arg_idx: 
+addr: 101cc
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 217
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 101e0
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 220
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 101f4
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 223
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10208
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 226
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 1021c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 229
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10230
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 232
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10244
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 235
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10258
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 238
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 1026c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 244
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 10280
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 247
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 10294
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 250
+nargs: 1
+format: CHECK-fail:
+str_arg_idx: 
+addr: 102a8
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 253
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102bc
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 256
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102d0
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 259
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102e4
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 262
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102f8
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 265
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 1030c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 270
+nargs: 0
+format: CHECK-fail: dif_plic_target_set_threshold failed
+str_arg_idx: 
+addr: 10320
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 276
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10334
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 281
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10348
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 286
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 1035c
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 291
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10370
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 296
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10384
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 301
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10398
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 306
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 103ac
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 311
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 103c0
+severity: 0
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 375
+nargs: 0
+format: Executing the test.
+str_arg_idx: 
+addr: 103d4
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 384
+nargs: 0
+format: CHECK-fail: uart_transfer_ongoing_bytes( uart, kUartSend, (uint8_t *)uart_tx_data, UART_DATASET_SIZE, &uart_tx_bytes_written, &uart_tx_done)
+str_arg_idx: 
+addr: 103e8
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 399
+nargs: 0
+format: CHECK-fail: uart_transfer_ongoing_bytes(uart, kUartReceive, uart_rx_data, UART_DATASET_SIZE, &uart_rx_bytes_read, &uart_rx_done)
+str_arg_idx: 
+addr: 103fc
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 408
+nargs: 0
+format: CHECK-fail: dif_uart_irq_set_enabled failed
+str_arg_idx: 
+addr: 10410
+severity: 0
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 433
+nargs: 0
+format: Checking the received UART RX data for consistency.
+str_arg_idx: 
+addr: 10424
+severity: 2
+file: sw/device/tests/sim_dv/uart_tx_rx_test.c
+line: 437
+nargs: 3
+format: CHECK-fail: UART RX data[%0d] mismatched: {act: %0h, exp: %0h}
+str_arg_idx: 
+addr: 10438
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 1044c
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 10460
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10474
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10488
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1049c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 104b0
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 104c4
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 104d8
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 104ec
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx:

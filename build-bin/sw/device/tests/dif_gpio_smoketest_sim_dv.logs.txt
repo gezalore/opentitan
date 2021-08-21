@@ -1,0 +1,105 @@
+addr: 10000
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10028
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1003c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10050
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10064
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 100a0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 100b4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/dif/dif_gpio_smoketest.c
+line: 71
+nargs: 0
+format: CHECK-fail: dif_gpio_init( (dif_gpio_params_t){ .base_addr = mmio_region_from_addr(TOP_EARLGREY_GPIO_BASE_ADDR), }, &gpio) == kDifGpioOk
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/dif/dif_gpio_smoketest.c
+line: 72
+nargs: 0
+format: CHECK-fail: dif_gpio_output_set_enabled_all(&gpio, kGpioMask) == kDifGpioOk
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/dif/dif_gpio_smoketest.c
+line: 50
+nargs: 0
+format: CHECK-fail: dif_gpio_write_all(&gpio, write_val) == kDifGpioOk
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/dif/dif_gpio_smoketest.c
+line: 53
+nargs: 0
+format: CHECK-fail: dif_gpio_read_all(&gpio, &read_val) == kDifGpioOk
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/dif/dif_gpio_smoketest.c
+line: 57
+nargs: 2
+format: CHECK-fail: %0H != %0H
+str_arg_idx:

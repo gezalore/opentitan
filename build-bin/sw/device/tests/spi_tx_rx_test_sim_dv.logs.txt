@@ -1,0 +1,490 @@
+addr: 10000
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 75
+nargs: 0
+format: CHECK-fail: dif_plic_irq_claim failed
+str_arg_idx: 
+addr: 10014
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 81
+nargs: 1
+format: CHECK-fail: Interurpt from unexpected peripheral: %0d
+str_arg_idx: 
+addr: 10028
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 88
+nargs: 0
+format: CHECK-fail: Unexpected RX full interrupt
+str_arg_idx: 
+addr: 1003c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 93
+nargs: 0
+format: CHECK-fail: Unexpected RX above level interrupt
+str_arg_idx: 
+addr: 10050
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 98
+nargs: 0
+format: CHECK-fail: Unexpected TX below level interrupt
+str_arg_idx: 
+addr: 10064
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 102
+nargs: 0
+format: CHECK-fail: Unexpected RX error interrupt
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 106
+nargs: 0
+format: CHECK-fail: Unexpected RX overflow interrupt
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 110
+nargs: 0
+format: CHECK-fail: Unexpected TX underflow interrupt
+str_arg_idx: 
+addr: 100a0
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 113
+nargs: 1
+format: Unexpected interrupt (at PLIC): %0d
+str_arg_idx: 
+addr: 100b4
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 122
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_state_get failed
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 124
+nargs: 0
+format: CHECK-fail: SPI_DEVICE interrupt fired at PLIC did not fire at SPI_DEVICE
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 129
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_state_clear failed
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 134
+nargs: 0
+format: CHECK-fail: dif_plic_irq_complete failed
+str_arg_idx: 
+addr: 10104
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 142
+nargs: 0
+format: Initializing the SPI_DEVICE.
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 155
+nargs: 0
+format: CHECK-fail: spi device init failed
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 159
+nargs: 0
+format: CHECK-fail: spi device init failed
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 164
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_enable RxFull failed
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 168
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_enable RxAboveLevel failed
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 172
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_enable TxBelowLevel failed
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 176
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_enable RxError failed
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 180
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_enable RxOverflow failed
+str_arg_idx: 
+addr: 101a4
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 184
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_enable TxUnderflow failed
+str_arg_idx: 
+addr: 101b8
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 197
+nargs: 0
+format: Initializing the PLIC.
+str_arg_idx: 
+addr: 101cc
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 201
+nargs: 0
+format: CHECK-fail: dif_plic_init failed
+str_arg_idx: 
+addr: 101e0
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 206
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 101f4
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 209
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10208
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 212
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 1021c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 215
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10230
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 218
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10244
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 222
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_trigger failed
+str_arg_idx: 
+addr: 10258
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 228
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 1026c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 231
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 10280
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 234
+nargs: 1
+format: CHECK-fail:
+str_arg_idx: 
+addr: 10294
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 237
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102a8
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 241
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102bc
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 245
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_priority failed
+str_arg_idx: 
+addr: 102d0
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 250
+nargs: 0
+format: CHECK-fail: dif_plic_target_set_threshold failed
+str_arg_idx: 
+addr: 102e4
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 255
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 102f8
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 260
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 1030c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 265
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10320
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 270
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10334
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 275
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 10348
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 280
+nargs: 0
+format: CHECK-fail: dif_plic_irq_set_enabled failed
+str_arg_idx: 
+addr: 1035c
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 292
+nargs: 0
+format: Executing the test.
+str_arg_idx: 
+addr: 10370
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 297
+nargs: 0
+format: CHECK-fail: dif_spi_device_send(spi_device, spi_device_tx_data, SPI_DEVICE_DATASET_SIZE, &bytes_transferred) == kDifSpiDeviceOk
+str_arg_idx: 
+addr: 10384
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 301
+nargs: 2
+format: SPI_DEVICE TX_FIFO transferred bytes mismatched: {act: %0d, exp: %0d}
+str_arg_idx: 
+addr: 10398
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 303
+nargs: 1
+format: Transferred %0d bytes to SPI_DEVICE TX_FIFO.
+str_arg_idx: 
+addr: 103ac
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 308
+nargs: 0
+format: CHECK-fail: dif_spi_device_set_irq_levels(spi_device, SPI_DEVICE_DATASET_SIZE, SPI_DEVICE_DATASET_SIZE / 2) == kDifSpiDeviceOk
+str_arg_idx: 
+addr: 103c0
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 317
+nargs: 0
+format: CHECK-fail: dif_spi_device_set_irq_levels(spi_device, SPI_DEVICE_DATASET_SIZE, 0) == kDifSpiDeviceOk
+str_arg_idx: 
+addr: 103d4
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 320
+nargs: 0
+format: SPI_DEVICE tx_below_level interrupt fired.
+str_arg_idx: 
+addr: 103e8
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 327
+nargs: 0
+format: SPI_DEVICE rx_above_level interrupt fired.
+str_arg_idx: 
+addr: 103fc
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 337
+nargs: 0
+format: CHECK-fail: dif_spi_device_recv(spi_device, spi_device_rx_data, SPI_DEVICE_DATASET_SIZE, &bytes_recved) == kDifSpiDeviceOk
+str_arg_idx: 
+addr: 10410
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 339
+nargs: 1
+format: Received %0d bytes from SPI_DEVICE RX_FIFO.
+str_arg_idx: 
+addr: 10424
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 344
+nargs: 2
+format: SPI_DEVICE RX_FIFO recvd bytes mismatched: {act: %0d, exp: %0d}
+str_arg_idx: 
+addr: 10438
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 351
+nargs: 0
+format: Checking the received SPI_HOST RX_FIFO data for consistency.
+str_arg_idx: 
+addr: 1044c
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 355
+nargs: 3
+format: CHECK-fail: SPI_DEVICE RX_FIFO data[%0d] mismatched: {act: %0h, exp: %0h}
+str_arg_idx: 
+addr: 10460
+severity: 2
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 365
+nargs: 0
+format: CHECK-fail: dif_spi_device_irq_disable TxBelowLevel failed
+str_arg_idx: 
+addr: 10474
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 367
+nargs: 0
+format: SPI_DEVICE Tx Below level interrupt fired.
+str_arg_idx: 
+addr: 10488
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 373
+nargs: 0
+format: SPI_DEVICE RX Above level interrupt fired.
+str_arg_idx: 
+addr: 1049c
+severity: 0
+file: sw/device/tests/sim_dv/spi_tx_rx_test.c
+line: 381
+nargs: 0
+format: SPI_DEVICE RX_FIFO full interrupt fired.
+str_arg_idx: 
+addr: 104b0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 104c4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 104d8
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 104ec
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10500
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 10514
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10528
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 1053c
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10550
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 10564
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx:

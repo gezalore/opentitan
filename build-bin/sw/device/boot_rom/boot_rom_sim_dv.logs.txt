@@ -1,0 +1,196 @@
+addr: 0
+severity: 2
+file: sw/device/boot_rom/boot_rom.c
+line: 46
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 14
+severity: 2
+file: sw/device/boot_rom/boot_rom.c
+line: 54
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 28
+severity: 0
+file: sw/device/boot_rom/boot_rom.c
+line: 57
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 3c
+severity: 2
+file: sw/device/boot_rom/boot_rom.c
+line: 61
+nargs: 1
+format: Bootstrap failed with status code: %0d
+str_arg_idx: 
+addr: 50
+severity: 0
+file: sw/device/boot_rom/boot_rom.c
+line: 66
+nargs: 0
+format: Boot ROM initialisation has completed, jump into flash!
+str_arg_idx: 
+addr: 64
+severity: 0
+file: sw/device/boot_rom/bootstrap.c
+line: 192
+nargs: 0
+format: Bootstrap requested, initialising HW...
+str_arg_idx: 
+addr: 78
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 202
+nargs: 0
+format: CHECK-fail: Failed to initialize SPI.
+str_arg_idx: 
+addr: 8c
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 214
+nargs: 0
+format: CHECK-fail: Failed to configure SPI.
+str_arg_idx: 
+addr: a0
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 221
+nargs: 0
+format: CHECK-fail: Failed to configure HMAC.
+str_arg_idx: 
+addr: b4
+severity: 0
+file: sw/device/boot_rom/bootstrap.c
+line: 223
+nargs: 0
+format: HW initialisation completed, waiting for SPI input...
+str_arg_idx: 
+addr: c8
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 227
+nargs: 1
+format: Bootstrap error: 0x%0h
+str_arg_idx: 
+addr: dc
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 43
+nargs: 0
+format: CHECK-fail: dif_gpio_init(gpio_params, &gpio) == kDifGpioOk
+str_arg_idx: 
+addr: f0
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 46
+nargs: 0
+format: CHECK-fail: dif_gpio_read_all(&gpio, &gpio_in) == kDifGpioOk
+str_arg_idx: 
+addr: 104
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 128
+nargs: 0
+format: CHECK-fail: Failed to check pending bytes.
+str_arg_idx: 
+addr: 118
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 133
+nargs: 0
+format: CHECK-fail: Failed to recieve bytes from SPI.
+str_arg_idx: 
+addr: 12c
+severity: 0
+file: sw/device/boot_rom/bootstrap.c
+line: 137
+nargs: 2
+format: Processing frame #%0d, expecting #%0d
+str_arg_idx: 
+addr: 140
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 141
+nargs: 1
+format: Detected hash mismatch on frame #%0d
+str_arg_idx: 
+addr: 154
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 145
+nargs: 0
+format: CHECK-fail: Failed to send bytes to SPI.
+str_arg_idx: 
+addr: 168
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 153
+nargs: 0
+format: CHECK-fail: Failed to send bytes to SPI.
+str_arg_idx: 
+addr: 17c
+severity: 0
+file: sw/device/boot_rom/bootstrap.c
+line: 162
+nargs: 0
+format: Flash erase successful
+str_arg_idx: 
+addr: 190
+severity: 0
+file: sw/device/boot_rom/bootstrap.c
+line: 172
+nargs: 0
+format: Bootstrap: DONE!
+str_arg_idx: 
+addr: 1a4
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 180
+nargs: 0
+format: CHECK-fail: Failed to send bytes to SPI.
+str_arg_idx: 
+addr: 1b8
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 77
+nargs: 0
+format: CHECK-fail: Error on hmac start.
+str_arg_idx: 
+addr: 1cc
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 87
+nargs: 0
+format: CHECK-fail: Error while pushing to FIFO.
+str_arg_idx: 
+addr: 1e0
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 92
+nargs: 0
+format: CHECK-fail: Error processing digest.
+str_arg_idx: 
+addr: 1f4
+severity: 2
+file: sw/device/boot_rom/bootstrap.c
+line: 97
+nargs: 0
+format: CHECK-fail: Error reading the digest.
+str_arg_idx: 
+addr: 208
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 21c
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx:

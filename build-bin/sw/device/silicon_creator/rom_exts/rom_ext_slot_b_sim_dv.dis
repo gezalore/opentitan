@@ -1,0 +1,3034 @@
+
+sw/device/silicon_creator/rom_exts/rom_ext_slot_b_sim_dv.elf:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .manifest     00000370  20080000  20080000  00001000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .vectors      00000084  20080400  20080400  00001400  2**8
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .crt          000000e8  20080484  20080484  00001484  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .text         00000d72  2008056c  2008056c  0000156c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .rodata       00000199  200812e0  200812e0  000022e0  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .data         00000008  10000000  2008147c  00003000  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  6 .bss          00000004  10000008  20081484  00003008  2**2
+                  ALLOC
+  7 .riscv.attributes 00000026  00000000  00000000  00003008  2**0
+                  CONTENTS, READONLY
+  8 .debug_info   00004c23  00000000  00000000  0000302e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_abbrev 00000d75  00000000  00000000  00007c51  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_aranges 00000080  00000000  00000000  000089c6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   000028c4  00000000  00000000  00008a46  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00002b68  00000000  00000000  0000b30a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 000001e0  00000000  00000000  0000de72  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_str    000016d7  00000000  00000000  0000e052  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_frame  0000040c  00000000  00000000  0000f72c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .vectors:
+
+20080400 <_rom_ext_interrupt_vector>:
+_rom_ext_interrupt_vector():
+20080400:	c0001073          	unimp
+20080404:	c0001073          	unimp
+20080408:	c0001073          	unimp
+2008040c:	c0001073          	unimp
+20080410:	c0001073          	unimp
+20080414:	c0001073          	unimp
+20080418:	c0001073          	unimp
+2008041c:	c0001073          	unimp
+20080420:	c0001073          	unimp
+20080424:	c0001073          	unimp
+20080428:	c0001073          	unimp
+2008042c:	c0001073          	unimp
+20080430:	c0001073          	unimp
+20080434:	c0001073          	unimp
+20080438:	c0001073          	unimp
+2008043c:	c0001073          	unimp
+20080440:	c0001073          	unimp
+20080444:	c0001073          	unimp
+20080448:	c0001073          	unimp
+2008044c:	c0001073          	unimp
+20080450:	c0001073          	unimp
+20080454:	c0001073          	unimp
+20080458:	c0001073          	unimp
+2008045c:	c0001073          	unimp
+20080460:	c0001073          	unimp
+20080464:	c0001073          	unimp
+20080468:	c0001073          	unimp
+2008046c:	c0001073          	unimp
+20080470:	c0001073          	unimp
+20080474:	c0001073          	unimp
+20080478:	c0001073          	unimp
+2008047c:	c0001073          	unimp
+20080480:	0040006f          	j	20080484 <_rom_ext_start_boot>
+
+Disassembly of section .crt:
+
+20080484 <_rom_ext_start_boot>:
+_rom_ext_start_boot():
+20080484:	30047073          	csrci	mstatus,8
+20080488:	72c5                	lui	t0,0xffff1
+2008048a:	88828293          	addi	t0,t0,-1912 # ffff0888 <_data_init_end+0xdff6f404>
+2008048e:	3042b073          	csrc	mie,t0
+20080492:	effa0117          	auipc	sp,0xeffa0
+20080496:	b5e10113          	addi	sp,sp,-1186 # 1001fff0 <_stack_start+0x1ff0>
+2008049a:	00000297          	auipc	t0,0x0
+2008049e:	f6628293          	addi	t0,t0,-154 # 20080400 <_rom_ext_interrupt_vector>
+200804a2:	ffc2f293          	andi	t0,t0,-4
+200804a6:	0012e293          	ori	t0,t0,1
+200804aa:	30529073          	csrw	mtvec,t0
+200804ae:	eff80517          	auipc	a0,0xeff80
+200804b2:	b5250513          	addi	a0,a0,-1198 # 10000000 <_data_start>
+200804b6:	eff80597          	auipc	a1,0xeff80
+200804ba:	b5258593          	addi	a1,a1,-1198 # 10000008 <_data_end>
+200804be:	00001617          	auipc	a2,0x1
+200804c2:	fbe60613          	addi	a2,a2,-66 # 2008147c <_data_init_start>
+200804c6:	00000097          	auipc	ra,0x0
+200804ca:	06c080e7          	jalr	108(ra) # 20080532 <crt_section_copy>
+200804ce:	eff80517          	auipc	a0,0xeff80
+200804d2:	b3a50513          	addi	a0,a0,-1222 # 10000008 <_data_end>
+200804d6:	eff80597          	auipc	a1,0xeff80
+200804da:	b3658593          	addi	a1,a1,-1226 # 1000000c <_bss_end>
+200804de:	00000097          	auipc	ra,0x0
+200804e2:	030080e7          	jalr	48(ra) # 2008050e <crt_section_clear>
+200804e6:	4281                	li	t0,0
+200804e8:	4301                	li	t1,0
+200804ea:	4381                	li	t2,0
+200804ec:	4e01                	li	t3,0
+200804ee:	4e81                	li	t4,0
+200804f0:	4f01                	li	t5,0
+200804f2:	4f81                	li	t6,0
+200804f4:	4501                	li	a0,0
+200804f6:	4581                	li	a1,0
+200804f8:	4601                	li	a2,0
+200804fa:	4681                	li	a3,0
+200804fc:	4701                	li	a4,0
+200804fe:	4781                	li	a5,0
+20080500:	4801                	li	a6,0
+20080502:	4881                	li	a7,0
+20080504:	eff80197          	auipc	gp,0xeff80
+20080508:	2fc18193          	addi	gp,gp,764 # 10000800 <__global_pointer$>
+2008050c:	a095                	j	20080570 <rom_ext_boot>
+
+2008050e <crt_section_clear>:
+crt_section_clear():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:36
+crt_section_clear:
+  .globl crt_section_clear
+  .type crt_section_clear, @function
+
+  // Check that start is before end.
+  bgeu a0, a1, L_clear_nothing
+2008050e:	00b57e63          	bgeu	a0,a1,2008052a <L_clear_nothing>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:39
+
+  // Check that start and end are word aligned.
+  or   t0, a0, a1
+20080512:	00b562b3          	or	t0,a0,a1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:40
+  andi t0, t0, 0x3
+20080516:	0032f293          	andi	t0,t0,3
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:41
+  bnez t0, L_clear_error
+2008051a:	00029b63          	bnez	t0,20080530 <L_clear_error>
+
+2008051e <L_clear_loop>:
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:46
+
+L_clear_loop:
+  // Write zero into section memory word-by-word.
+  // TODO: unroll
+  sw   zero, 0(a0)
+2008051e:	00052023          	sw	zero,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:47
+  addi a0, a0, 4
+20080522:	0511                	addi	a0,a0,4
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:48
+  bltu a0, a1, L_clear_loop
+20080524:	feb56de3          	bltu	a0,a1,2008051e <L_clear_loop>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:49
+  ret
+20080528:	8082                	ret
+
+2008052a <L_clear_nothing>:
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:54
+
+L_clear_nothing:
+  // If section length is 0 just return. Otherwise end is before start
+  // which is invalid so trigger an error.
+  bne a0, a1, L_clear_error
+2008052a:	00b51363          	bne	a0,a1,20080530 <L_clear_error>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:55
+  ret
+2008052e:	8082                	ret
+
+20080530 <L_clear_error>:
+	...
+
+20080532 <crt_section_copy>:
+crt_section_copy():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:87
+crt_section_copy:
+  .global crt_section_copy
+  .type crt_section_copy, @function
+
+  // Check that start is before end.
+  bgeu a0, a1, L_copy_nothing
+20080532:	02b57963          	bgeu	a0,a1,20080564 <L_copy_nothing>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:90
+
+  // Check that start, end and src are word aligned.
+  or   t0, a0, a1
+20080536:	00b562b3          	or	t0,a0,a1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:91
+  or   t0, t0, a2
+2008053a:	00c2e2b3          	or	t0,t0,a2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:92
+  andi t0, t0, 0x3
+2008053e:	0032f293          	andi	t0,t0,3
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:93
+  bnez t0, L_copy_error
+20080542:	02029463          	bnez	t0,2008056a <L_copy_error>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:110
+  //        +-------------+
+  //        |             |
+  //      start          end
+  //
+  // TODO: disallow all overlap since it indicates API misuse?
+  sub  t0, a0, a2           // (start - src) mod 2**32
+20080546:	40c502b3          	sub	t0,a0,a2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:111
+  sub  t1, a1, a0           // end - start
+2008054a:	40a58333          	sub	t1,a1,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:112
+  bltu t0, t1, L_copy_error
+2008054e:	0062ee63          	bltu	t0,t1,2008056a <L_copy_error>
+
+20080552 <L_copy_loop>:
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:117
+
+L_copy_loop:
+  // Copy data from src into section word-by-word.
+  // TODO: unroll
+  lw   t0, 0(a2)
+20080552:	00062283          	lw	t0,0(a2)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:118
+  addi a2, a2, 4
+20080556:	0611                	addi	a2,a2,4
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:119
+  sw   t0, 0(a0)
+20080558:	00552023          	sw	t0,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:120
+  addi a0, a0, 4
+2008055c:	0511                	addi	a0,a0,4
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:121
+  bltu a0, a1, L_copy_loop
+2008055e:	feb56ae3          	bltu	a0,a1,20080552 <L_copy_loop>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:122
+  ret
+20080562:	8082                	ret
+
+20080564 <L_copy_nothing>:
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:127
+
+L_copy_nothing:
+  // If section length is 0 just return. Otherwise end is before start
+  // which is invalid so trigger an error.
+  bne a0, a1, L_copy_error
+20080564:	00b51363          	bne	a0,a1,2008056a <L_copy_error>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/crt/crt.S:128
+  ret
+20080568:	8082                	ret
+
+2008056a <L_copy_error>:
+	...
+
+Disassembly of section .text:
+
+2008056c <main>:
+main():
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/dummy_main.c:9
+
+int main(int argc, char *argv[]) {
+  (void)argc;
+  (void)argv;
+
+  return 0;
+2008056c:	4501                	li	a0,0
+2008056e:	8082                	ret
+
+20080570 <rom_ext_boot>:
+rom_ext_boot():
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:24
+// TODO - need to decide what happens to the peripherals during the
+//        Mask ROM to ROM_EXT handover (for example, does UART need
+//        re-configuring, etc...). It is possible that the signature of
+//        this function will change to pass the relevant information from
+//        the Mask ROM.
+void rom_ext_boot(void) {
+20080570:	1101                	addi	sp,sp,-32
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:25
+  dif_uart_result_t init_result = dif_uart_init(
+20080572:	ce06                	sw	ra,28(sp)
+20080574:	eff80597          	auipc	a1,0xeff80
+20080578:	a9458593          	addi	a1,a1,-1388 # 10000008 <_data_end>
+2008057c:	40000537          	lui	a0,0x40000
+20080580:	2891                	jal	200805d4 <dif_uart_init>
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:31
+      (dif_uart_params_t){
+          .base_addr = mmio_region_from_addr(TOP_EARLGREY_UART0_BASE_ADDR),
+      },
+      &uart);
+
+  if (init_result != kDifUartOk) {
+20080582:	e539                	bnez	a0,200805d0 <rom_ext_boot+0x60>
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:37
+    abort();
+  }
+
+  dif_uart_config_result_t config_result =
+      dif_uart_configure(&uart, (dif_uart_config_t){
+                                    .baudrate = kUartBaudrate,
+20080584:	00001517          	auipc	a0,0x1
+20080588:	dcc50513          	addi	a0,a0,-564 # 20081350 <kUartBaudrate>
+2008058c:	4108                	lw	a0,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:38
+                                    .clk_freq_hz = kClockFreqPeripheralHz,
+2008058e:	00001597          	auipc	a1,0x1
+20080592:	db258593          	addi	a1,a1,-590 # 20081340 <kClockFreqPeripheralHz>
+20080596:	418c                	lw	a1,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:36
+      dif_uart_configure(&uart, (dif_uart_config_t){
+20080598:	c42a                	sw	a0,8(sp)
+2008059a:	c62e                	sw	a1,12(sp)
+2008059c:	4505                	li	a0,1
+2008059e:	c82a                	sw	a0,16(sp)
+200805a0:	ca2a                	sw	a0,20(sp)
+200805a2:	eff80517          	auipc	a0,0xeff80
+200805a6:	a6650513          	addi	a0,a0,-1434 # 10000008 <_data_end>
+200805aa:	002c                	addi	a1,sp,8
+200805ac:	281d                	jal	200805e2 <dif_uart_configure>
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:43
+                                    .parity_enable = kDifUartToggleDisabled,
+                                    .parity = kDifUartParityEven,
+                                });
+
+  if (config_result != kDifUartConfigOk) {
+200805ae:	e10d                	bnez	a0,200805d0 <rom_ext_boot+0x60>
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:47
+    abort();
+  }
+
+  base_uart_stdout(&uart);
+200805b0:	eff80517          	auipc	a0,0xeff80
+200805b4:	a5850513          	addi	a0,a0,-1448 # 10000008 <_data_end>
+200805b8:	2151                	jal	20080a3c <base_uart_stdout>
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:49
+
+  base_printf("Hello World!\n");
+200805ba:	00001517          	auipc	a0,0x1
+200805be:	eaa50513          	addi	a0,a0,-342 # 20081464 <__clz_tab+0x100>
+200805c2:	29c1                	jal	20080a92 <base_printf>
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:52
+
+  // TODO - there might be another level before jumping into main.
+  (void)main(0, NULL);
+200805c4:	4501                	li	a0,0
+200805c6:	4581                	li	a1,0
+200805c8:	3755                	jal	2008056c <main>
+wait_for_interrupt():
+/home/gl/work/opentitan/repo/sw/device/lib/runtime/hart.h:25
+ * Hints to the processor that we don't have anything better to be doing, and to
+ * go into low-power mode until an interrupt is serviced.
+ *
+ * This function may behave as if it is a no-op.
+ */
+inline void wait_for_interrupt(void) { asm volatile("wfi"); }
+200805ca:	10500073          	wfi
+rom_ext_boot():
+/home/gl/work/opentitan/repo/build-out/../sw/device/silicon_creator/rom_exts/rom_ext.c:55
+
+  // TODO - is this a correct way of handling the "return"?
+  while (true) {
+200805ce:	bff5                	j	200805ca <rom_ext_boot+0x5a>
+200805d0:	21a9                	jal	20080a1a <abort>
+	...
+
+200805d4 <dif_uart_init>:
+dif_uart_init():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:136
+
+  return bytes_read;
+}
+
+dif_uart_result_t dif_uart_init(dif_uart_params_t params, dif_uart_t *uart) {
+  if (uart == NULL) {
+200805d4:	c581                	beqz	a1,200805dc <dif_uart_init+0x8>
+200805d6:	4601                	li	a2,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:140
+    return kDifUartBadArg;
+  }
+
+  uart->params = params;
+200805d8:	c188                	sw	a0,0(a1)
+200805da:	a011                	j	200805de <dif_uart_init+0xa>
+200805dc:	4609                	li	a2,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:142
+  return kDifUartOk;
+}
+200805de:	8532                	mv	a0,a2
+200805e0:	8082                	ret
+
+200805e2 <dif_uart_configure>:
+dif_uart_configure():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:145
+
+dif_uart_config_result_t dif_uart_configure(const dif_uart_t *uart,
+                                            dif_uart_config_t config) {
+200805e2:	1141                	addi	sp,sp,-16
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:146
+  if (uart == NULL) {
+200805e4:	c606                	sw	ra,12(sp)
+200805e6:	c422                	sw	s0,8(sp)
+200805e8:	c226                	sw	s1,4(sp)
+200805ea:	c935                	beqz	a0,2008065e <dif_uart_configure+0x7c>
+200805ec:	84ae                	mv	s1,a1
+200805ee:	842a                	mv	s0,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:150
+    return kDifUartConfigBadArg;
+  }
+
+  if (config.baudrate == 0 || config.clk_freq_hz == 0) {
+200805f0:	418c                	lw	a1,0(a1)
+200805f2:	450d                	li	a0,3
+200805f4:	c5b5                	beqz	a1,20080660 <dif_uart_configure+0x7e>
+200805f6:	40d0                	lw	a2,4(s1)
+200805f8:	c625                	beqz	a2,20080660 <dif_uart_configure+0x7e>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:169
+                "NCO bit width exceeds 28 bits.");
+
+  // NCO creates 16x of baudrate. So, in addition to the nco_width,
+  // 2^4 should be multiplied.
+  uint64_t nco =
+      ((uint64_t)config.baudrate << (nco_width + 4)) / config.clk_freq_hz;
+200805fa:	01459513          	slli	a0,a1,0x14
+200805fe:	81b1                	srli	a1,a1,0xc
+20080600:	4681                	li	a3,0
+20080602:	177000ef          	jal	ra,20080f78 <__udivdi3>
+20080606:	6641                	lui	a2,0x10
+20080608:	167d                	addi	a2,a2,-1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:170
+  uint32_t nco_masked = nco & UART_CTRL_NCO_MASK;
+2008060a:	8e69                	and	a2,a2,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:173
+
+  // Requested baudrate is too high for the given clock frequency.
+  if (nco != nco_masked) {
+2008060c:	8d31                	xor	a0,a0,a2
+2008060e:	8dc9                	or	a1,a1,a0
+20080610:	4511                	li	a0,4
+20080612:	e5b9                	bnez	a1,20080660 <dif_uart_configure+0x7e>
+uart_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:92
+  mmio_region_write32(uart->params.base_addr, UART_CTRL_REG_OFFSET, 0u);
+20080614:	4008                	lw	a0,0(s0)
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+ * @param offset the offset to write at, in bytes.
+ * @param value the value to write.
+ */
+inline void mmio_region_write32(mmio_region_t base, ptrdiff_t offset,
+                                uint32_t value) {
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+20080616:	00052623          	sw	zero,12(a0)
+uart_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:98
+  mmio_region_write32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET, reg);
+2008061a:	4008                	lw	a0,0(s0)
+2008061c:	458d                	li	a1,3
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+2008061e:	cd4c                	sw	a1,28(a0)
+uart_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:100
+  mmio_region_write32(uart->params.base_addr, UART_OVRD_REG_OFFSET, 0u);
+20080620:	4008                	lw	a0,0(s0)
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+20080622:	02052223          	sw	zero,36(a0)
+uart_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:101
+  mmio_region_write32(uart->params.base_addr, UART_TIMEOUT_CTRL_REG_OFFSET, 0u);
+20080626:	4008                	lw	a0,0(s0)
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+20080628:	02052623          	sw	zero,44(a0)
+uart_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:102
+  mmio_region_write32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET, 0u);
+2008062c:	4008                	lw	a0,0(s0)
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+2008062e:	00052223          	sw	zero,4(a0)
+uart_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:103
+  mmio_region_write32(uart->params.base_addr, UART_INTR_STATE_REG_OFFSET,
+20080632:	4008                	lw	a0,0(s0)
+20080634:	55fd                	li	a1,-1
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+20080636:	c10c                	sw	a1,0(a0)
+dif_uart_configure():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:185
+  // Set baudrate, enable RX and TX, configure parity.
+  uint32_t reg = 0;
+  reg = bitfield_field32_write(reg, UART_CTRL_NCO_FIELD, nco_masked);
+  reg = bitfield_bit32_write(reg, UART_CTRL_TX_BIT, true);
+  reg = bitfield_bit32_write(reg, UART_CTRL_RX_BIT, true);
+  if (config.parity_enable == kDifUartToggleEnabled) {
+20080638:	4494                	lw	a3,8(s1)
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:80
+BITFIELD_WARN_UNUSED_RESULT
+inline uint32_t bitfield_field32_write(uint32_t bitfield,
+                                       bitfield_field32_t field,
+                                       uint32_t value) {
+  bitfield &= ~(field.mask << field.index);
+  bitfield |= (value & field.mask) << field.index;
+2008063a:	01061513          	slli	a0,a2,0x10
+2008063e:	04300593          	li	a1,67
+dif_uart_configure():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:185
+20080642:	c291                	beqz	a3,20080646 <dif_uart_configure+0x64>
+20080644:	458d                	li	a1,3
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:188
+    reg = bitfield_bit32_write(reg, UART_CTRL_PARITY_EN_BIT, true);
+  }
+  if (config.parity == kDifUartParityOdd) {
+20080646:	44d0                	lw	a2,12(s1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:185
+  if (config.parity_enable == kDifUartToggleEnabled) {
+20080648:	8d4d                	or	a0,a0,a1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:188
+  if (config.parity == kDifUartParityOdd) {
+2008064a:	e219                	bnez	a2,20080650 <dif_uart_configure+0x6e>
+2008064c:	08056513          	ori	a0,a0,128
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:191
+    reg = bitfield_bit32_write(reg, UART_CTRL_PARITY_ODD_BIT, true);
+  }
+  mmio_region_write32(uart->params.base_addr, UART_CTRL_REG_OFFSET, reg);
+20080650:	400c                	lw	a1,0(s0)
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+20080652:	c5c8                	sw	a0,12(a1)
+dif_uart_configure():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:194
+
+  // Disable interrupts.
+  mmio_region_write32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET, 0u);
+20080654:	400c                	lw	a1,0(s0)
+20080656:	4501                	li	a0,0
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+20080658:	0005a223          	sw	zero,4(a1)
+2008065c:	a011                	j	20080660 <dif_uart_configure+0x7e>
+2008065e:	4509                	li	a0,2
+dif_uart_configure():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:197
+
+  return kDifUartConfigOk;
+}
+20080660:	4492                	lw	s1,4(sp)
+20080662:	4422                	lw	s0,8(sp)
+20080664:	40b2                	lw	ra,12(sp)
+20080666:	0141                	addi	sp,sp,16
+20080668:	8082                	ret
+
+2008066a <dif_uart_irq_is_pending>:
+dif_uart_irq_is_pending():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:201
+
+dif_uart_result_t dif_uart_irq_is_pending(const dif_uart_t *uart,
+                                          dif_uart_irq_t irq,
+                                          bool *is_pending) {
+2008066a:	1141                	addi	sp,sp,-16
+2008066c:	c606                	sw	ra,12(sp)
+2008066e:	c422                	sw	s0,8(sp)
+20080670:	c226                	sw	s1,4(sp)
+20080672:	84aa                	mv	s1,a0
+20080674:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:202
+  if (uart == NULL || is_pending == NULL) {
+20080676:	c09d                	beqz	s1,2008069c <dif_uart_irq_is_pending+0x32>
+20080678:	8432                	mv	s0,a2
+2008067a:	c20d                	beqz	a2,2008069c <dif_uart_irq_is_pending+0x32>
+2008067c:	860a                	mv	a2,sp
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:207
+    return kDifUartBadArg;
+  }
+
+  ptrdiff_t offset;
+  if (!uart_irq_offset_get(irq, &offset)) {
+2008067e:	852e                	mv	a0,a1
+20080680:	85b2                	mv	a1,a2
+20080682:	2015                	jal	200806a6 <uart_irq_offset_get>
+20080684:	85aa                	mv	a1,a0
+20080686:	4505                	li	a0,1
+20080688:	c991                	beqz	a1,2008069c <dif_uart_irq_is_pending+0x32>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:212
+    return kDifUartError;
+  }
+
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_INTR_STATE_REG_OFFSET);
+2008068a:	4088                	lw	a0,0(s1)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+2008068c:	410c                	lw	a1,0(a0)
+dif_uart_irq_is_pending():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:213
+  *is_pending = bitfield_bit32_read(reg, offset);
+2008068e:	4602                	lw	a2,0(sp)
+20080690:	4501                	li	a0,0
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+ */
+BITFIELD_WARN_UNUSED_RESULT
+inline bool bitfield_bit32_read(uint32_t bitfield,
+                                bitfield_bit32_index_t bit_index) {
+  return bitfield_field32_read(bitfield,
+                               bitfield_bit32_to_field32(bit_index)) == 0x1u;
+20080692:	00c5d5b3          	srl	a1,a1,a2
+20080696:	8985                	andi	a1,a1,1
+dif_uart_irq_is_pending():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:213
+20080698:	00b40023          	sb	a1,0(s0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:216
+
+  return kDifUartOk;
+}
+2008069c:	4492                	lw	s1,4(sp)
+2008069e:	4422                	lw	s0,8(sp)
+200806a0:	40b2                	lw	ra,12(sp)
+200806a2:	0141                	addi	sp,sp,16
+200806a4:	8082                	ret
+
+200806a6 <uart_irq_offset_get>:
+uart_irq_offset_get():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:55
+                                ptrdiff_t *offset_out) {
+200806a6:	461d                	li	a2,7
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:57
+  switch (irq_type) {
+200806a8:	00a66563          	bltu	a2,a0,200806b2 <uart_irq_offset_get+0xc>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:86
+  *offset_out = offset;
+200806ac:	c188                	sw	a0,0(a1)
+200806ae:	4505                	li	a0,1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:89
+}
+200806b0:	8082                	ret
+200806b2:	4501                	li	a0,0
+200806b4:	8082                	ret
+
+200806b6 <dif_uart_irq_acknowledge>:
+dif_uart_irq_acknowledge():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:219
+
+dif_uart_result_t dif_uart_irq_acknowledge(const dif_uart_t *uart,
+                                           dif_uart_irq_t irq) {
+200806b6:	1141                	addi	sp,sp,-16
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:220
+  if (uart == NULL) {
+200806b8:	c606                	sw	ra,12(sp)
+200806ba:	c422                	sw	s0,8(sp)
+200806bc:	c10d                	beqz	a0,200806de <dif_uart_irq_acknowledge+0x28>
+200806be:	842a                	mv	s0,a0
+200806c0:	0050                	addi	a2,sp,4
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:225
+    return kDifUartBadArg;
+  }
+
+  ptrdiff_t offset;
+  if (!uart_irq_offset_get(irq, &offset)) {
+200806c2:	852e                	mv	a0,a1
+200806c4:	85b2                	mv	a1,a2
+200806c6:	37c5                	jal	200806a6 <uart_irq_offset_get>
+200806c8:	85aa                	mv	a1,a0
+200806ca:	4505                	li	a0,1
+200806cc:	c991                	beqz	a1,200806e0 <dif_uart_irq_acknowledge+0x2a>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:230
+    return kDifUartError;
+  }
+
+  // Writing to the register clears the corresponding bits (Write-one clear).
+  uint32_t reg = bitfield_bit32_write(0, offset, true);
+200806ce:	4592                	lw	a1,4(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:231
+  mmio_region_write32(uart->params.base_addr, UART_INTR_STATE_REG_OFFSET, reg);
+200806d0:	4010                	lw	a2,0(s0)
+200806d2:	4501                	li	a0,0
+200806d4:	4685                	li	a3,1
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:79
+  bitfield &= ~(field.mask << field.index);
+200806d6:	00b695b3          	sll	a1,a3,a1
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+200806da:	c20c                	sw	a1,0(a2)
+200806dc:	a011                	j	200806e0 <dif_uart_irq_acknowledge+0x2a>
+200806de:	4509                	li	a0,2
+dif_uart_irq_acknowledge():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:234
+
+  return kDifUartOk;
+}
+200806e0:	4422                	lw	s0,8(sp)
+200806e2:	40b2                	lw	ra,12(sp)
+200806e4:	0141                	addi	sp,sp,16
+200806e6:	8082                	ret
+
+200806e8 <dif_uart_irq_disable_all>:
+dif_uart_irq_disable_all():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:238
+
+dif_uart_result_t dif_uart_irq_disable_all(const dif_uart_t *uart,
+                                           dif_uart_irq_snapshot_t *snapshot) {
+  if (uart == NULL) {
+200806e8:	c911                	beqz	a0,200806fc <dif_uart_irq_disable_all+0x14>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:243
+    return kDifUartBadArg;
+  }
+
+  // Pass the current interrupt state to the caller.
+  if (snapshot != NULL) {
+200806ea:	c581                	beqz	a1,200806f2 <dif_uart_irq_disable_all+0xa>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:245
+    *snapshot =
+        mmio_region_read32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET);
+200806ec:	4110                	lw	a2,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+200806ee:	4250                	lw	a2,4(a2)
+dif_uart_irq_disable_all():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:244
+    *snapshot =
+200806f0:	c190                	sw	a2,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:249
+  }
+
+  // Disable all UART interrupts.
+  mmio_region_write32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET, 0u);
+200806f2:	410c                	lw	a1,0(a0)
+200806f4:	4501                	li	a0,0
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+200806f6:	0005a223          	sw	zero,4(a1)
+dif_uart_irq_disable_all():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:252
+
+  return kDifUartOk;
+}
+200806fa:	8082                	ret
+200806fc:	4509                	li	a0,2
+200806fe:	8082                	ret
+
+20080700 <dif_uart_irq_restore_all>:
+dif_uart_irq_restore_all():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:255
+
+dif_uart_result_t dif_uart_irq_restore_all(
+    const dif_uart_t *uart, const dif_uart_irq_snapshot_t *snapshot) {
+20080700:	862a                	mv	a2,a0
+20080702:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:256
+  if (uart == NULL || snapshot == NULL) {
+20080704:	c611                	beqz	a2,20080710 <dif_uart_irq_restore_all+0x10>
+20080706:	c589                	beqz	a1,20080710 <dif_uart_irq_restore_all+0x10>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:261
+    return kDifUartBadArg;
+  }
+
+  mmio_region_write32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET,
+                      *snapshot);
+20080708:	418c                	lw	a1,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:260
+  mmio_region_write32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET,
+2008070a:	4210                	lw	a2,0(a2)
+2008070c:	4501                	li	a0,0
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+2008070e:	c24c                	sw	a1,4(a2)
+dif_uart_irq_restore_all():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:264
+
+  return kDifUartOk;
+}
+20080710:	8082                	ret
+
+20080712 <dif_uart_irq_get_enabled>:
+dif_uart_irq_get_enabled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:268
+
+dif_uart_result_t dif_uart_irq_get_enabled(const dif_uart_t *uart,
+                                           dif_uart_irq_t irq,
+                                           dif_uart_toggle_t *state) {
+20080712:	1141                	addi	sp,sp,-16
+20080714:	c606                	sw	ra,12(sp)
+20080716:	c422                	sw	s0,8(sp)
+20080718:	c226                	sw	s1,4(sp)
+2008071a:	84aa                	mv	s1,a0
+2008071c:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:269
+  if (uart == NULL || state == NULL) {
+2008071e:	c485                	beqz	s1,20080746 <dif_uart_irq_get_enabled+0x34>
+20080720:	8432                	mv	s0,a2
+20080722:	c215                	beqz	a2,20080746 <dif_uart_irq_get_enabled+0x34>
+20080724:	860a                	mv	a2,sp
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:274
+    return kDifUartBadArg;
+  }
+
+  ptrdiff_t offset;
+  if (!uart_irq_offset_get(irq, &offset)) {
+20080726:	852e                	mv	a0,a1
+20080728:	85b2                	mv	a1,a2
+2008072a:	3fb5                	jal	200806a6 <uart_irq_offset_get>
+2008072c:	85aa                	mv	a1,a0
+2008072e:	4505                	li	a0,1
+20080730:	c999                	beqz	a1,20080746 <dif_uart_irq_get_enabled+0x34>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:279
+    return kDifUartError;
+  }
+
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET);
+20080732:	4088                	lw	a0,0(s1)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+20080734:	414c                	lw	a1,4(a0)
+dif_uart_irq_get_enabled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:281
+
+  bool is_enabled = bitfield_bit32_read(reg, offset);
+20080736:	4602                	lw	a2,0(sp)
+20080738:	4501                	li	a0,0
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+                               bitfield_bit32_to_field32(bit_index)) == 0x1u;
+2008073a:	00c5d5b3          	srl	a1,a1,a2
+2008073e:	8985                	andi	a1,a1,1
+20080740:	0015b593          	seqz	a1,a1
+dif_uart_irq_get_enabled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:282
+  *state = is_enabled ? kDifUartToggleEnabled : kDifUartToggleDisabled;
+20080744:	c00c                	sw	a1,0(s0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:285
+
+  return kDifUartOk;
+}
+20080746:	4492                	lw	s1,4(sp)
+20080748:	4422                	lw	s0,8(sp)
+2008074a:	40b2                	lw	ra,12(sp)
+2008074c:	0141                	addi	sp,sp,16
+2008074e:	8082                	ret
+
+20080750 <dif_uart_irq_set_enabled>:
+dif_uart_irq_set_enabled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:289
+
+dif_uart_result_t dif_uart_irq_set_enabled(const dif_uart_t *uart,
+                                           dif_uart_irq_t irq,
+                                           dif_uart_toggle_t state) {
+20080750:	1141                	addi	sp,sp,-16
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:290
+  if (uart == NULL) {
+20080752:	c606                	sw	ra,12(sp)
+20080754:	c422                	sw	s0,8(sp)
+20080756:	c226                	sw	s1,4(sp)
+20080758:	c91d                	beqz	a0,2008078e <dif_uart_irq_set_enabled+0x3e>
+2008075a:	8432                	mv	s0,a2
+2008075c:	84aa                	mv	s1,a0
+2008075e:	860a                	mv	a2,sp
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:295
+    return kDifUartBadArg;
+  }
+
+  ptrdiff_t offset;
+  if (!uart_irq_offset_get(irq, &offset)) {
+20080760:	852e                	mv	a0,a1
+20080762:	85b2                	mv	a1,a2
+20080764:	3789                	jal	200806a6 <uart_irq_offset_get>
+20080766:	85aa                	mv	a1,a0
+20080768:	4505                	li	a0,1
+2008076a:	c19d                	beqz	a1,20080790 <dif_uart_irq_set_enabled+0x40>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:300
+    return kDifUartError;
+  }
+
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET);
+2008076c:	408c                	lw	a1,0(s1)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+2008076e:	41d0                	lw	a2,4(a1)
+dif_uart_irq_set_enabled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:302
+  bool bit = (state == kDifUartToggleEnabled) ? true : false;
+  reg = bitfield_bit32_write(reg, offset, bit);
+20080770:	4682                	lw	a3,0(sp)
+20080772:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:301
+  bool bit = (state == kDifUartToggleEnabled) ? true : false;
+20080774:	00143713          	seqz	a4,s0
+20080778:	4785                	li	a5,1
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:79
+  bitfield &= ~(field.mask << field.index);
+2008077a:	00d797b3          	sll	a5,a5,a3
+2008077e:	fff7c793          	not	a5,a5
+20080782:	8e7d                	and	a2,a2,a5
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:80
+  bitfield |= (value & field.mask) << field.index;
+20080784:	00d716b3          	sll	a3,a4,a3
+20080788:	8e55                	or	a2,a2,a3
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+2008078a:	c1d0                	sw	a2,4(a1)
+2008078c:	a011                	j	20080790 <dif_uart_irq_set_enabled+0x40>
+2008078e:	4509                	li	a0,2
+dif_uart_irq_set_enabled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:306
+  mmio_region_write32(uart->params.base_addr, UART_INTR_ENABLE_REG_OFFSET, reg);
+
+  return kDifUartOk;
+}
+20080790:	4492                	lw	s1,4(sp)
+20080792:	4422                	lw	s0,8(sp)
+20080794:	40b2                	lw	ra,12(sp)
+20080796:	0141                	addi	sp,sp,16
+20080798:	8082                	ret
+
+2008079a <dif_uart_irq_force>:
+dif_uart_irq_force():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:309
+
+dif_uart_result_t dif_uart_irq_force(const dif_uart_t *uart,
+                                     dif_uart_irq_t irq) {
+2008079a:	1141                	addi	sp,sp,-16
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:310
+  if (uart == NULL) {
+2008079c:	c606                	sw	ra,12(sp)
+2008079e:	c422                	sw	s0,8(sp)
+200807a0:	c10d                	beqz	a0,200807c2 <dif_uart_irq_force+0x28>
+200807a2:	842a                	mv	s0,a0
+200807a4:	0050                	addi	a2,sp,4
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:315
+    return kDifUartBadArg;
+  }
+
+  ptrdiff_t offset;
+  if (!uart_irq_offset_get(irq, &offset)) {
+200807a6:	852e                	mv	a0,a1
+200807a8:	85b2                	mv	a1,a2
+200807aa:	3df5                	jal	200806a6 <uart_irq_offset_get>
+200807ac:	85aa                	mv	a1,a0
+200807ae:	4505                	li	a0,1
+200807b0:	c991                	beqz	a1,200807c4 <dif_uart_irq_force+0x2a>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:320
+    return kDifUartError;
+  }
+
+  // Force the requested interrupt (write-only).
+  uint32_t reg = bitfield_bit32_write(0, offset, true);
+200807b2:	4592                	lw	a1,4(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:321
+  mmio_region_write32(uart->params.base_addr, UART_INTR_TEST_REG_OFFSET, reg);
+200807b4:	4010                	lw	a2,0(s0)
+200807b6:	4501                	li	a0,0
+200807b8:	4685                	li	a3,1
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:79
+  bitfield &= ~(field.mask << field.index);
+200807ba:	00b695b3          	sll	a1,a3,a1
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+200807be:	c60c                	sw	a1,8(a2)
+200807c0:	a011                	j	200807c4 <dif_uart_irq_force+0x2a>
+200807c2:	4509                	li	a0,2
+dif_uart_irq_force():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:324
+
+  return kDifUartOk;
+}
+200807c4:	4422                	lw	s0,8(sp)
+200807c6:	40b2                	lw	ra,12(sp)
+200807c8:	0141                	addi	sp,sp,16
+200807ca:	8082                	ret
+
+200807cc <dif_uart_watermark_rx_set>:
+dif_uart_watermark_rx_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:328
+
+dif_uart_result_t dif_uart_watermark_rx_set(const dif_uart_t *uart,
+                                            dif_uart_watermark_t watermark) {
+  if (uart == NULL) {
+200807cc:	cd09                	beqz	a0,200807e6 <dif_uart_watermark_rx_set+0x1a>
+200807ce:	4691                	li	a3,4
+200807d0:	4605                	li	a2,1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:335
+  }
+
+  // Check if the requested watermark is valid, and get a corresponding
+  // register definition to be written.
+  uint32_t value;
+  switch (watermark) {
+200807d2:	00b6eb63          	bltu	a3,a1,200807e8 <dif_uart_watermark_rx_set+0x1c>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:357
+      return kDifUartError;
+  }
+
+  // Set watermark level.
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET);
+200807d6:	4108                	lw	a0,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+200807d8:	4d54                	lw	a3,28(a0)
+200807da:	4601                	li	a2,0
+dif_uart_watermark_rx_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:335
+  switch (watermark) {
+200807dc:	058a                	slli	a1,a1,0x2
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:79
+200807de:	9a8d                	andi	a3,a3,-29
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:80
+  bitfield |= (value & field.mask) << field.index;
+200807e0:	8dd5                	or	a1,a1,a3
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+200807e2:	cd4c                	sw	a1,28(a0)
+200807e4:	a011                	j	200807e8 <dif_uart_watermark_rx_set+0x1c>
+200807e6:	4609                	li	a2,2
+dif_uart_watermark_rx_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:362
+  reg = bitfield_field32_write(reg, UART_FIFO_CTRL_RXILVL_FIELD, value);
+  mmio_region_write32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET, reg);
+
+  return kDifUartOk;
+}
+200807e8:	8532                	mv	a0,a2
+200807ea:	8082                	ret
+
+200807ec <dif_uart_watermark_tx_set>:
+dif_uart_watermark_tx_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:366
+
+dif_uart_result_t dif_uart_watermark_tx_set(const dif_uart_t *uart,
+                                            dif_uart_watermark_t watermark) {
+  if (uart == NULL) {
+200807ec:	cd11                	beqz	a0,20080808 <dif_uart_watermark_tx_set+0x1c>
+200807ee:	468d                	li	a3,3
+200807f0:	4605                	li	a2,1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:373
+  }
+
+  // Check if the requested watermark is valid, and get a corresponding
+  // register definition to be written.
+  uint32_t value;
+  switch (watermark) {
+200807f2:	00b6ec63          	bltu	a3,a1,2008080a <dif_uart_watermark_tx_set+0x1e>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:393
+      return kDifUartError;
+  }
+
+  // Set watermark level.
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET);
+200807f6:	4108                	lw	a0,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+200807f8:	4d54                	lw	a3,28(a0)
+200807fa:	4601                	li	a2,0
+dif_uart_watermark_tx_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:373
+  switch (watermark) {
+200807fc:	0596                	slli	a1,a1,0x5
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:79
+  bitfield &= ~(field.mask << field.index);
+200807fe:	f9f6f693          	andi	a3,a3,-97
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:80
+  bitfield |= (value & field.mask) << field.index;
+20080802:	8dd5                	or	a1,a1,a3
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+20080804:	cd4c                	sw	a1,28(a0)
+20080806:	a011                	j	2008080a <dif_uart_watermark_tx_set+0x1e>
+20080808:	4609                	li	a2,2
+dif_uart_watermark_tx_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:398
+  reg = bitfield_field32_write(reg, UART_FIFO_CTRL_TXILVL_FIELD, value);
+  mmio_region_write32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET, reg);
+
+  return kDifUartOk;
+}
+2008080a:	8532                	mv	a0,a2
+2008080c:	8082                	ret
+
+2008080e <dif_uart_bytes_send>:
+dif_uart_bytes_send():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:403
+
+dif_uart_result_t dif_uart_bytes_send(const dif_uart_t *uart,
+                                      const uint8_t *data,
+                                      size_t bytes_requested,
+                                      size_t *bytes_written) {
+2008080e:	4709                	li	a4,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:404
+  if (uart == NULL || data == NULL) {
+20080810:	c51d                	beqz	a0,2008083e <dif_uart_bytes_send+0x30>
+20080812:	c595                	beqz	a1,2008083e <dif_uart_bytes_send+0x30>
+20080814:	4781                	li	a5,0
+uart_bytes_send():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:113
+  while ((bytes_written < bytes_requested) && !uart_tx_full(uart)) {
+20080816:	c20d                	beqz	a2,20080838 <dif_uart_bytes_send+0x2a>
+uart_tx_full():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:21
+      mmio_region_read32(uart->params.base_addr, UART_STATUS_REG_OFFSET);
+20080818:	00052803          	lw	a6,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+2008081c:	01082703          	lw	a4,16(a6)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+                               bitfield_bit32_to_field32(bit_index)) == 0x1u;
+20080820:	8b05                	andi	a4,a4,1
+uart_bytes_send():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:113
+  while ((bytes_written < bytes_requested) && !uart_tx_full(uart)) {
+20080822:	eb19                	bnez	a4,20080838 <dif_uart_bytes_send+0x2a>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:114
+    uart_tx_fifo_write(uart, data[bytes_written]);
+20080824:	00f58733          	add	a4,a1,a5
+20080828:	00074703          	lbu	a4,0(a4)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:115
+    ++bytes_written;
+2008082c:	0785                	addi	a5,a5,1
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+2008082e:	00e82c23          	sw	a4,24(a6)
+uart_bytes_send():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:113
+  while ((bytes_written < bytes_requested) && !uart_tx_full(uart)) {
+20080832:	fef613e3          	bne	a2,a5,20080818 <dif_uart_bytes_send+0xa>
+20080836:	87b2                	mv	a5,a2
+20080838:	4701                	li	a4,0
+dif_uart_bytes_send():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:410
+    return kDifUartBadArg;
+  }
+
+  // `bytes_written` is an optional parameter.
+  size_t res = uart_bytes_send(uart, data, bytes_requested);
+  if (bytes_written != NULL) {
+2008083a:	c291                	beqz	a3,2008083e <dif_uart_bytes_send+0x30>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:411
+    *bytes_written = res;
+2008083c:	c29c                	sw	a5,0(a3)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:415
+  }
+
+  return kDifUartOk;
+}
+2008083e:	853a                	mv	a0,a4
+20080840:	8082                	ret
+
+20080842 <dif_uart_bytes_receive>:
+dif_uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:419
+
+dif_uart_result_t dif_uart_bytes_receive(const dif_uart_t *uart,
+                                         size_t bytes_requested, uint8_t *data,
+                                         size_t *bytes_read) {
+20080842:	4709                	li	a4,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:420
+  if (uart == NULL || data == NULL) {
+20080844:	c515                	beqz	a0,20080870 <dif_uart_bytes_receive+0x2e>
+20080846:	c60d                	beqz	a2,20080870 <dif_uart_bytes_receive+0x2e>
+20080848:	4801                	li	a6,0
+uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:127
+  while ((bytes_read < bytes_requested) && !uart_rx_empty(uart)) {
+2008084a:	cd99                	beqz	a1,20080868 <dif_uart_bytes_receive+0x26>
+uart_rx_empty():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:33
+      mmio_region_read32(uart->params.base_addr, UART_STATUS_REG_OFFSET);
+2008084c:	4118                	lw	a4,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+2008084e:	4b1c                	lw	a5,16(a4)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+20080850:	0207f793          	andi	a5,a5,32
+uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:127
+  while ((bytes_read < bytes_requested) && !uart_rx_empty(uart)) {
+20080854:	eb91                	bnez	a5,20080868 <dif_uart_bytes_receive+0x26>
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+20080856:	4b58                	lw	a4,20(a4)
+uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:128
+    data[bytes_read] = uart_rx_fifo_read(uart);
+20080858:	010607b3          	add	a5,a2,a6
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:129
+    ++bytes_read;
+2008085c:	0805                	addi	a6,a6,1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:128
+    data[bytes_read] = uart_rx_fifo_read(uart);
+2008085e:	00e78023          	sb	a4,0(a5)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:127
+  while ((bytes_read < bytes_requested) && !uart_rx_empty(uart)) {
+20080862:	ff0595e3          	bne	a1,a6,2008084c <dif_uart_bytes_receive+0xa>
+20080866:	882e                	mv	a6,a1
+20080868:	4701                	li	a4,0
+dif_uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:426
+    return kDifUartBadArg;
+  }
+
+  // `bytes_read` is an optional parameter.
+  size_t res = uart_bytes_receive(uart, bytes_requested, data);
+  if (bytes_read != NULL) {
+2008086a:	c299                	beqz	a3,20080870 <dif_uart_bytes_receive+0x2e>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:427
+    *bytes_read = res;
+2008086c:	0106a023          	sw	a6,0(a3)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:431
+  }
+
+  return kDifUartOk;
+}
+20080870:	853a                	mv	a0,a4
+20080872:	8082                	ret
+
+20080874 <dif_uart_byte_send_polled>:
+dif_uart_byte_send_polled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:435
+
+dif_uart_result_t dif_uart_byte_send_polled(const dif_uart_t *uart,
+                                            uint8_t byte) {
+  if (uart == NULL) {
+20080874:	cd19                	beqz	a0,20080892 <dif_uart_byte_send_polled+0x1e>
+20080876:	4110                	lw	a2,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+20080878:	4a14                	lw	a3,16(a2)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+2008087a:	8a85                	andi	a3,a3,1
+dif_uart_byte_send_polled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:440
+    return kDifUartBadArg;
+  }
+
+  // Busy wait for the TX FIFO to free up.
+  while (uart_tx_full(uart)) {
+2008087c:	fef5                	bnez	a3,20080878 <dif_uart_byte_send_polled+0x4>
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+2008087e:	4a14                	lw	a3,16(a2)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+20080880:	8a85                	andi	a3,a3,1
+uart_bytes_send():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:113
+  while ((bytes_written < bytes_requested) && !uart_tx_full(uart)) {
+20080882:	e299                	bnez	a3,20080888 <dif_uart_byte_send_polled+0x14>
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+20080884:	ce0c                	sw	a1,24(a2)
+20080886:	4110                	lw	a2,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+20080888:	4a08                	lw	a0,16(a2)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+2008088a:	8921                	andi	a0,a0,8
+dif_uart_byte_send_polled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:447
+
+  (void)uart_bytes_send(uart, &byte, 1);
+
+  // Busy wait for the TX FIFO to be drained and for HW to finish processing
+  // the last byte.
+  while (!uart_tx_idle(uart)) {
+2008088c:	dd75                	beqz	a0,20080888 <dif_uart_byte_send_polled+0x14>
+2008088e:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:451
+  }
+
+  return kDifUartOk;
+}
+20080890:	8082                	ret
+20080892:	4509                	li	a0,2
+20080894:	8082                	ret
+
+20080896 <dif_uart_byte_receive_polled>:
+dif_uart_byte_receive_polled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:454
+
+dif_uart_result_t dif_uart_byte_receive_polled(const dif_uart_t *uart,
+                                               uint8_t *byte) {
+20080896:	862a                	mv	a2,a0
+20080898:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:455
+  if (uart == NULL || byte == NULL) {
+2008089a:	c205                	beqz	a2,200808ba <dif_uart_byte_receive_polled+0x24>
+2008089c:	cd99                	beqz	a1,200808ba <dif_uart_byte_receive_polled+0x24>
+2008089e:	4210                	lw	a2,0(a2)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+200808a0:	4a08                	lw	a0,16(a2)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+200808a2:	02057513          	andi	a0,a0,32
+dif_uart_byte_receive_polled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:460
+    return kDifUartBadArg;
+  }
+
+  // Busy wait for the RX message in the FIFO.
+  while (uart_rx_empty(uart)) {
+200808a6:	fd6d                	bnez	a0,200808a0 <dif_uart_byte_receive_polled+0xa>
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+200808a8:	4a08                	lw	a0,16(a2)
+bitfield_bit32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:125
+200808aa:	02057693          	andi	a3,a0,32
+200808ae:	4501                	li	a0,0
+uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:127
+  while ((bytes_read < bytes_requested) && !uart_rx_empty(uart)) {
+200808b0:	e689                	bnez	a3,200808ba <dif_uart_byte_receive_polled+0x24>
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+200808b2:	4a50                	lw	a2,20(a2)
+200808b4:	4501                	li	a0,0
+uart_bytes_receive():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:128
+    data[bytes_read] = uart_rx_fifo_read(uart);
+200808b6:	00c58023          	sb	a2,0(a1)
+dif_uart_byte_receive_polled():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:466
+  }
+
+  (void)uart_bytes_receive(uart, 1, byte);
+
+  return kDifUartOk;
+}
+200808ba:	8082                	ret
+
+200808bc <dif_uart_rx_bytes_available>:
+dif_uart_rx_bytes_available():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:469
+
+dif_uart_result_t dif_uart_rx_bytes_available(const dif_uart_t *uart,
+                                              size_t *num_bytes) {
+200808bc:	862a                	mv	a2,a0
+200808be:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:470
+  if (uart == NULL || num_bytes == NULL) {
+200808c0:	ca09                	beqz	a2,200808d2 <dif_uart_rx_bytes_available+0x16>
+200808c2:	c981                	beqz	a1,200808d2 <dif_uart_rx_bytes_available+0x16>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:476
+    return kDifUartBadArg;
+  }
+
+  // RX FIFO fill level (in bytes).
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_FIFO_STATUS_REG_OFFSET);
+200808c4:	4208                	lw	a0,0(a2)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+200808c6:	5110                	lw	a2,32(a0)
+200808c8:	4501                	li	a0,0
+bitfield_field32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:60
+  return (bitfield >> field.index) & field.mask;
+200808ca:	8241                	srli	a2,a2,0x10
+200808cc:	03f67613          	andi	a2,a2,63
+dif_uart_rx_bytes_available():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:477
+  *num_bytes = (size_t)bitfield_field32_read(reg, UART_FIFO_STATUS_RXLVL_FIELD);
+200808d0:	c190                	sw	a2,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:480
+
+  return kDifUartOk;
+}
+200808d2:	8082                	ret
+
+200808d4 <dif_uart_tx_bytes_available>:
+dif_uart_tx_bytes_available():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:483
+
+dif_uart_result_t dif_uart_tx_bytes_available(const dif_uart_t *uart,
+                                              size_t *num_bytes) {
+200808d4:	862a                	mv	a2,a0
+200808d6:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:484
+  if (uart == NULL || num_bytes == NULL) {
+200808d8:	ce01                	beqz	a2,200808f0 <dif_uart_tx_bytes_available+0x1c>
+200808da:	c999                	beqz	a1,200808f0 <dif_uart_tx_bytes_available+0x1c>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:490
+    return kDifUartBadArg;
+  }
+
+  // TX FIFO fill level (in bytes).
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_FIFO_STATUS_REG_OFFSET);
+200808dc:	4208                	lw	a0,0(a2)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+200808de:	5110                	lw	a2,32(a0)
+200808e0:	4501                	li	a0,0
+bitfield_field32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:60
+200808e2:	03f67613          	andi	a2,a2,63
+200808e6:	02000693          	li	a3,32
+dif_uart_tx_bytes_available():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:493
+  uint32_t fill_bytes =
+      bitfield_field32_read(reg, UART_FIFO_STATUS_TXLVL_FIELD);
+  *num_bytes = kDifUartFifoSizeBytes - fill_bytes;
+200808ea:	40c68633          	sub	a2,a3,a2
+200808ee:	c190                	sw	a2,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:496
+
+  return kDifUartOk;
+}
+200808f0:	8082                	ret
+
+200808f2 <dif_uart_fifo_reset>:
+dif_uart_fifo_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:500
+
+dif_uart_result_t dif_uart_fifo_reset(const dif_uart_t *uart,
+                                      dif_uart_fifo_reset_t reset) {
+  if (uart == NULL) {
+200808f2:	c11d                	beqz	a0,20080918 <dif_uart_fifo_reset+0x26>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:505
+    return kDifUartBadArg;
+  }
+
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET);
+200808f4:	4110                	lw	a2,0(a0)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+200808f6:	4e48                	lw	a0,28(a2)
+dif_uart_fifo_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:507
+
+  if (reset == kDifUartFifoResetRx || reset == kDifUartFifoResetAll) {
+200808f8:	ffd5f693          	andi	a3,a1,-3
+200808fc:	0016b693          	seqz	a3,a3
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:511
+    reg = bitfield_bit32_write(reg, UART_FIFO_CTRL_RXRST_BIT, true);
+  }
+
+  if (reset == kDifUartFifoResetTx || reset == kDifUartFifoResetAll) {
+20080900:	fff58713          	addi	a4,a1,-1
+20080904:	4789                	li	a5,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:507
+  if (reset == kDifUartFifoResetRx || reset == kDifUartFifoResetAll) {
+20080906:	00d565b3          	or	a1,a0,a3
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:511
+  if (reset == kDifUartFifoResetTx || reset == kDifUartFifoResetAll) {
+2008090a:	00f77463          	bgeu	a4,a5,20080912 <dif_uart_fifo_reset+0x20>
+2008090e:	0025e593          	ori	a1,a1,2
+20080912:	4501                	li	a0,0
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+20080914:	ce4c                	sw	a1,28(a2)
+dif_uart_fifo_reset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:518
+  }
+
+  mmio_region_write32(uart->params.base_addr, UART_FIFO_CTRL_REG_OFFSET, reg);
+
+  return kDifUartOk;
+}
+20080916:	8082                	ret
+20080918:	4509                	li	a0,2
+2008091a:	8082                	ret
+
+2008091c <dif_uart_loopback_set>:
+dif_uart_loopback_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:523
+
+dif_uart_result_t dif_uart_loopback_set(const dif_uart_t *uart,
+                                        dif_uart_loopback_t loopback,
+                                        dif_uart_toggle_t enable) {
+  if (uart == NULL) {
+2008091c:	c515                	beqz	a0,20080948 <dif_uart_loopback_set+0x2c>
+2008091e:	4681                	li	a3,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:529
+    return kDifUartBadArg;
+  }
+
+  uint32_t index = loopback ? UART_CTRL_LLPBK_BIT : UART_CTRL_SLPBK_BIT;
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_CTRL_REG_OFFSET);
+20080920:	4108                	lw	a0,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:527
+  uint32_t index = loopback ? UART_CTRL_LLPBK_BIT : UART_CTRL_SLPBK_BIT;
+20080922:	0015b593          	seqz	a1,a1
+20080926:	4715                	li	a4,5
+20080928:	40b705b3          	sub	a1,a4,a1
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+2008092c:	4558                	lw	a4,12(a0)
+dif_uart_loopback_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:530
+  reg = bitfield_bit32_write(reg, index, enable == kDifUartToggleEnabled);
+2008092e:	00163613          	seqz	a2,a2
+20080932:	4785                	li	a5,1
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:79
+  bitfield &= ~(field.mask << field.index);
+20080934:	00b797b3          	sll	a5,a5,a1
+20080938:	fff7c793          	not	a5,a5
+2008093c:	8f7d                	and	a4,a4,a5
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:80
+  bitfield |= (value & field.mask) << field.index;
+2008093e:	00b615b3          	sll	a1,a2,a1
+20080942:	8dd9                	or	a1,a1,a4
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+20080944:	c54c                	sw	a1,12(a0)
+20080946:	a011                	j	2008094a <dif_uart_loopback_set+0x2e>
+20080948:	4689                	li	a3,2
+dif_uart_loopback_set():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:534
+  mmio_region_write32(uart->params.base_addr, UART_CTRL_REG_OFFSET, reg);
+
+  return kDifUartOk;
+}
+2008094a:	8536                	mv	a0,a3
+2008094c:	8082                	ret
+
+2008094e <dif_uart_enable_rx_timeout>:
+dif_uart_enable_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:537
+
+dif_uart_result_t dif_uart_enable_rx_timeout(const dif_uart_t *uart,
+                                             uint32_t duration_ticks) {
+2008094e:	862a                	mv	a2,a0
+20080950:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:538
+  if (uart == NULL || (duration_ticks & ~UART_TIMEOUT_CTRL_VAL_MASK) != 0) {
+20080952:	ca11                	beqz	a2,20080966 <dif_uart_enable_rx_timeout+0x18>
+20080954:	0185d693          	srli	a3,a1,0x18
+20080958:	e699                	bnez	a3,20080966 <dif_uart_enable_rx_timeout+0x18>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:545
+  }
+
+  uint32_t reg = bitfield_bit32_write(0, UART_TIMEOUT_CTRL_EN_BIT, true);
+  reg =
+      bitfield_field32_write(reg, UART_TIMEOUT_CTRL_VAL_FIELD, duration_ticks);
+  mmio_region_write32(uart->params.base_addr, UART_TIMEOUT_CTRL_REG_OFFSET,
+2008095a:	4210                	lw	a2,0(a2)
+2008095c:	4501                	li	a0,0
+2008095e:	800006b7          	lui	a3,0x80000
+bitfield_field32_write():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:80
+20080962:	8dd5                	or	a1,a1,a3
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+20080964:	d64c                	sw	a1,44(a2)
+dif_uart_enable_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:549
+                      reg);
+
+  return kDifUartOk;
+}
+20080966:	8082                	ret
+
+20080968 <dif_uart_disable_rx_timeout>:
+dif_uart_disable_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:552
+
+dif_uart_result_t dif_uart_disable_rx_timeout(const dif_uart_t *uart) {
+  if (uart == NULL) {
+20080968:	c511                	beqz	a0,20080974 <dif_uart_disable_rx_timeout+0xc>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:558
+    return kDifUartBadArg;
+  }
+
+  uint32_t reg = bitfield_bit32_write(0, UART_TIMEOUT_CTRL_EN_BIT, false);
+  reg = bitfield_field32_write(reg, UART_TIMEOUT_CTRL_VAL_FIELD, 0);
+  mmio_region_write32(uart->params.base_addr, UART_TIMEOUT_CTRL_REG_OFFSET,
+2008096a:	410c                	lw	a1,0(a0)
+2008096c:	4501                	li	a0,0
+mmio_region_write32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:133
+2008096e:	0205a623          	sw	zero,44(a1)
+dif_uart_disable_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:562
+                      reg);
+
+  return kDifUartOk;
+}
+20080972:	8082                	ret
+20080974:	4509                	li	a0,2
+20080976:	8082                	ret
+
+20080978 <dif_uart_get_rx_timeout>:
+dif_uart_get_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:566
+
+dif_uart_result_t dif_uart_get_rx_timeout(const dif_uart_t *uart,
+                                          dif_uart_toggle_t *status,
+                                          uint32_t *duration_ticks) {
+20080978:	86aa                	mv	a3,a0
+2008097a:	4509                	li	a0,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:567
+  if (uart == NULL || status == NULL) {
+2008097c:	ce99                	beqz	a3,2008099a <dif_uart_get_rx_timeout+0x22>
+2008097e:	cd91                	beqz	a1,2008099a <dif_uart_get_rx_timeout+0x22>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:572
+    return kDifUartBadArg;
+  }
+
+  uint32_t reg =
+      mmio_region_read32(uart->params.base_addr, UART_TIMEOUT_CTRL_REG_OFFSET);
+20080980:	4288                	lw	a0,0(a3)
+mmio_region_read32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/mmio.h:101
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+20080982:	5554                	lw	a3,44(a0)
+dif_uart_get_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:573
+  *status = bitfield_bit32_read(reg, UART_TIMEOUT_CTRL_EN_BIT)
+20080984:	fff6c513          	not	a0,a3
+20080988:	817d                	srli	a0,a0,0x1f
+2008098a:	c188                	sw	a0,0(a1)
+2008098c:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:577
+                ? kDifUartToggleEnabled
+                : kDifUartToggleDisabled;
+
+  if (duration_ticks != NULL) {
+2008098e:	c611                	beqz	a2,2008099a <dif_uart_get_rx_timeout+0x22>
+20080990:	010005b7          	lui	a1,0x1000
+20080994:	15fd                	addi	a1,a1,-1
+bitfield_field32_read():
+/home/gl/work/opentitan/repo/sw/device/lib/base/bitfield.h:60
+  return (bitfield >> field.index) & field.mask;
+20080996:	8df5                	and	a1,a1,a3
+dif_uart_get_rx_timeout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:578
+    *duration_ticks = bitfield_field32_read(reg, UART_TIMEOUT_CTRL_VAL_FIELD);
+20080998:	c20c                	sw	a1,0(a2)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/dif/dif_uart.c:582
+  }
+
+  return kDifUartOk;
+}
+2008099a:	8082                	ret
+
+2008099c <wait_for_interrupt>:
+wait_for_interrupt():
+/home/gl/work/opentitan/repo/sw/device/lib/runtime/hart.h:25
+2008099c:	10500073          	wfi
+200809a0:	8082                	ret
+
+200809a2 <usleep>:
+usleep():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/hart.c:14
+#include "sw/device/lib/arch/device.h"
+#include "sw/device/lib/runtime/ibex.h"
+
+extern void wait_for_interrupt(void);
+
+void usleep(uint32_t usec) {
+200809a2:	1141                	addi	sp,sp,-16
+200809a4:	c606                	sw	ra,12(sp)
+200809a6:	00001597          	auipc	a1,0x1
+200809aa:	99258593          	addi	a1,a1,-1646 # 20081338 <kClockFreqCpuHz>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/hart.c:15
+  uint64_t cycles = kClockFreqCpuHz * usec / 1000000;
+200809ae:	41d0                	lw	a2,4(a1)
+200809b0:	4194                	lw	a3,0(a1)
+200809b2:	02a605b3          	mul	a1,a2,a0
+200809b6:	02a6b633          	mulhu	a2,a3,a0
+200809ba:	95b2                	add	a1,a1,a2
+200809bc:	02a68533          	mul	a0,a3,a0
+200809c0:	000f4637          	lui	a2,0xf4
+200809c4:	24060613          	addi	a2,a2,576 # f4240 <_dv_log_offset+0xe4240>
+200809c8:	4681                	li	a3,0
+200809ca:	237d                	jal	20080f78 <__udivdi3>
+ibex_mcycle_read():
+/home/gl/work/opentitan/repo/sw/device/lib/runtime/ibex.h:32
+ */
+inline uint64_t ibex_mcycle_read(void) {
+  uint32_t cycle_low = 0;
+  uint32_t cycle_high = 0;
+  uint32_t cycle_high_2 = 0;
+  asm volatile(
+200809cc:	4801                	li	a6,0
+200809ce:	4701                	li	a4,0
+
+200809d0 <read0>:
+200809d0:	b8002873          	csrr	a6,mcycleh
+200809d4:	b00026f3          	csrr	a3,mcycle
+200809d8:	b8002773          	csrr	a4,mcycleh
+200809dc:	fee81ae3          	bne	a6,a4,200809d0 <read0>
+200809e0:	4781                	li	a5,0
+200809e2:	4601                	li	a2,0
+
+200809e4 <read1>:
+200809e4:	b80027f3          	csrr	a5,mcycleh
+200809e8:	b0002773          	csrr	a4,mcycle
+200809ec:	b8002673          	csrr	a2,mcycleh
+200809f0:	fec79ae3          	bne	a5,a2,200809e4 <read1>
+usleep():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/hart.c:17
+  uint64_t start = ibex_mcycle_read();
+  while ((ibex_mcycle_read() - start) < cycles) {
+200809f4:	00d73633          	sltu	a2,a4,a3
+200809f8:	410787b3          	sub	a5,a5,a6
+200809fc:	8f91                	sub	a5,a5,a2
+200809fe:	00b78663          	beq	a5,a1,20080a0a <read1+0x26>
+20080a02:	00b7b733          	sltu	a4,a5,a1
+20080a06:	ff69                	bnez	a4,200809e0 <read0+0x10>
+20080a08:	a031                	j	20080a14 <read1+0x30>
+20080a0a:	40d70633          	sub	a2,a4,a3
+20080a0e:	00a63733          	sltu	a4,a2,a0
+20080a12:	f779                	bnez	a4,200809e0 <read0+0x10>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/hart.c:19
+  }
+}
+20080a14:	40b2                	lw	ra,12(sp)
+20080a16:	0141                	addi	sp,sp,16
+20080a18:	8082                	ret
+
+20080a1a <abort>:
+wait_for_interrupt():
+/home/gl/work/opentitan/repo/sw/device/lib/runtime/hart.h:25
+20080a1a:	10500073          	wfi
+abort():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/hart.c:22
+
+noreturn void abort(void) {
+  while (true) {
+20080a1e:	bff5                	j	20080a1a <abort>
+
+20080a20 <base_set_stdout>:
+base_set_stdout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:56
+static buffer_sink_t base_stdout = {
+    .data = NULL, .sink = &base_dev_null,
+};
+
+void base_set_stdout(buffer_sink_t out) {
+  if (out.sink == NULL) {
+20080a20:	e589                	bnez	a1,20080a2a <base_set_stdout+0xa>
+20080a22:	00000597          	auipc	a1,0x0
+20080a26:	01658593          	addi	a1,a1,22 # 20080a38 <base_dev_null>
+20080a2a:	eff7f617          	auipc	a2,0xeff7f
+20080a2e:	5d660613          	addi	a2,a2,1494 # 10000000 <_data_start>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:59
+    out.sink = &base_dev_null;
+  }
+  base_stdout = out;
+20080a32:	c208                	sw	a0,0(a2)
+20080a34:	c24c                	sw	a1,4(a2)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:60
+}
+20080a36:	8082                	ret
+
+20080a38 <base_dev_null>:
+base_dev_null():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:48
+static size_t base_dev_null(void *data, const char *buf, size_t len) {
+20080a38:	8532                	mv	a0,a2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:49
+  return len;
+20080a3a:	8082                	ret
+
+20080a3c <base_uart_stdout>:
+base_uart_stdout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:72
+    }
+  }
+  return len;
+}
+
+void base_uart_stdout(const dif_uart_t *uart) {
+20080a3c:	eff7f597          	auipc	a1,0xeff7f
+20080a40:	5c458593          	addi	a1,a1,1476 # 10000000 <_data_start>
+base_set_stdout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:59
+  base_stdout = out;
+20080a44:	c188                	sw	a0,0(a1)
+20080a46:	00000517          	auipc	a0,0x0
+20080a4a:	00c50513          	addi	a0,a0,12 # 20080a52 <base_dev_uart>
+20080a4e:	c1c8                	sw	a0,4(a1)
+base_uart_stdout():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:75
+  base_set_stdout(
+      (buffer_sink_t){.data = (void *)uart, .sink = &base_dev_uart});
+}
+20080a50:	8082                	ret
+
+20080a52 <base_dev_uart>:
+base_dev_uart():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:62
+static size_t base_dev_uart(void *data, const char *buf, size_t len) {
+20080a52:	1101                	addi	sp,sp,-32
+20080a54:	ce06                	sw	ra,28(sp)
+20080a56:	cc22                	sw	s0,24(sp)
+20080a58:	ca26                	sw	s1,20(sp)
+20080a5a:	c84a                	sw	s2,16(sp)
+20080a5c:	c64e                	sw	s3,12(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:64
+  for (size_t i = 0; i < len; ++i) {
+20080a5e:	c20d                	beqz	a2,20080a80 <base_dev_uart+0x2e>
+20080a60:	8432                	mv	s0,a2
+20080a62:	892e                	mv	s2,a1
+20080a64:	89aa                	mv	s3,a0
+20080a66:	4481                	li	s1,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:65
+    if (dif_uart_byte_send_polled(uart, (uint8_t)buf[i]) != kDifUartOk) {
+20080a68:	00990533          	add	a0,s2,s1
+20080a6c:	00054583          	lbu	a1,0(a0)
+20080a70:	854e                	mv	a0,s3
+20080a72:	3509                	jal	20080874 <dif_uart_byte_send_polled>
+20080a74:	e519                	bnez	a0,20080a82 <base_dev_uart+0x30>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:64
+  for (size_t i = 0; i < len; ++i) {
+20080a76:	0485                	addi	s1,s1,1
+20080a78:	fe9418e3          	bne	s0,s1,20080a68 <base_dev_uart+0x16>
+20080a7c:	84a2                	mv	s1,s0
+20080a7e:	a011                	j	20080a82 <base_dev_uart+0x30>
+20080a80:	4481                	li	s1,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:70
+}
+20080a82:	8526                	mv	a0,s1
+20080a84:	49b2                	lw	s3,12(sp)
+20080a86:	4942                	lw	s2,16(sp)
+20080a88:	44d2                	lw	s1,20(sp)
+20080a8a:	4462                	lw	s0,24(sp)
+20080a8c:	40f2                	lw	ra,28(sp)
+20080a8e:	6105                	addi	sp,sp,32
+20080a90:	8082                	ret
+
+20080a92 <base_printf>:
+base_printf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:77
+
+size_t base_printf(const char *format, ...) {
+20080a92:	7179                	addi	sp,sp,-48
+20080a94:	c606                	sw	ra,12(sp)
+20080a96:	d646                	sw	a7,44(sp)
+20080a98:	d442                	sw	a6,40(sp)
+20080a9a:	d23e                	sw	a5,36(sp)
+20080a9c:	d03a                	sw	a4,32(sp)
+20080a9e:	ce36                	sw	a3,28(sp)
+20080aa0:	cc32                	sw	a2,24(sp)
+20080aa2:	ca2e                	sw	a1,20(sp)
+20080aa4:	eff7f597          	auipc	a1,0xeff7f
+20080aa8:	55c58593          	addi	a1,a1,1372 # 10000000 <_data_start>
+base_vprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:86
+  va_end(args);
+  return bytes_left;
+}
+
+size_t base_vprintf(const char *format, va_list args) {
+  return base_vfprintf(base_stdout, format, args);
+20080aac:	4190                	lw	a2,0(a1)
+20080aae:	41cc                	lw	a1,4(a1)
+20080ab0:	872a                	mv	a4,a0
+20080ab2:	0854                	addi	a3,sp,20
+base_printf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:79
+  va_start(args, format);
+20080ab4:	c436                	sw	a3,8(sp)
+base_vprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:86
+  return base_vfprintf(base_stdout, format, args);
+20080ab6:	8532                	mv	a0,a2
+20080ab8:	863a                	mv	a2,a4
+20080aba:	200d                	jal	20080adc <base_vfprintf>
+base_printf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:82
+  return bytes_left;
+20080abc:	40b2                	lw	ra,12(sp)
+20080abe:	6145                	addi	sp,sp,48
+20080ac0:	8082                	ret
+
+20080ac2 <base_vprintf>:
+base_vprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:85
+size_t base_vprintf(const char *format, va_list args) {
+20080ac2:	eff7f697          	auipc	a3,0xeff7f
+20080ac6:	53e68693          	addi	a3,a3,1342 # 10000000 <_data_start>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:86
+  return base_vfprintf(base_stdout, format, args);
+20080aca:	4290                	lw	a2,0(a3)
+20080acc:	42d4                	lw	a3,4(a3)
+20080ace:	872e                	mv	a4,a1
+20080ad0:	87aa                	mv	a5,a0
+20080ad2:	8532                	mv	a0,a2
+20080ad4:	85b6                	mv	a1,a3
+20080ad6:	863e                	mv	a2,a5
+20080ad8:	86ba                	mv	a3,a4
+20080ada:	a009                	j	20080adc <base_vfprintf>
+
+20080adc <base_vfprintf>:
+base_vfprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:344
+      *bytes_written += out.sink(out.data, kUnknownSpec, sizeof(kUnknownSpec));
+    }
+  }
+}
+
+size_t base_vfprintf(buffer_sink_t out, const char *format, va_list args) {
+20080adc:	7139                	addi	sp,sp,-64
+20080ade:	de06                	sw	ra,60(sp)
+20080ae0:	dc22                	sw	s0,56(sp)
+20080ae2:	da26                	sw	s1,52(sp)
+20080ae4:	d84a                	sw	s2,48(sp)
+20080ae6:	d64e                	sw	s3,44(sp)
+20080ae8:	d452                	sw	s4,40(sp)
+20080aea:	d256                	sw	s5,36(sp)
+20080aec:	d05a                	sw	s6,32(sp)
+20080aee:	ce5e                	sw	s7,28(sp)
+20080af0:	cc62                	sw	s8,24(sp)
+20080af2:	ca66                	sw	s9,20(sp)
+20080af4:	c86a                	sw	s10,16(sp)
+20080af6:	c66e                	sw	s11,12(sp)
+20080af8:	8bb2                	mv	s7,a2
+20080afa:	892a                	mv	s2,a0
+20080afc:	c236                	sw	a3,4(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:345
+  if (out.sink == NULL) {
+20080afe:	c199                	beqz	a1,20080b04 <base_vfprintf+0x28>
+20080b00:	89ae                	mv	s3,a1
+20080b02:	a029                	j	20080b0c <base_vfprintf+0x30>
+20080b04:	00000997          	auipc	s3,0x0
+20080b08:	f3498993          	addi	s3,s3,-204 # 20080a38 <base_dev_null>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:354
+  // NOTE: This copy is necessary on amd64 and other platforms, where
+  // `va_list` is a fixed array type (and, as such, decays to a pointer in
+  // an argument list). On PSABI RV32IMC, however, `va_list` is a `void*`, so
+  // this is a copy of the pointer, not the array.
+  va_list args_copy;
+  va_copy(args_copy, args);
+20080b0c:	c036                	sw	a3,0(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:357
+
+  size_t bytes_written = 0;
+  while (format[0] != '\0') {
+20080b0e:	000bc503          	lbu	a0,0(s7)
+20080b12:	28050f63          	beqz	a0,20080db0 <base_vfprintf+0x2d4>
+20080b16:	4b01                	li	s6,0
+20080b18:	02500c13          	li	s8,37
+20080b1c:	4ca5                	li	s9,9
+20080b1e:	02000d13          	li	s10,32
+20080b22:	06800d93          	li	s11,104
+20080b26:	00001a17          	auipc	s4,0x1
+20080b2a:	94ca0a13          	addi	s4,s4,-1716 # 20081472 <__clz_tab+0x10e>
+20080b2e:	4aa9                	li	s5,10
+consume_until_percent():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:143
+  size_t text_len = 0;
+20080b30:	4481                	li	s1,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:146
+    if (c == '\0' || c == kPercent) {
+20080b32:	0ff57413          	andi	s0,a0,255
+20080b36:	01840963          	beq	s0,s8,20080b48 <base_vfprintf+0x6c>
+20080b3a:	c419                	beqz	s0,20080b48 <base_vfprintf+0x6c>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:145
+    char c = (*format)[text_len];
+20080b3c:	009b8533          	add	a0,s7,s1
+20080b40:	00154503          	lbu	a0,1(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:153
+    ++text_len;
+20080b44:	0485                	addi	s1,s1,1
+20080b46:	b7f5                	j	20080b32 <base_vfprintf+0x56>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:147
+      if (text_len > 0) {
+20080b48:	c491                	beqz	s1,20080b54 <base_vfprintf+0x78>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:148
+        *bytes_written += out.sink(out.data, *format, text_len);
+20080b4a:	854a                	mv	a0,s2
+20080b4c:	85de                	mv	a1,s7
+20080b4e:	8626                	mv	a2,s1
+20080b50:	9982                	jalr	s3
+20080b52:	9b2a                	add	s6,s6,a0
+base_vfprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:358
+    if (!consume_until_percent(out, &format, &bytes_written)) {
+20080b54:	24040f63          	beqz	s0,20080db2 <base_vfprintf+0x2d6>
+consume_format_specifier():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:188
+    char c = (*format)[spec_len];
+20080b58:	009b8633          	add	a2,s7,s1
+20080b5c:	00164503          	lbu	a0,1(a2)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:189
+    if (c == '\0') {
+20080b60:	22050f63          	beqz	a0,20080d9e <base_vfprintf+0x2c2>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:193
+    if (c < '0' || c > '9') {
+20080b64:	fd050593          	addi	a1,a0,-48
+20080b68:	0ff5f593          	andi	a1,a1,255
+20080b6c:	00bcf863          	bgeu	s9,a1,20080b7c <base_vfprintf+0xa0>
+20080b70:	4401                	li	s0,0
+20080b72:	4581                	li	a1,0
+20080b74:	4605                	li	a2,1
+20080b76:	028d7f63          	bgeu	s10,s0,20080bb4 <base_vfprintf+0xd8>
+20080b7a:	aca1                	j	20080dd2 <base_vfprintf+0x2f6>
+20080b7c:	4581                	li	a1,0
+20080b7e:	4401                	li	s0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:189
+    if (c == '\0') {
+20080b80:	0609                	addi	a2,a2,2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:188
+    char c = (*format)[spec_len];
+20080b82:	00b606b3          	add	a3,a2,a1
+20080b86:	0006c683          	lbu	a3,0(a3)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:189
+    if (c == '\0') {
+20080b8a:	20068a63          	beqz	a3,20080d9e <base_vfprintf+0x2c2>
+20080b8e:	0ff57513          	andi	a0,a0,255
+20080b92:	03540733          	mul	a4,s0,s5
+20080b96:	953a                	add	a0,a0,a4
+20080b98:	fd050413          	addi	s0,a0,-48
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:193
+    if (c < '0' || c > '9') {
+20080b9c:	fd068513          	addi	a0,a3,-48
+20080ba0:	0ff57713          	andi	a4,a0,255
+20080ba4:	0585                	addi	a1,a1,1
+20080ba6:	8536                	mv	a0,a3
+20080ba8:	fcecfde3          	bgeu	s9,a4,20080b82 <base_vfprintf+0xa6>
+20080bac:	4601                	li	a2,0
+20080bae:	8536                	mv	a0,a3
+20080bb0:	228d6163          	bltu	s10,s0,20080dd2 <base_vfprintf+0x2f6>
+20080bb4:	008036b3          	snez	a3,s0
+20080bb8:	8e55                	or	a2,a2,a3
+20080bba:	20060c63          	beqz	a2,20080dd2 <base_vfprintf+0x2f6>
+process_specifier():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:263
+  switch (spec.type) {
+20080bbe:	95de                	add	a1,a1,s7
+20080bc0:	95a6                	add	a1,a1,s1
+20080bc2:	00258b93          	addi	s7,a1,2
+20080bc6:	02adce63          	blt	s11,a0,20080c02 <base_vfprintf+0x126>
+20080bca:	06100593          	li	a1,97
+20080bce:	06a5d563          	bge	a1,a0,20080c38 <base_vfprintf+0x15c>
+20080bd2:	06300593          	li	a1,99
+20080bd6:	0ca5cb63          	blt	a1,a0,20080cac <base_vfprintf+0x1d0>
+20080bda:	06200593          	li	a1,98
+20080bde:	14b50a63          	beq	a0,a1,20080d32 <base_vfprintf+0x256>
+20080be2:	06300593          	li	a1,99
+20080be6:	18b51f63          	bne	a0,a1,20080d84 <base_vfprintf+0x2a8>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:269
+      char value = (char)va_arg(*args, uint32_t);
+20080bea:	4502                	lw	a0,0(sp)
+20080bec:	00450593          	addi	a1,a0,4
+20080bf0:	c02e                	sw	a1,0(sp)
+20080bf2:	4108                	lw	a0,0(a0)
+20080bf4:	00a105a3          	sb	a0,11(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:270
+      *bytes_written += out.sink(out.data, &value, 1);
+20080bf8:	4605                	li	a2,1
+20080bfa:	854a                	mv	a0,s2
+20080bfc:	00b10593          	addi	a1,sp,11
+20080c00:	aa41                	j	20080d90 <base_vfprintf+0x2b4>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:263
+  switch (spec.type) {
+20080c02:	07200593          	li	a1,114
+20080c06:	04a5dd63          	bge	a1,a0,20080c60 <base_vfprintf+0x184>
+20080c0a:	07700593          	li	a1,119
+20080c0e:	0aa5c663          	blt	a1,a0,20080cba <base_vfprintf+0x1de>
+20080c12:	07300593          	li	a1,115
+20080c16:	12b50963          	beq	a0,a1,20080d48 <base_vfprintf+0x26c>
+20080c1a:	07500593          	li	a1,117
+20080c1e:	16b51363          	bne	a0,a1,20080d84 <base_vfprintf+0x2a8>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:329
+      uint32_t value = va_arg(*args, uint32_t);
+20080c22:	4502                	lw	a0,0(sp)
+20080c24:	00450593          	addi	a1,a0,4
+20080c28:	c02e                	sw	a1,0(sp)
+20080c2a:	4110                	lw	a2,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:330
+      *bytes_written += write_digits(out, value, spec.width, 10, kDigitsLow);
+20080c2c:	00000797          	auipc	a5,0x0
+20080c30:	6d578793          	addi	a5,a5,1749 # 20081301 <kDigitsLow>
+20080c34:	4729                	li	a4,10
+20080c36:	a8cd                	j	20080d28 <base_vfprintf+0x24c>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:263
+  switch (spec.type) {
+20080c38:	13850763          	beq	a0,s8,20080d66 <base_vfprintf+0x28a>
+20080c3c:	04800593          	li	a1,72
+20080c40:	00b50663          	beq	a0,a1,20080c4c <base_vfprintf+0x170>
+20080c44:	05800593          	li	a1,88
+20080c48:	12b51e63          	bne	a0,a1,20080d84 <base_vfprintf+0x2a8>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:324
+      uint32_t value = va_arg(*args, uint32_t);
+20080c4c:	4502                	lw	a0,0(sp)
+20080c4e:	00450593          	addi	a1,a0,4
+20080c52:	c02e                	sw	a1,0(sp)
+20080c54:	4110                	lw	a2,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:325
+      *bytes_written += write_digits(out, value, spec.width, 16, kDigitsHigh);
+20080c56:	00000797          	auipc	a5,0x0
+20080c5a:	6bb78793          	addi	a5,a5,1723 # 20081311 <kDigitsHigh>
+20080c5e:	a0e1                	j	20080d26 <base_vfprintf+0x24a>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:263
+  switch (spec.type) {
+20080c60:	06900593          	li	a1,105
+20080c64:	06b50d63          	beq	a0,a1,20080cde <base_vfprintf+0x202>
+20080c68:	06f00593          	li	a1,111
+20080c6c:	10b50163          	beq	a0,a1,20080d6e <base_vfprintf+0x292>
+20080c70:	07000593          	li	a1,112
+20080c74:	10b51863          	bne	a0,a1,20080d84 <base_vfprintf+0x2a8>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:310
+      *bytes_written += out.sink(out.data, "0x", 2);
+20080c78:	00000597          	auipc	a1,0x0
+20080c7c:	7fe58593          	addi	a1,a1,2046 # 20081476 <__clz_tab+0x112>
+20080c80:	4609                	li	a2,2
+20080c82:	854a                	mv	a0,s2
+20080c84:	9982                	jalr	s3
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:311
+      uintptr_t value = va_arg(*args, uintptr_t);
+20080c86:	4582                	lw	a1,0(sp)
+20080c88:	00458613          	addi	a2,a1,4
+20080c8c:	c032                	sw	a2,0(sp)
+20080c8e:	4190                	lw	a2,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:310
+      *bytes_written += out.sink(out.data, "0x", 2);
+20080c90:	01650433          	add	s0,a0,s6
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:313
+          write_digits(out, value, sizeof(uintptr_t) * 2, 16, kDigitsLow);
+20080c94:	00000797          	auipc	a5,0x0
+20080c98:	66d78793          	addi	a5,a5,1645 # 20081301 <kDigitsLow>
+20080c9c:	46a1                	li	a3,8
+20080c9e:	4741                	li	a4,16
+20080ca0:	854a                	mv	a0,s2
+20080ca2:	85ce                	mv	a1,s3
+20080ca4:	2a55                	jal	20080e58 <write_digits>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:312
+      *bytes_written +=
+20080ca6:	00a40b33          	add	s6,s0,a0
+20080caa:	a0ed                	j	20080d94 <base_vfprintf+0x2b8>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:263
+  switch (spec.type) {
+20080cac:	06400593          	li	a1,100
+20080cb0:	02b50763          	beq	a0,a1,20080cde <base_vfprintf+0x202>
+20080cb4:	07b50063          	beq	a0,s11,20080d14 <base_vfprintf+0x238>
+20080cb8:	a0f1                	j	20080d84 <base_vfprintf+0x2a8>
+20080cba:	07800593          	li	a1,120
+20080cbe:	04b50b63          	beq	a0,a1,20080d14 <base_vfprintf+0x238>
+20080cc2:	07a00593          	li	a1,122
+20080cc6:	0ab51f63          	bne	a0,a1,20080d84 <base_vfprintf+0x2a8>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:283
+      size_t len = va_arg(*args, size_t);
+20080cca:	4502                	lw	a0,0(sp)
+20080ccc:	00450593          	addi	a1,a0,4
+20080cd0:	c02e                	sw	a1,0(sp)
+20080cd2:	4110                	lw	a2,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:284
+      char *value = va_arg(*args, char *);
+20080cd4:	00850593          	addi	a1,a0,8
+20080cd8:	c02e                	sw	a1,0(sp)
+20080cda:	414c                	lw	a1,4(a0)
+20080cdc:	a84d                	j	20080d8e <base_vfprintf+0x2b2>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:290
+      uint32_t value = va_arg(*args, uint32_t);
+20080cde:	4502                	lw	a0,0(sp)
+20080ce0:	00450593          	addi	a1,a0,4
+20080ce4:	c02e                	sw	a1,0(sp)
+20080ce6:	4104                	lw	s1,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:291
+      if (((int32_t)value) < 0) {
+20080ce8:	557d                	li	a0,-1
+20080cea:	00954c63          	blt	a0,s1,20080d02 <base_vfprintf+0x226>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:292
+        *bytes_written += out.sink(out.data, "-", 1);
+20080cee:	00000597          	auipc	a1,0x0
+20080cf2:	78658593          	addi	a1,a1,1926 # 20081474 <__clz_tab+0x110>
+20080cf6:	4605                	li	a2,1
+20080cf8:	854a                	mv	a0,s2
+20080cfa:	9982                	jalr	s3
+20080cfc:	9b2a                	add	s6,s6,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:293
+        value = -value;
+20080cfe:	409004b3          	neg	s1,s1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:295
+      *bytes_written += write_digits(out, value, spec.width, 10, kDigitsLow);
+20080d02:	00000797          	auipc	a5,0x0
+20080d06:	5ff78793          	addi	a5,a5,1535 # 20081301 <kDigitsLow>
+20080d0a:	4729                	li	a4,10
+20080d0c:	854a                	mv	a0,s2
+20080d0e:	85ce                	mv	a1,s3
+20080d10:	8626                	mv	a2,s1
+20080d12:	a829                	j	20080d2c <base_vfprintf+0x250>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:318
+      uint32_t value = va_arg(*args, uint32_t);
+20080d14:	4502                	lw	a0,0(sp)
+20080d16:	00450593          	addi	a1,a0,4
+20080d1a:	c02e                	sw	a1,0(sp)
+20080d1c:	4110                	lw	a2,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:319
+      *bytes_written += write_digits(out, value, spec.width, 16, kDigitsLow);
+20080d1e:	00000797          	auipc	a5,0x0
+20080d22:	5e378793          	addi	a5,a5,1507 # 20081301 <kDigitsLow>
+20080d26:	4741                	li	a4,16
+20080d28:	854a                	mv	a0,s2
+20080d2a:	85ce                	mv	a1,s3
+20080d2c:	86a2                	mv	a3,s0
+20080d2e:	222d                	jal	20080e58 <write_digits>
+20080d30:	a08d                	j	20080d92 <base_vfprintf+0x2b6>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:334
+      uint32_t value = va_arg(*args, uint32_t);
+20080d32:	4502                	lw	a0,0(sp)
+20080d34:	00450593          	addi	a1,a0,4
+20080d38:	c02e                	sw	a1,0(sp)
+20080d3a:	4110                	lw	a2,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:335
+      *bytes_written += write_digits(out, value, spec.width, 2, kDigitsLow);
+20080d3c:	00000797          	auipc	a5,0x0
+20080d40:	5c578793          	addi	a5,a5,1477 # 20081301 <kDigitsLow>
+20080d44:	4709                	li	a4,2
+20080d46:	b7cd                	j	20080d28 <base_vfprintf+0x24c>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:274
+      char *value = va_arg(*args, char *);
+20080d48:	4502                	lw	a0,0(sp)
+20080d4a:	00450593          	addi	a1,a0,4
+20080d4e:	c02e                	sw	a1,0(sp)
+20080d50:	410c                	lw	a1,0(a0)
+20080d52:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:276
+      while (value[len] != '\0') {
+20080d54:	00a58633          	add	a2,a1,a0
+20080d58:	00064603          	lbu	a2,0(a2)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:277
+        ++len;
+20080d5c:	0505                	addi	a0,a0,1
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:276
+      while (value[len] != '\0') {
+20080d5e:	fa7d                	bnez	a2,20080d54 <base_vfprintf+0x278>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:279
+      *bytes_written += out.sink(out.data, value, len);
+20080d60:	fff50613          	addi	a2,a0,-1
+20080d64:	a02d                	j	20080d8e <base_vfprintf+0x2b2>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:265
+      *bytes_written += out.sink(out.data, "%", 1);
+20080d66:	4605                	li	a2,1
+20080d68:	854a                	mv	a0,s2
+20080d6a:	85d2                	mv	a1,s4
+20080d6c:	a015                	j	20080d90 <base_vfprintf+0x2b4>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:299
+      uint32_t value = va_arg(*args, uint32_t);
+20080d6e:	4502                	lw	a0,0(sp)
+20080d70:	00450593          	addi	a1,a0,4
+20080d74:	c02e                	sw	a1,0(sp)
+20080d76:	4110                	lw	a2,0(a0)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:300
+      *bytes_written += write_digits(out, value, spec.width, 8, kDigitsLow);
+20080d78:	00000797          	auipc	a5,0x0
+20080d7c:	58978793          	addi	a5,a5,1417 # 20081301 <kDigitsLow>
+20080d80:	4721                	li	a4,8
+20080d82:	b75d                	j	20080d28 <base_vfprintf+0x24c>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:339
+      *bytes_written += out.sink(out.data, kUnknownSpec, sizeof(kUnknownSpec));
+20080d84:	00000597          	auipc	a1,0x0
+20080d88:	59d58593          	addi	a1,a1,1437 # 20081321 <kUnknownSpec>
+20080d8c:	463d                	li	a2,15
+20080d8e:	854a                	mv	a0,s2
+20080d90:	9982                	jalr	s3
+20080d92:	9b2a                	add	s6,s6,a0
+base_vfprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:357
+  while (format[0] != '\0') {
+20080d94:	000bc503          	lbu	a0,0(s7)
+20080d98:	d8051ce3          	bnez	a0,20080b30 <base_vfprintf+0x54>
+20080d9c:	a819                	j	20080db2 <base_vfprintf+0x2d6>
+consume_format_specifier():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:190
+      *bytes_written += out.sink(out.data, kErrorNul, sizeof(kErrorNul));
+20080d9e:	00000597          	auipc	a1,0x0
+20080da2:	54658593          	addi	a1,a1,1350 # 200812e4 <kErrorNul>
+20080da6:	4645                	li	a2,17
+20080da8:	854a                	mv	a0,s2
+20080daa:	9982                	jalr	s3
+20080dac:	9b2a                	add	s6,s6,a0
+20080dae:	a011                	j	20080db2 <base_vfprintf+0x2d6>
+20080db0:	4b01                	li	s6,0
+base_vfprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:370
+
+    process_specifier(out, spec, &bytes_written, &args_copy);
+  }
+
+  va_end(args_copy);
+  return bytes_written;
+20080db2:	855a                	mv	a0,s6
+20080db4:	4db2                	lw	s11,12(sp)
+20080db6:	4d42                	lw	s10,16(sp)
+20080db8:	4cd2                	lw	s9,20(sp)
+20080dba:	4c62                	lw	s8,24(sp)
+20080dbc:	4bf2                	lw	s7,28(sp)
+20080dbe:	5b02                	lw	s6,32(sp)
+20080dc0:	5a92                	lw	s5,36(sp)
+20080dc2:	5a22                	lw	s4,40(sp)
+20080dc4:	59b2                	lw	s3,44(sp)
+20080dc6:	5942                	lw	s2,48(sp)
+20080dc8:	54d2                	lw	s1,52(sp)
+20080dca:	5462                	lw	s0,56(sp)
+20080dcc:	50f2                	lw	ra,60(sp)
+20080dce:	6121                	addi	sp,sp,64
+20080dd0:	8082                	ret
+consume_format_specifier():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:203
+    *bytes_written += out.sink(out.data, kErrorTooWide, sizeof(kErrorTooWide));
+20080dd2:	00000597          	auipc	a1,0x0
+20080dd6:	52358593          	addi	a1,a1,1315 # 200812f5 <kErrorTooWide>
+20080dda:	4631                	li	a2,12
+20080ddc:	b7f1                	j	20080da8 <base_vfprintf+0x2cc>
+
+20080dde <base_snprintf>:
+base_snprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:109
+size_t base_snprintf(char *buf, size_t len, const char *format, ...) {
+20080dde:	7179                	addi	sp,sp,-48
+20080de0:	ca06                	sw	ra,20(sp)
+20080de2:	d646                	sw	a7,44(sp)
+20080de4:	d442                	sw	a6,40(sp)
+20080de6:	d23e                	sw	a5,36(sp)
+20080de8:	d03a                	sw	a4,32(sp)
+20080dea:	ce36                	sw	a3,28(sp)
+20080dec:	0874                	addi	a3,sp,28
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:111
+  va_start(args, format);
+20080dee:	c836                	sw	a3,16(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:113
+  snprintf_captures_t data = {
+20080df0:	c42a                	sw	a0,8(sp)
+20080df2:	c62e                	sw	a1,12(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:119
+  size_t bytes_left = base_vfprintf(out, format, args);
+20080df4:	00000597          	auipc	a1,0x0
+20080df8:	01258593          	addi	a1,a1,18 # 20080e06 <snprintf_sink>
+20080dfc:	0028                	addi	a0,sp,8
+20080dfe:	39f9                	jal	20080adc <base_vfprintf>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:121
+  return bytes_left;
+20080e00:	40d2                	lw	ra,20(sp)
+20080e02:	6145                	addi	sp,sp,48
+20080e04:	8082                	ret
+
+20080e06 <snprintf_sink>:
+snprintf_sink():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:94
+static size_t snprintf_sink(void *data, const char *buf, size_t len) {
+20080e06:	1141                	addi	sp,sp,-16
+20080e08:	c606                	sw	ra,12(sp)
+20080e0a:	c422                	sw	s0,8(sp)
+20080e0c:	c226                	sw	s1,4(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:96
+  if (captures->bytes_left == 0) {
+20080e0e:	4140                	lw	s0,4(a0)
+20080e10:	c005                	beqz	s0,20080e30 <snprintf_sink+0x2a>
+20080e12:	84aa                	mv	s1,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:100
+  if (len > captures->bytes_left) {
+20080e14:	00c46363          	bltu	s0,a2,20080e1a <snprintf_sink+0x14>
+20080e18:	8432                	mv	s0,a2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:103
+  memcpy(captures->buf, buf, len);
+20080e1a:	4088                	lw	a0,0(s1)
+20080e1c:	8622                	mv	a2,s0
+20080e1e:	20f9                	jal	20080eec <memcpy>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:104
+  captures->buf += len;
+20080e20:	4088                	lw	a0,0(s1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:105
+  captures->bytes_left -= len;
+20080e22:	40cc                	lw	a1,4(s1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:104
+  captures->buf += len;
+20080e24:	9522                	add	a0,a0,s0
+20080e26:	c088                	sw	a0,0(s1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:105
+  captures->bytes_left -= len;
+20080e28:	40858533          	sub	a0,a1,s0
+20080e2c:	c0c8                	sw	a0,4(s1)
+20080e2e:	a011                	j	20080e32 <snprintf_sink+0x2c>
+20080e30:	4401                	li	s0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:107
+}
+20080e32:	8522                	mv	a0,s0
+20080e34:	4492                	lw	s1,4(sp)
+20080e36:	4422                	lw	s0,8(sp)
+20080e38:	40b2                	lw	ra,12(sp)
+20080e3a:	0141                	addi	sp,sp,16
+20080e3c:	8082                	ret
+
+20080e3e <base_fprintf>:
+base_fprintf():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:124
+size_t base_fprintf(buffer_sink_t out, const char *format, ...) {
+20080e3e:	1101                	addi	sp,sp,-32
+20080e40:	c206                	sw	ra,4(sp)
+20080e42:	ce46                	sw	a7,28(sp)
+20080e44:	cc42                	sw	a6,24(sp)
+20080e46:	ca3e                	sw	a5,20(sp)
+20080e48:	c83a                	sw	a4,16(sp)
+20080e4a:	c636                	sw	a3,12(sp)
+20080e4c:	0074                	addi	a3,sp,12
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:126
+  va_start(args, format);
+20080e4e:	c036                	sw	a3,0(sp)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:127
+  size_t bytes_left = base_vfprintf(out, format, args);
+20080e50:	3171                	jal	20080adc <base_vfprintf>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:129
+  return bytes_left;
+20080e52:	4092                	lw	ra,4(sp)
+20080e54:	6105                	addi	sp,sp,32
+20080e56:	8082                	ret
+
+20080e58 <write_digits>:
+write_digits():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:225
+                           uint32_t base, const char *glyphs) {
+20080e58:	7139                	addi	sp,sp,-64
+20080e5a:	de06                	sw	ra,60(sp)
+20080e5c:	dc22                	sw	s0,56(sp)
+20080e5e:	da26                	sw	s1,52(sp)
+20080e60:	d84a                	sw	s2,48(sp)
+20080e62:	d64e                	sw	s3,44(sp)
+20080e64:	892e                	mv	s2,a1
+20080e66:	89aa                	mv	s3,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:232
+  while (value > 0) {
+20080e68:	ca05                	beqz	a2,20080e98 <write_digits+0x40>
+20080e6a:	4501                	li	a0,0
+20080e6c:	02b10813          	addi	a6,sp,43
+20080e70:	84b2                	mv	s1,a2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:234
+    value /= base;
+20080e72:	02e65633          	divu	a2,a2,a4
+20080e76:	02e60433          	mul	s0,a2,a4
+20080e7a:	40848433          	sub	s0,s1,s0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:235
+    buffer[kWordBits - 1 - len] = glyphs[digit];
+20080e7e:	943e                	add	s0,s0,a5
+20080e80:	00040403          	lb	s0,0(s0)
+20080e84:	00a805b3          	add	a1,a6,a0
+20080e88:	00858023          	sb	s0,0(a1)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:232
+  while (value > 0) {
+20080e8c:	157d                	addi	a0,a0,-1
+20080e8e:	fee4f1e3          	bgeu	s1,a4,20080e70 <write_digits+0x18>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:238
+  width = width == 0 ? 1 : width;
+20080e92:	40a00633          	neg	a2,a0
+20080e96:	a011                	j	20080e9a <write_digits+0x42>
+20080e98:	4601                	li	a2,0
+20080e9a:	4485                	li	s1,1
+20080e9c:	c291                	beqz	a3,20080ea0 <write_digits+0x48>
+20080e9e:	84b6                	mv	s1,a3
+20080ea0:	02000513          	li	a0,32
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:239
+  width = width > kWordBits ? kWordBits : width;
+20080ea4:	00a4e463          	bltu	s1,a0,20080eac <write_digits+0x54>
+20080ea8:	02000493          	li	s1,32
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:240
+  while (len < width) {
+20080eac:	00967f63          	bgeu	a2,s1,20080eca <write_digits+0x72>
+20080eb0:	0068                	addi	a0,sp,12
+20080eb2:	8d05                	sub	a0,a0,s1
+20080eb4:	02050513          	addi	a0,a0,32
+20080eb8:	40c48433          	sub	s0,s1,a2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:241
+    buffer[kWordBits - len - 1] = '0';
+20080ebc:	03000593          	li	a1,48
+20080ec0:	8622                	mv	a2,s0
+20080ec2:	2081                	jal	20080f02 <memset>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:240
+  while (len < width) {
+20080ec4:	147d                	addi	s0,s0,-1
+20080ec6:	fc7d                	bnez	s0,20080ec4 <write_digits+0x6c>
+20080ec8:	8626                	mv	a2,s1
+20080eca:	0068                	addi	a0,sp,12
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:244
+  return out.sink(out.data, buffer + (kWordBits - len), len);
+20080ecc:	8d11                	sub	a0,a0,a2
+20080ece:	02050593          	addi	a1,a0,32
+20080ed2:	854e                	mv	a0,s3
+20080ed4:	9902                	jalr	s2
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/runtime/print.c:245
+}
+20080ed6:	59b2                	lw	s3,44(sp)
+20080ed8:	5942                	lw	s2,48(sp)
+20080eda:	54d2                	lw	s1,52(sp)
+20080edc:	5462                	lw	s0,56(sp)
+20080ede:	50f2                	lw	ra,60(sp)
+20080ee0:	6121                	addi	sp,sp,64
+20080ee2:	8082                	ret
+
+20080ee4 <read_32>:
+read_32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/memory.h:68
+  // Failing to get that particular codegen in either GCC or Clang with -O2 or
+  // -Os set shall be considred a bug in this function. The same applies to
+  // `write32()`.
+  ptr = __builtin_assume_aligned(ptr, alignof(uint32_t));
+  uint32_t val;
+  __builtin_memcpy(&val, ptr, sizeof(uint32_t));
+20080ee4:	4108                	lw	a0,0(a0)
+/home/gl/work/opentitan/repo/sw/device/lib/base/memory.h:69
+  return val;
+20080ee6:	8082                	ret
+
+20080ee8 <write_32>:
+write_32():
+/home/gl/work/opentitan/repo/sw/device/lib/base/memory.h:94
+inline void write_32(uint32_t value, void *ptr) {
+  // Both GCC and Clang optimize the code below into a single word-store on most
+  // platforms. See the comment in `read_32()` for more implementation-private
+  // information.
+  ptr = __builtin_assume_aligned(ptr, alignof(uint32_t));
+  __builtin_memcpy(ptr, &value, sizeof(uint32_t));
+20080ee8:	c188                	sw	a0,0(a1)
+/home/gl/work/opentitan/repo/sw/device/lib/base/memory.h:95
+}
+20080eea:	8082                	ret
+
+20080eec <memcpy>:
+memcpy():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:24
+
+#if !defined(HOST_BUILD)
+void *memcpy(void *restrict dest, const void *restrict src, size_t len) {
+  uint8_t *dest8 = (uint8_t *)dest;
+  uint8_t *src8 = (uint8_t *)src;
+  for (size_t i = 0; i < len; ++i) {
+20080eec:	ca11                	beqz	a2,20080f00 <memcpy+0x14>
+20080eee:	86aa                	mv	a3,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:25
+    dest8[i] = src8[i];
+20080ef0:	00058703          	lb	a4,0(a1)
+20080ef4:	00e68023          	sb	a4,0(a3)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:24
+  for (size_t i = 0; i < len; ++i) {
+20080ef8:	167d                	addi	a2,a2,-1
+20080efa:	0685                	addi	a3,a3,1
+20080efc:	0585                	addi	a1,a1,1
+20080efe:	fa6d                	bnez	a2,20080ef0 <memcpy+0x4>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:27
+  }
+  return dest;
+20080f00:	8082                	ret
+
+20080f02 <memset>:
+memset():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:35
+
+#if !defined(HOST_BUILD)
+void *memset(void *dest, int value, size_t len) {
+  uint8_t *dest8 = (uint8_t *)dest;
+  uint8_t value8 = (uint8_t)value;
+  for (size_t i = 0; i < len; ++i) {
+20080f02:	c619                	beqz	a2,20080f10 <memset+0xe>
+20080f04:	86aa                	mv	a3,a0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:36
+    dest8[i] = value8;
+20080f06:	00b68023          	sb	a1,0(a3)
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:35
+  for (size_t i = 0; i < len; ++i) {
+20080f0a:	167d                	addi	a2,a2,-1
+20080f0c:	0685                	addi	a3,a3,1
+20080f0e:	fe65                	bnez	a2,20080f06 <memset+0x4>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:38
+  }
+  return dest;
+20080f10:	8082                	ret
+
+20080f12 <memcmp>:
+memcmp():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:52
+};
+
+int memcmp(const void *lhs, const void *rhs, size_t len) {
+  const uint8_t *lhs8 = (uint8_t *)lhs;
+  const uint8_t *rhs8 = (uint8_t *)rhs;
+  for (size_t i = 0; i < len; ++i) {
+20080f12:	ce09                	beqz	a2,20080f2c <memcmp+0x1a>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:53
+    if (lhs8[i] < rhs8[i]) {
+20080f14:	00054683          	lbu	a3,0(a0)
+20080f18:	0005c703          	lbu	a4,0(a1)
+20080f1c:	00e6ea63          	bltu	a3,a4,20080f30 <memcmp+0x1e>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:55
+      return kMemCmpLt;
+    } else if (lhs8[i] > rhs8[i]) {
+20080f20:	00d76b63          	bltu	a4,a3,20080f36 <memcmp+0x24>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:52
+  for (size_t i = 0; i < len; ++i) {
+20080f24:	167d                	addi	a2,a2,-1
+20080f26:	0585                	addi	a1,a1,1
+20080f28:	0505                	addi	a0,a0,1
+20080f2a:	f66d                	bnez	a2,20080f14 <memcmp+0x2>
+20080f2c:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:60
+      return kMemCmpGt;
+    }
+  }
+  return kMemCmpEq;
+}
+20080f2e:	8082                	ret
+20080f30:	fd600513          	li	a0,-42
+20080f34:	8082                	ret
+20080f36:	02a00513          	li	a0,42
+20080f3a:	8082                	ret
+
+20080f3c <memchr>:
+memchr():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:67
+
+#if !defined(HOST_BUILD)
+void *memchr(const void *ptr, int value, size_t len) {
+  uint8_t *ptr8 = (uint8_t *)ptr;
+  uint8_t value8 = (uint8_t)value;
+  for (size_t i = 0; i < len; ++i) {
+20080f3c:	ca11                	beqz	a2,20080f50 <memchr+0x14>
+20080f3e:	0ff5f593          	andi	a1,a1,255
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:68
+    if (ptr8[i] == value8) {
+20080f42:	00054683          	lbu	a3,0(a0)
+20080f46:	00b68663          	beq	a3,a1,20080f52 <memchr+0x16>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:67
+  for (size_t i = 0; i < len; ++i) {
+20080f4a:	167d                	addi	a2,a2,-1
+20080f4c:	0505                	addi	a0,a0,1
+20080f4e:	fa75                	bnez	a2,20080f42 <memchr+0x6>
+20080f50:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:73
+      return ptr8 + i;
+    }
+  }
+  return NULL;
+}
+20080f52:	8082                	ret
+
+20080f54 <memrchr>:
+memrchr():
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:79
+#endif  // !defined(HOST_BUILD)
+
+void *memrchr(const void *ptr, int value, size_t len) {
+  uint8_t *ptr8 = (uint8_t *)ptr;
+  uint8_t value8 = (uint8_t)value;
+  for (size_t i = 0; i < len; ++i) {
+20080f54:	ce09                	beqz	a2,20080f6e <memrchr+0x1a>
+20080f56:	fff50693          	addi	a3,a0,-1
+20080f5a:	0ff5f593          	andi	a1,a1,255
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:81
+    size_t idx = len - i - 1;
+    if (ptr8[idx] == value8) {
+20080f5e:	00c68733          	add	a4,a3,a2
+20080f62:	00074703          	lbu	a4,0(a4)
+20080f66:	00b70663          	beq	a4,a1,20080f72 <memrchr+0x1e>
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:79
+  for (size_t i = 0; i < len; ++i) {
+20080f6a:	167d                	addi	a2,a2,-1
+20080f6c:	fa6d                	bnez	a2,20080f5e <memrchr+0xa>
+20080f6e:	4501                	li	a0,0
+/home/gl/work/opentitan/repo/build-out/../sw/device/lib/base/memory.c:86
+      return ptr8 + idx;
+    }
+  }
+  return NULL;
+}
+20080f70:	8082                	ret
+20080f72:	9532                	add	a0,a0,a2
+20080f74:	157d                	addi	a0,a0,-1
+20080f76:	8082                	ret
+
+20080f78 <__udivdi3>:
+__udivdi3():
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1319
+20080f78:	88aa                	mv	a7,a0
+20080f7a:	87ae                	mv	a5,a1
+__udivmoddi4():
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1024
+20080f7c:	8832                	mv	a6,a2
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1025
+20080f7e:	8536                	mv	a0,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1026
+20080f80:	8346                	mv	t1,a7
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1064
+20080f82:	20069963          	bnez	a3,20081194 <__udivdi3+0x21c>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1066
+20080f86:	200816b7          	lui	a3,0x20081
+20080f8a:	36468693          	addi	a3,a3,868 # 20081364 <__clz_tab>
+20080f8e:	0cc5f063          	bgeu	a1,a2,2008104e <__udivdi3+0xd6>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1070
+20080f92:	6741                	lui	a4,0x10
+20080f94:	0ae67663          	bgeu	a2,a4,20081040 <__udivdi3+0xc8>
+20080f98:	0ff00713          	li	a4,255
+20080f9c:	00c73733          	sltu	a4,a4,a2
+20080fa0:	070e                	slli	a4,a4,0x3
+20080fa2:	00e65533          	srl	a0,a2,a4
+20080fa6:	96aa                	add	a3,a3,a0
+20080fa8:	0006c683          	lbu	a3,0(a3)
+20080fac:	02000513          	li	a0,32
+20080fb0:	9736                	add	a4,a4,a3
+20080fb2:	40e506b3          	sub	a3,a0,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1072
+20080fb6:	00e50c63          	beq	a0,a4,20080fce <__udivdi3+0x56>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1078
+20080fba:	00d797b3          	sll	a5,a5,a3
+20080fbe:	00e8d733          	srl	a4,a7,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1077
+20080fc2:	00d61833          	sll	a6,a2,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1078
+20080fc6:	00f765b3          	or	a1,a4,a5
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1079
+20080fca:	00d89333          	sll	t1,a7,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1082
+20080fce:	01085893          	srli	a7,a6,0x10
+20080fd2:	0315d7b3          	divu	a5,a1,a7
+20080fd6:	01081613          	slli	a2,a6,0x10
+20080fda:	8241                	srli	a2,a2,0x10
+20080fdc:	01035713          	srli	a4,t1,0x10
+20080fe0:	0315f6b3          	remu	a3,a1,a7
+20080fe4:	853e                	mv	a0,a5
+20080fe6:	02f605b3          	mul	a1,a2,a5
+20080fea:	06c2                	slli	a3,a3,0x10
+20080fec:	8f55                	or	a4,a4,a3
+20080fee:	00b77c63          	bgeu	a4,a1,20081006 <__udivdi3+0x8e>
+20080ff2:	9742                	add	a4,a4,a6
+20080ff4:	fff78513          	addi	a0,a5,-1
+20080ff8:	01076763          	bltu	a4,a6,20081006 <__udivdi3+0x8e>
+20080ffc:	00b77563          	bgeu	a4,a1,20081006 <__udivdi3+0x8e>
+20081000:	ffe78513          	addi	a0,a5,-2
+20081004:	9742                	add	a4,a4,a6
+20081006:	8f0d                	sub	a4,a4,a1
+20081008:	031777b3          	remu	a5,a4,a7
+2008100c:	0342                	slli	t1,t1,0x10
+2008100e:	01035313          	srli	t1,t1,0x10
+20081012:	03175733          	divu	a4,a4,a7
+20081016:	07c2                	slli	a5,a5,0x10
+20081018:	0067e333          	or	t1,a5,t1
+2008101c:	02e606b3          	mul	a3,a2,a4
+20081020:	863a                	mv	a2,a4
+20081022:	00d37b63          	bgeu	t1,a3,20081038 <__udivdi3+0xc0>
+20081026:	9342                	add	t1,t1,a6
+20081028:	fff70613          	addi	a2,a4,-1 # ffff <_stack_size+0xdfff>
+2008102c:	01036663          	bltu	t1,a6,20081038 <__udivdi3+0xc0>
+20081030:	00d37463          	bgeu	t1,a3,20081038 <__udivdi3+0xc0>
+20081034:	ffe70613          	addi	a2,a4,-2
+20081038:	0542                	slli	a0,a0,0x10
+2008103a:	8d51                	or	a0,a0,a2
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1209
+2008103c:	4581                	li	a1,0
+2008103e:	a85d                	j	200810f4 <__udivdi3+0x17c>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1070
+20081040:	01000537          	lui	a0,0x1000
+20081044:	4741                	li	a4,16
+20081046:	f4a66ee3          	bltu	a2,a0,20080fa2 <__udivdi3+0x2a>
+2008104a:	4761                	li	a4,24
+2008104c:	bf99                	j	20080fa2 <__udivdi3+0x2a>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1091
+2008104e:	e601                	bnez	a2,20081056 <__udivdi3+0xde>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1092
+20081050:	4705                	li	a4,1
+20081052:	02c75833          	divu	a6,a4,a2
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1094
+20081056:	6741                	lui	a4,0x10
+20081058:	08e87f63          	bgeu	a6,a4,200810f6 <__udivdi3+0x17e>
+2008105c:	0ff00713          	li	a4,255
+20081060:	01077363          	bgeu	a4,a6,20081066 <__udivdi3+0xee>
+20081064:	4521                	li	a0,8
+20081066:	00a85733          	srl	a4,a6,a0
+2008106a:	96ba                	add	a3,a3,a4
+2008106c:	0006c703          	lbu	a4,0(a3)
+20081070:	02000613          	li	a2,32
+20081074:	972a                	add	a4,a4,a0
+20081076:	40e606b3          	sub	a3,a2,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1096
+2008107a:	08e61563          	bne	a2,a4,20081104 <__udivdi3+0x18c>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1105
+2008107e:	410787b3          	sub	a5,a5,a6
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1106
+20081082:	4585                	li	a1,1
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1124
+20081084:	01085893          	srli	a7,a6,0x10
+20081088:	01081613          	slli	a2,a6,0x10
+2008108c:	8241                	srli	a2,a2,0x10
+2008108e:	01035713          	srli	a4,t1,0x10
+20081092:	0317f6b3          	remu	a3,a5,a7
+20081096:	0317d7b3          	divu	a5,a5,a7
+2008109a:	06c2                	slli	a3,a3,0x10
+2008109c:	8f55                	or	a4,a4,a3
+2008109e:	02f60e33          	mul	t3,a2,a5
+200810a2:	853e                	mv	a0,a5
+200810a4:	01c77c63          	bgeu	a4,t3,200810bc <__udivdi3+0x144>
+200810a8:	9742                	add	a4,a4,a6
+200810aa:	fff78513          	addi	a0,a5,-1
+200810ae:	01076763          	bltu	a4,a6,200810bc <__udivdi3+0x144>
+200810b2:	01c77563          	bgeu	a4,t3,200810bc <__udivdi3+0x144>
+200810b6:	ffe78513          	addi	a0,a5,-2
+200810ba:	9742                	add	a4,a4,a6
+200810bc:	41c70733          	sub	a4,a4,t3
+200810c0:	031777b3          	remu	a5,a4,a7
+200810c4:	0342                	slli	t1,t1,0x10
+200810c6:	01035313          	srli	t1,t1,0x10
+200810ca:	03175733          	divu	a4,a4,a7
+200810ce:	07c2                	slli	a5,a5,0x10
+200810d0:	0067e333          	or	t1,a5,t1
+200810d4:	02e606b3          	mul	a3,a2,a4
+200810d8:	863a                	mv	a2,a4
+200810da:	00d37b63          	bgeu	t1,a3,200810f0 <__udivdi3+0x178>
+200810de:	9342                	add	t1,t1,a6
+200810e0:	fff70613          	addi	a2,a4,-1 # ffff <_stack_size+0xdfff>
+200810e4:	01036663          	bltu	t1,a6,200810f0 <__udivdi3+0x178>
+200810e8:	00d37463          	bgeu	t1,a3,200810f0 <__udivdi3+0x178>
+200810ec:	ffe70613          	addi	a2,a4,-2
+200810f0:	0542                	slli	a0,a0,0x10
+200810f2:	8d51                	or	a0,a0,a2
+__udivdi3():
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1321
+200810f4:	8082                	ret
+__udivmoddi4():
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1094
+200810f6:	01000737          	lui	a4,0x1000
+200810fa:	4541                	li	a0,16
+200810fc:	f6e865e3          	bltu	a6,a4,20081066 <__udivdi3+0xee>
+20081100:	4561                	li	a0,24
+20081102:	b795                	j	20081066 <__udivdi3+0xee>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1114
+20081104:	00d81833          	sll	a6,a6,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1115
+20081108:	00e7d5b3          	srl	a1,a5,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1117
+2008110c:	00d89333          	sll	t1,a7,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1116
+20081110:	00d797b3          	sll	a5,a5,a3
+20081114:	00e8d733          	srl	a4,a7,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1119
+20081118:	01085893          	srli	a7,a6,0x10
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1116
+2008111c:	00f76633          	or	a2,a4,a5
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1119
+20081120:	0315f733          	remu	a4,a1,a7
+20081124:	01081793          	slli	a5,a6,0x10
+20081128:	83c1                	srli	a5,a5,0x10
+2008112a:	01065513          	srli	a0,a2,0x10
+2008112e:	0315d5b3          	divu	a1,a1,a7
+20081132:	0742                	slli	a4,a4,0x10
+20081134:	8f49                	or	a4,a4,a0
+20081136:	02b786b3          	mul	a3,a5,a1
+2008113a:	852e                	mv	a0,a1
+2008113c:	00d77c63          	bgeu	a4,a3,20081154 <__udivdi3+0x1dc>
+20081140:	9742                	add	a4,a4,a6
+20081142:	fff58513          	addi	a0,a1,-1
+20081146:	01076763          	bltu	a4,a6,20081154 <__udivdi3+0x1dc>
+2008114a:	00d77563          	bgeu	a4,a3,20081154 <__udivdi3+0x1dc>
+2008114e:	ffe58513          	addi	a0,a1,-2
+20081152:	9742                	add	a4,a4,a6
+20081154:	40d706b3          	sub	a3,a4,a3
+20081158:	0316f733          	remu	a4,a3,a7
+2008115c:	0642                	slli	a2,a2,0x10
+2008115e:	8241                	srli	a2,a2,0x10
+20081160:	0316d6b3          	divu	a3,a3,a7
+20081164:	0742                	slli	a4,a4,0x10
+20081166:	02d788b3          	mul	a7,a5,a3
+2008116a:	00c767b3          	or	a5,a4,a2
+2008116e:	8736                	mv	a4,a3
+20081170:	0117fc63          	bgeu	a5,a7,20081188 <__udivdi3+0x210>
+20081174:	97c2                	add	a5,a5,a6
+20081176:	fff68713          	addi	a4,a3,-1
+2008117a:	0107e763          	bltu	a5,a6,20081188 <__udivdi3+0x210>
+2008117e:	0117f563          	bgeu	a5,a7,20081188 <__udivdi3+0x210>
+20081182:	ffe68713          	addi	a4,a3,-2
+20081186:	97c2                	add	a5,a5,a6
+20081188:	01051593          	slli	a1,a0,0x10
+2008118c:	411787b3          	sub	a5,a5,a7
+20081190:	8dd9                	or	a1,a1,a4
+20081192:	bdcd                	j	20081084 <__udivdi3+0x10c>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1140
+20081194:	14d5e263          	bltu	a1,a3,200812d8 <__udivdi3+0x360>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1159
+20081198:	6741                	lui	a4,0x10
+2008119a:	02e6ff63          	bgeu	a3,a4,200811d8 <__udivdi3+0x260>
+2008119e:	0ff00713          	li	a4,255
+200811a2:	00d735b3          	sltu	a1,a4,a3
+200811a6:	058e                	slli	a1,a1,0x3
+200811a8:	20081737          	lui	a4,0x20081
+200811ac:	00b6d533          	srl	a0,a3,a1
+200811b0:	36470713          	addi	a4,a4,868 # 20081364 <__clz_tab>
+200811b4:	972a                	add	a4,a4,a0
+200811b6:	00074703          	lbu	a4,0(a4)
+200811ba:	02000513          	li	a0,32
+200811be:	972e                	add	a4,a4,a1
+200811c0:	40e505b3          	sub	a1,a0,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1160
+200811c4:	02e51163          	bne	a0,a4,200811e6 <__udivdi3+0x26e>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1172
+200811c8:	4505                	li	a0,1
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1170
+200811ca:	f2f6e5e3          	bltu	a3,a5,200810f4 <__udivdi3+0x17c>
+200811ce:	00c8b533          	sltu	a0,a7,a2
+200811d2:	00154513          	xori	a0,a0,1
+200811d6:	bf39                	j	200810f4 <__udivdi3+0x17c>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1159
+200811d8:	01000737          	lui	a4,0x1000
+200811dc:	45c1                	li	a1,16
+200811de:	fce6e5e3          	bltu	a3,a4,200811a8 <__udivdi3+0x230>
+200811e2:	45e1                	li	a1,24
+200811e4:	b7d1                	j	200811a8 <__udivdi3+0x230>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1194
+200811e6:	00e65333          	srl	t1,a2,a4
+200811ea:	00b696b3          	sll	a3,a3,a1
+200811ee:	00d36333          	or	t1,t1,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1200
+200811f2:	01035513          	srli	a0,t1,0x10
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1195
+200811f6:	00b61eb3          	sll	t4,a2,a1
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1196
+200811fa:	00e7d633          	srl	a2,a5,a4
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1200
+200811fe:	02a676b3          	remu	a3,a2,a0
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1197
+20081202:	00b797b3          	sll	a5,a5,a1
+20081206:	00e8d733          	srl	a4,a7,a4
+2008120a:	00f76833          	or	a6,a4,a5
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1200
+2008120e:	01031793          	slli	a5,t1,0x10
+20081212:	83c1                	srli	a5,a5,0x10
+20081214:	01085713          	srli	a4,a6,0x10
+20081218:	02a65633          	divu	a2,a2,a0
+2008121c:	06c2                	slli	a3,a3,0x10
+2008121e:	8f55                	or	a4,a4,a3
+20081220:	02c78f33          	mul	t5,a5,a2
+20081224:	8e32                	mv	t3,a2
+20081226:	01e77c63          	bgeu	a4,t5,2008123e <__udivdi3+0x2c6>
+2008122a:	971a                	add	a4,a4,t1
+2008122c:	fff60e13          	addi	t3,a2,-1
+20081230:	00676763          	bltu	a4,t1,2008123e <__udivdi3+0x2c6>
+20081234:	01e77563          	bgeu	a4,t5,2008123e <__udivdi3+0x2c6>
+20081238:	ffe60e13          	addi	t3,a2,-2
+2008123c:	971a                	add	a4,a4,t1
+2008123e:	41e70733          	sub	a4,a4,t5
+20081242:	02a776b3          	remu	a3,a4,a0
+20081246:	02a75733          	divu	a4,a4,a0
+2008124a:	06c2                	slli	a3,a3,0x10
+2008124c:	02e78633          	mul	a2,a5,a4
+20081250:	01081793          	slli	a5,a6,0x10
+20081254:	83c1                	srli	a5,a5,0x10
+20081256:	8fd5                	or	a5,a5,a3
+20081258:	86ba                	mv	a3,a4
+2008125a:	00c7fc63          	bgeu	a5,a2,20081272 <__udivdi3+0x2fa>
+2008125e:	979a                	add	a5,a5,t1
+20081260:	fff70693          	addi	a3,a4,-1 # ffffff <_dv_log_offset+0xfeffff>
+20081264:	0067e763          	bltu	a5,t1,20081272 <__udivdi3+0x2fa>
+20081268:	00c7f563          	bgeu	a5,a2,20081272 <__udivdi3+0x2fa>
+2008126c:	ffe70693          	addi	a3,a4,-2
+20081270:	979a                	add	a5,a5,t1
+20081272:	010e1513          	slli	a0,t3,0x10
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1201
+20081276:	6e41                	lui	t3,0x10
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1200
+20081278:	8d55                	or	a0,a0,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1201
+2008127a:	fffe0693          	addi	a3,t3,-1 # ffff <_stack_size+0xdfff>
+2008127e:	00d57833          	and	a6,a0,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1200
+20081282:	8f91                	sub	a5,a5,a2
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1201
+20081284:	00def6b3          	and	a3,t4,a3
+20081288:	01055613          	srli	a2,a0,0x10
+2008128c:	010ede93          	srli	t4,t4,0x10
+20081290:	02d80333          	mul	t1,a6,a3
+20081294:	02d606b3          	mul	a3,a2,a3
+20081298:	01035713          	srli	a4,t1,0x10
+2008129c:	03d80833          	mul	a6,a6,t4
+200812a0:	9836                	add	a6,a6,a3
+200812a2:	9742                	add	a4,a4,a6
+200812a4:	03d60633          	mul	a2,a2,t4
+200812a8:	00d77363          	bgeu	a4,a3,200812ae <__udivdi3+0x336>
+200812ac:	9672                	add	a2,a2,t3
+200812ae:	01075693          	srli	a3,a4,0x10
+200812b2:	9636                	add	a2,a2,a3
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1203
+200812b4:	02c7e063          	bltu	a5,a2,200812d4 <__udivdi3+0x35c>
+200812b8:	d8c792e3          	bne	a5,a2,2008103c <__udivdi3+0xc4>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1201
+200812bc:	67c1                	lui	a5,0x10
+200812be:	17fd                	addi	a5,a5,-1
+200812c0:	8f7d                	and	a4,a4,a5
+200812c2:	0742                	slli	a4,a4,0x10
+200812c4:	00f37333          	and	t1,t1,a5
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1198
+200812c8:	00b898b3          	sll	a7,a7,a1
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1201
+200812cc:	971a                	add	a4,a4,t1
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1209
+200812ce:	4581                	li	a1,0
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1203
+200812d0:	e2e8f2e3          	bgeu	a7,a4,200810f4 <__udivdi3+0x17c>
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1205
+200812d4:	157d                	addi	a0,a0,-1
+__udivdi3():
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1206
+200812d6:	b39d                	j	2008103c <__udivdi3+0xc4>
+__udivmoddi4():
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1145
+200812d8:	4581                	li	a1,0
+/__w/1/s/build/gcc/.build/riscv32-unknown-elf/src/gcc/libgcc/libgcc2.c:1144
+200812da:	4501                	li	a0,0
+200812dc:	bd21                	j	200810f4 <__udivdi3+0x17c>

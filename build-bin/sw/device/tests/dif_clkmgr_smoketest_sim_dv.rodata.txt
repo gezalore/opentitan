@@ -1,0 +1,278 @@
+addr: 200018ac
+string: �
+addr: 200018af
+string: E
+addr: 200018b8
+string: �
+addr: 200018bb
+string: 
+addr: 200018c0
+string: �
+addr: 200018c3
+string: K
+addr: 200018cc
+string: 
+addr: 200018cf
+string: 
+addr: 200018d4
+string: �
+addr: 200018d7
+string: Q
+addr: 200018e0
+string: ,
+addr: 200018e3
+string: 
+addr: 200018e8
+string: �
+addr: 200018eb
+string: n
+addr: 200018f4
+string: 
+addr: 200018f7
+string: 
+addr: 200018fc
+string: �
+addr: 200018ff
+string: 
+addr: 20001904
+string: 
+addr: 20001908
+string: 8
+addr: 2000190b
+string: 
+addr: 20001910
+string: �
+addr: 20001913
+string: 
+addr: 20001918
+string: 
+addr: 2000191c
+string: ;
+addr: 2000191f
+string: 
+addr: 20001924
+string: O
+addr: 20001927
+string: 
+addr: 20001930
+string: t
+addr: 20001933
+string: 
+addr: 20001938
+string: O
+addr: 2000193b
+string: !
+addr: 20001944
+string: �
+addr: 20001947
+string: 
+addr: 2000194c
+string: �
+addr: 2000194f
+string: 
+addr: 20001958
+string: �
+addr: 2000195b
+string: 
+addr: 20001960
+string: �
+addr: 20001963
+string: "
+addr: 2000196c
+string: �
+addr: 2000196f
+string: 
+addr: 20001979
+string: ��
+addr: 20001981
+string: 6n
+addr: 20001989
+string: l�
+addr: 20001990
+string: @B
+addr: 20001998
+string: ��
+addr: 2000199f
+string: 0
+addr: 200019a3
+string: 0
+addr: 200019a8
+string: �
+addr: 200019ab
+string: D
+addr: 200019b4
+string: *
+addr: 200019b7
+string: 
+addr: 200019bc
+string: �
+addr: 200019bf
+string: L
+addr: 200019c8
+string: �
+addr: 200019cb
+string: 
+addr: 200019d0
+string: �
+addr: 200019d3
+string: N
+addr: 200019dc
+string: *
+addr: 200019df
+string: 
+addr: 200019e4
+string: �
+addr: 200019e7
+string: O
+addr: 200019f0
+string: 
+addr: 200019f3
+string: 
+addr: 200019f8
+string: �
+addr: 200019fb
+string: U
+addr: 20001a04
+string: 0
+addr: 20001a07
+string: 
+addr: 20001a0c
+string: �
+addr: 20001a0f
+string: V
+addr: 20001a14
+string: 
+addr: 20001a18
+string: �
+addr: 20001a1b
+string: 
+addr: 20001a20
+string: �
+addr: 20001a23
+string: d
+addr: 20001a2c
+string: �
+addr: 20001a2f
+string: 
+addr: 20001a34
+string: 
+addr: 20001a38
+string: �
+addr: 20001a3b
+string: 
+addr: 20001a44
+string: 
+addr: 20001a47
+string: 
+addr: 20001a4c
+string: �
+addr: 20001a4f
+string: (
+addr: 20001a58
+string: ^
+addr: 20001a5b
+string: 
+addr: 20001a60
+string: �
+addr: 20001a63
+string: *
+addr: 20001a6c
+string: 
+addr: 20001a6f
+string: 
+addr: 20001a74
+string: �
+addr: 20001a77
+string: +
+addr: 20001a80
+string: 
+addr: 20001a83
+string: !
+addr: 20001a87
+string: !
+addr: 20001a8b
+string: !
+addr: 20001a8f
+string: !
+addr: 20001a93
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001ae5
+string: ../sw/device/lib/handler.c
+addr: 20001bff
+string: Software IRQ triggered!
+addr: 20001c17
+string: Timer IRQ triggered!
+addr: 20001c2c
+string: External IRQ triggered!
+addr: 20001c44
+string: Instruction access fault, mtval shows fault address
+addr: 20001c78
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001cb3
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001ceb
+string: Load/Store fault, mtval shows the fault address
+addr: 20001d1b
+string: Environment call encountered
+addr: 20001d38
+string: %s
+addr: 20001d3b
+string: MTVAL value is 0x%x
+addr: 20001d4f
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001d74
+string: CHECK-fail: failed to init UART
+addr: 20001d94
+string: CHECK-fail: failed to configure UART
+addr: 20001db9
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001de0
+string: PASS!
+addr: 20001de6
+string: FAIL!
+addr: 20001df0
+string: 
+addr: 20001df4
+string: 
+addr: 20001df8
+string: 
+addr: 20001dfc
+string: ../sw/device/tests/dif/dif_clkmgr_smoketest.c
+addr: 20001e2a
+string: CHECK-fail: dif_clkmgr_hintable_clock_get_hint(clkmgr, clock, &enabled) == kDifClkmgrOk
+addr: 20001e82
+string: CHECK-fail: dif_clkmgr_hintable_clock_set_hint( clkmgr, clock, expected ? kDifClkmgrToggleEnabled : kDifClkmgrToggleDisabled) == kDifClkmgrOk
+addr: 20001f10
+string: CHECK-fail: enabled == expected
+addr: 20001f30
+string: CHECK-fail: dif_clkmgr_hintable_clock_get_enabled(clkmgr, clock, &status) == kDifClkmgrOk
+addr: 20001f8a
+string: CHECK-fail: clock %u hint is enabled but status is disabled
+addr: 20001fc6
+string: CHECK-fail: dif_clkmgr_init(params, &clkmgr) == kDifClkmgrOk
+addr: 20002003
+string: CHECK-fail: dif_clkmgr_gateable_clock_get_enabled(clkmgr, clock, &enabled) == kDifClkmgrOk
+addr: 2000205e
+string: CHECK-fail: dif_clkmgr_gateable_clock_set_enabled( clkmgr, clock, expected ? kDifClkmgrToggleEnabled : kDifClkmgrToggleDisabled) == kDifClkmgrOk
+addr: 200020f4
+string: 
+addr: 200020f8
+string: %s%5d %s:%d]
+addr: 20002106
+string: 
+addr: 20002109
+string: I
+addr: 2000210b
+string: W
+addr: 2000210d
+string: E
+addr: 2000210f
+string: F
+addr: 20002111
+string: ?
+addr: 20002113
+string: %
+addr: 20002115
+string: -
+addr: 20002117
+string: 0x

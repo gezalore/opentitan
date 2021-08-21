@@ -1,0 +1,398 @@
+addr: 20001e5c
+string: T#
+addr: 20001e5f
+string: E
+addr: 20001e68
+string: o#
+addr: 20001e6b
+string: 
+addr: 20001e70
+string: T#
+addr: 20001e73
+string: K
+addr: 20001e7c
+string: �#
+addr: 20001e7f
+string: 
+addr: 20001e84
+string: T#
+addr: 20001e87
+string: Q
+addr: 20001e90
+string: �#
+addr: 20001e93
+string: 
+addr: 20001e98
+string: T#
+addr: 20001e9b
+string: n
+addr: 20001ea4
+string: �$
+addr: 20001ea7
+string: 
+addr: 20001eac
+string: T#
+addr: 20001eaf
+string: 
+addr: 20001eb4
+string: 
+addr: 20001eb8
+string: �$
+addr: 20001ebb
+string: 
+addr: 20001ec0
+string: T#
+addr: 20001ec3
+string: 
+addr: 20001ec8
+string: 
+addr: 20001ecc
+string: �$
+addr: 20001ecf
+string: 
+addr: 20001ed4
+string: �$
+addr: 20001ed7
+string: 
+addr: 20001ee0
+string: �$
+addr: 20001ee3
+string: 
+addr: 20001ee8
+string: �$
+addr: 20001eeb
+string: !
+addr: 20001ef4
+string: %
+addr: 20001ef7
+string: 
+addr: 20001efc
+string: )%
+addr: 20001eff
+string: 
+addr: 20001f08
+string: P%
+addr: 20001f0b
+string: 
+addr: 20001f10
+string: )%
+addr: 20001f13
+string: "
+addr: 20001f1c
+string: V%
+addr: 20001f1f
+string: 
+addr: 20001f29
+string: ��
+addr: 20001f31
+string: 6n
+addr: 20001f39
+string: l�
+addr: 20001f40
+string: @B
+addr: 20001f48
+string: ��
+addr: 20001f4f
+string: 0
+addr: 20001f53
+string: 0
+addr: 20001f58
+string: \%
+addr: 20001f5b
+string: �
+addr: 20001f64
+string: �%
+addr: 20001f67
+string: 
+addr: 20001f6c
+string: \%
+addr: 20001f6f
+string: �
+addr: 20001f78
+string: �%
+addr: 20001f7b
+string: Every one suspects himself of at least one of the cardinal virtues, and this is mine: I am one of the few honest people that I have ever known
+addr: 2000200c
+string: =�h�6�q�h��v/�7��E�mB������N
+addr: 20002030
+string: \%
+addr: 20002033
+string: �
+addr: 2000203c
+string: �%
+addr: 2000203f
+string: 
+addr: 20002044
+string: \%
+addr: 20002047
+string: �
+addr: 20002050
+string: �%
+addr: 20002053
+string: 9{��Ӄ?�����ە1H�#^��(M9���@
+addr: 20002078
+string: \%
+addr: 2000207b
+string: �
+addr: 20002084
+string: �%
+addr: 20002087
+string: 
+addr: 2000208c
+string: 
+addr: 20002090
+string: \%
+addr: 20002093
+string: 9
+addr: 2000209c
+string: &
+addr: 2000209f
+string: 
+addr: 200020a4
+string: \%
+addr: 200020a7
+string: :
+addr: 200020b0
+string: M&
+addr: 200020b3
+string: 
+addr: 200020b8
+string: \%
+addr: 200020bb
+string: J
+addr: 200020c4
+string: �&
+addr: 200020c7
+string: 
+addr: 200020cc
+string: \%
+addr: 200020cf
+string: K
+addr: 200020d8
+string: �&
+addr: 200020db
+string: 
+addr: 200020e0
+string: \%
+addr: 200020e3
+string: \
+addr: 200020ec
+string: �&
+addr: 200020ef
+string: 
+addr: 200020f4
+string: \%
+addr: 200020f7
+string: b
+addr: 20002100
+string: �&
+addr: 20002103
+string: 
+addr: 20002108
+string: \%
+addr: 2000210b
+string: d
+addr: 20002114
+string: 0'
+addr: 20002117
+string: 
+addr: 2000211c
+string: \%
+addr: 2000211f
+string: h
+addr: 20002128
+string: m'
+addr: 2000212b
+string: 
+addr: 20002130
+string: \%
+addr: 20002133
+string: w
+addr: 2000213c
+string: �'
+addr: 2000213f
+string: 
+addr: 20002144
+string: \%
+addr: 20002147
+string: x
+addr: 20002150
+string: �'
+addr: 20002153
+string: 
+addr: 20002158
+string: \%
+addr: 2000215b
+string: �
+addr: 20002164
+string: (
+addr: 20002167
+string: 
+addr: 2000216c
+string: \%
+addr: 2000216f
+string: �
+addr: 20002178
+string: _(
+addr: 2000217b
+string: 
+addr: 20002180
+string: \%
+addr: 20002183
+string: �
+addr: 20002188
+string: 
+addr: 2000218c
+string: �(
+addr: 2000218f
+string: 
+addr: 20002194
+string: \%
+addr: 20002197
+string: �
+addr: 200021a0
+string: �(
+addr: 200021a3
+string: 
+addr: 200021a8
+string: \%
+addr: 200021ab
+string: �
+addr: 200021b4
+string: )
+addr: 200021b7
+string: 
+addr: 200021bc
+string: \%
+addr: 200021bf
+string: �
+addr: 200021c8
+string: Q)
+addr: 200021cb
+string: 
+addr: 200021d0
+string: \%
+addr: 200021d3
+string: �
+addr: 200021dc
+string: �)
+addr: 200021df
+string: 
+addr: 200021e4
+string: \%
+addr: 200021e7
+string: �
+addr: 200021ec
+string: 
+addr: 200021f0
+string: �)
+addr: 200021f3
+string: %*
+addr: 200021f7
+string: '*
+addr: 200021fb
+string: )*
+addr: 200021ff
+string: +*
+addr: 20002203
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20002255
+string: ../sw/device/lib/handler.c
+addr: 2000236f
+string: Software IRQ triggered!
+addr: 20002387
+string: Timer IRQ triggered!
+addr: 2000239c
+string: External IRQ triggered!
+addr: 200023b4
+string: Instruction access fault, mtval shows fault address
+addr: 200023e8
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20002423
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 2000245b
+string: Load/Store fault, mtval shows the fault address
+addr: 2000248b
+string: Environment call encountered
+addr: 200024a8
+string: %s
+addr: 200024ab
+string: MTVAL value is 0x%x
+addr: 200024bf
+string: ../sw/device/lib/testing/test_main.c
+addr: 200024e4
+string: CHECK-fail: failed to init UART
+addr: 20002504
+string: CHECK-fail: failed to configure UART
+addr: 20002529
+string: ../sw/device/lib/testing/test_status.c
+addr: 20002550
+string: PASS!
+addr: 20002556
+string: FAIL!
+addr: 2000255c
+string: ../sw/device/tests/dif/dif_hmac_smoketest.c
+addr: 20002588
+string: Running HMAC DIF test...
+addr: 200025a1
+string: Running test SHA256 pass 1...
+addr: 200025bf
+string: Running test SHA256 pass 2...
+addr: 200025dd
+string: Running test HMAC pass 1...
+addr: 200025f9
+string: Running test HMAC pass 2...
+addr: 20002615
+string: CHECK-fail: Invalid arguments encountered in HMAC init.
+addr: 2000264d
+string: CHECK-fail: Unknown error encountered in HMAC init.
+addr: 20002681
+string: CHECK-fail: Invalid arguments encountered in HMAC start.
+addr: 200026ba
+string: CHECK-fail: Unknown error encountered in HMAC start.
+addr: 200026ef
+string: CHECK-fail: Invalid arguments encountered while pushing to FIFO.
+addr: 20002730
+string: CHECK-fail: Unknown error encountered while pushing to FIFO.
+addr: 2000276d
+string: CHECK-fail: FIFO filled up too may times, giving up.
+addr: 200027a2
+string: CHECK-fail: Invalid arguments encountered checking FIFO depth.
+addr: 200027e1
+string: CHECK-fail: Unknown error encountered checking FIFO depth.
+addr: 2000281c
+string: CHECK-fail: Invalid arguments encountered checking message length.
+addr: 2000285f
+string: CHECK-fail: Unknown error encountered checking message length.
+addr: 2000289e
+string: CHECK-fail: Message length mismatch. Expected %u bits but got %u bits.
+addr: 200028e5
+string: CHECK-fail: Invalid arguments encountered running HMAC.
+addr: 2000291d
+string: CHECK-fail: Unknown error encountered running HMAC.
+addr: 20002951
+string: CHECK-fail: Invalid arguments encountered reading HMAC digest.
+addr: 20002990
+string: CHECK-fail: Unknown error encountered reading HMAC digest.
+addr: 200029cb
+string: CHECK-fail: Digest mismatch, expected: 0x%X at index [%i] but got: 0x%X.
+addr: 20002a14
+string: %s%5d %s:%d]
+addr: 20002a22
+string: 
+addr: 20002a25
+string: I
+addr: 20002a27
+string: W
+addr: 20002a29
+string: E
+addr: 20002a2b
+string: F
+addr: 20002a2d
+string: ?
+addr: 20002a2f
+string: %
+addr: 20002a31
+string: -
+addr: 20002a33
+string: 0x

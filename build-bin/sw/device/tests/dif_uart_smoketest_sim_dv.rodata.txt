@@ -1,0 +1,236 @@
+addr: 20001624
+string: 
+addr: 20001627
+string: E
+addr: 20001630
+string: +
+addr: 20001633
+string: 
+addr: 20001638
+string: 
+addr: 2000163b
+string: K
+addr: 20001644
+string: C
+addr: 20001647
+string: 
+addr: 2000164c
+string: 
+addr: 2000164f
+string: Q
+addr: 20001658
+string: X
+addr: 2000165b
+string: 
+addr: 20001660
+string: 
+addr: 20001663
+string: n
+addr: 2000166c
+string: G
+addr: 2000166f
+string: 
+addr: 20001674
+string: 
+addr: 20001677
+string: 
+addr: 2000167c
+string: 
+addr: 20001680
+string: d
+addr: 20001683
+string: 
+addr: 20001688
+string: 
+addr: 2000168b
+string: 
+addr: 20001690
+string: 
+addr: 20001694
+string: g
+addr: 20001697
+string: �
+addr: 2000169b
+string: �
+addr: 2000169f
+string: �
+addr: 200016a3
+string: �
+addr: 200016a7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 200016f8
+string: �
+addr: 200016fb
+string: 
+addr: 20001704
+string: �
+addr: 20001707
+string: 
+addr: 2000170c
+string: �
+addr: 2000170f
+string: !
+addr: 20001718
+string: �
+addr: 2000171b
+string: 
+addr: 20001720
+string: 
+addr: 20001723
+string: 
+addr: 2000172c
+string: .
+addr: 2000172f
+string: 
+addr: 20001734
+string: 
+addr: 20001737
+string: "
+addr: 20001740
+string: 4
+addr: 20001743
+string: 
+addr: 20001751
+string: ��
+addr: 20001759
+string: 6n
+addr: 20001761
+string: l�
+addr: 20001768
+string: @B
+addr: 20001770
+string: ��
+addr: 20001777
+string: 0
+addr: 2000177b
+string: 0
+addr: 20001780
+string: 
+addr: 20001784
+string: :
+addr: 20001787
+string: 
+addr: 20001790
+string: f
+addr: 20001793
+string: 
+addr: 20001798
+string: :
+addr: 2000179b
+string: $
+addr: 200017a4
+string: �
+addr: 200017a7
+string: 
+addr: 200017ac
+string: :
+addr: 200017af
+string: '
+addr: 200017b8
+string: 
+addr: 200017bb
+string: 
+addr: 200017c0
+string: :
+addr: 200017c3
+string: (
+addr: 200017cc
+string: v
+addr: 200017cf
+string: 
+addr: 200017d4
+string: :
+addr: 200017d7
+string: -
+addr: 200017e0
+string: �
+addr: 200017e3
+string: 
+addr: 200017e8
+string: :
+addr: 200017eb
+string: 0
+addr: 200017f4
+string: 
+addr: 200017f7
+string: 
+addr: 200017fc
+string: :
+addr: 200017ff
+string: 1
+addr: 20001808
+string: c
+addr: 2000180b
+string: 
+addr: 20001811
+string: ../sw/device/lib/handler.c
+addr: 2000192b
+string: Software IRQ triggered!
+addr: 20001943
+string: Timer IRQ triggered!
+addr: 20001958
+string: External IRQ triggered!
+addr: 20001970
+string: Instruction access fault, mtval shows fault address
+addr: 200019a4
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200019df
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001a17
+string: Load/Store fault, mtval shows the fault address
+addr: 20001a47
+string: Environment call encountered
+addr: 20001a64
+string: %s
+addr: 20001a67
+string: MTVAL value is 0x%x
+addr: 20001a7b
+string: %s%5d %s:%d]
+addr: 20001a89
+string: 
+addr: 20001a8c
+string: I
+addr: 20001a8e
+string: W
+addr: 20001a90
+string: E
+addr: 20001a92
+string: F
+addr: 20001a94
+string: ?
+addr: 20001a96
+string: %
+addr: 20001a98
+string: -
+addr: 20001a9a
+string: 0x
+addr: 20001a9d
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001ac2
+string: CHECK-fail: failed to init UART
+addr: 20001ae2
+string: CHECK-fail: failed to configure UART
+addr: 20001b07
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001b2e
+string: PASS!
+addr: 20001b34
+string: FAIL!
+addr: 20001b3a
+string: ../sw/device/tests/dif/dif_uart_smoketest.c
+addr: 20001b66
+string: CHECK-fail: dif_uart_init( (dif_uart_params_t){ .base_addr = mmio_region_from_addr(TOP_EARLGREY_UART0_BASE_ADDR), }, &uart) == kDifUartOk
+addr: 20001bf0
+string: CHECK-fail: UART config failed!
+addr: 20001c10
+string: CHECK-fail: dif_uart_loopback_set(&uart, kDifUartLoopbackSystem, kDifUartToggleEnabled) == kDifUartOk
+addr: 20001c76
+string: CHECK-fail: dif_uart_fifo_reset(&uart, kDifUartFifoResetAll) == kDifUartOk
+addr: 20001cc1
+string: Smoke test!
+addr: 20001ccd
+string: CHECK-fail: dif_uart_byte_send_polled(&uart, kSendData[i]) == kDifUartOk
+addr: 20001d16
+string: CHECK-fail: dif_uart_byte_receive_polled(&uart, &receive_byte) == kDifUartOk
+addr: 20001d63
+string: CHECK-fail: receive_byte == kSendData[i]

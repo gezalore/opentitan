@@ -1,0 +1,262 @@
+addr: 20001834
+string: �
+addr: 20001837
+string: E
+addr: 20001840
+string: �
+addr: 20001843
+string: 
+addr: 20001848
+string: �
+addr: 2000184b
+string: K
+addr: 20001854
+string: �
+addr: 20001857
+string: 
+addr: 2000185c
+string: �
+addr: 2000185f
+string: Q
+addr: 20001868
+string: 
+addr: 2000186b
+string: 
+addr: 20001870
+string: �
+addr: 20001873
+string: n
+addr: 2000187c
+string: �
+addr: 2000187f
+string: 
+addr: 20001884
+string: �
+addr: 20001887
+string: 
+addr: 2000188c
+string: 
+addr: 20001890
+string: 
+addr: 20001893
+string: 
+addr: 20001898
+string: �
+addr: 2000189b
+string: 
+addr: 200018a0
+string: 
+addr: 200018a4
+string: 
+addr: 200018a7
+string: 
+addr: 200018ac
+string: '
+addr: 200018af
+string: 
+addr: 200018b8
+string: L
+addr: 200018bb
+string: 
+addr: 200018c0
+string: '
+addr: 200018c3
+string: !
+addr: 200018cc
+string: l
+addr: 200018cf
+string: 
+addr: 200018d4
+string: �
+addr: 200018d7
+string: 
+addr: 200018e0
+string: �
+addr: 200018e3
+string: 
+addr: 200018e8
+string: �
+addr: 200018eb
+string: "
+addr: 200018f4
+string: �
+addr: 200018f7
+string: 
+addr: 20001901
+string: ��
+addr: 20001909
+string: 6n
+addr: 20001911
+string: l�
+addr: 20001918
+string: @B
+addr: 20001920
+string: ��
+addr: 20001927
+string: 0
+addr: 2000192b
+string: 0
+addr: 20001930
+string: �#�����Ao��?���I~���LF#Î�/|llV_�W�[���˲PY^�P�1��)���;Z=UIi����T�C��繓�;����b����*ű�G��R)dڪJ#
+addr: 200019a4
+string: 
+addr: 200019a8
+string: �
+addr: 200019ab
+string: I
+addr: 200019b4
+string: �
+addr: 200019b7
+string: 
+addr: 200019bc
+string: �
+addr: 200019bf
+string: M
+addr: 200019c8
+string: [
+addr: 200019cb
+string: 
+addr: 200019d0
+string: �
+addr: 200019d3
+string: P
+addr: 200019dc
+string: �
+addr: 200019df
+string: 
+addr: 200019e4
+string: �
+addr: 200019e7
+string: T
+addr: 200019f0
+string: �
+addr: 200019f3
+string: 
+addr: 200019f8
+string: �
+addr: 200019fb
+string: Y
+addr: 20001a04
+string: ;
+addr: 20001a07
+string: 
+addr: 20001a0c
+string: �
+addr: 20001a0f
+string: ]
+addr: 20001a18
+string: �
+addr: 20001a1b
+string: 
+addr: 20001a20
+string: �
+addr: 20001a23
+string: _
+addr: 20001a28
+string: 
+addr: 20001a2c
+string: �
+addr: 20001a2f
+string: 
+addr: 20001a34
+string: �
+addr: 20001a37
+string: h
+addr: 20001a40
+string: �
+addr: 20001a43
+string: 
+addr: 20001a48
+string: �
+addr: 20001a4b
+string: m
+addr: 20001a54
+string: 
+addr: 20001a57
+string: 
+addr: 20001a5c
+string: i
+addr: 20001a5f
+string: k
+addr: 20001a63
+string: m
+addr: 20001a67
+string: o
+addr: 20001a6b
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001abd
+string: ../sw/device/lib/handler.c
+addr: 20001bd7
+string: Software IRQ triggered!
+addr: 20001bef
+string: Timer IRQ triggered!
+addr: 20001c04
+string: External IRQ triggered!
+addr: 20001c1c
+string: Instruction access fault, mtval shows fault address
+addr: 20001c50
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 20001c8b
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 20001cc3
+string: Load/Store fault, mtval shows the fault address
+addr: 20001cf3
+string: Environment call encountered
+addr: 20001d10
+string: %s
+addr: 20001d13
+string: MTVAL value is 0x%x
+addr: 20001d27
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001d4c
+string: CHECK-fail: failed to init UART
+addr: 20001d6c
+string: CHECK-fail: failed to configure UART
+addr: 20001d91
+string: ../sw/device/lib/testing/test_status.c
+addr: 20001db8
+string: PASS!
+addr: 20001dbe
+string: FAIL!
+addr: 20001dc4
+string: ../sw/device/tests/dif/dif_csrng_smoketest.c
+addr: 20001df1
+string: CHECK-fail: dif_csrng_instantiate(csrng, kDifCsrngEntropySrcToggleDisable, &kEntropyInput) == kDifCsrngOk
+addr: 20001e5b
+string: CHECK-fail: dif_csrng_reseed(csrng, &seed_material) == kDifCsrngOk
+addr: 20001e9e
+string: CHECK-fail: dif_csrng_generate_start(csrng, kExpectedOutputLen) == kDifCsrngOk
+addr: 20001eed
+string: CHECK-fail: dif_csrng_get_output_status(csrng, &output_status) == kDifCsrngOk
+addr: 20001f3b
+string: CHECK-fail: dif_csrng_generate_end(csrng, output, kExpectedOutputLen) == kDifCsrngOk
+addr: 20001f90
+string: CHECK-fail: output[i] != 0u
+addr: 20001fac
+string: [%d] got = 0x%x; expected = 0x%x
+addr: 20001fcd
+string: CHECK-fail: dif_csrng_init(params, &csrng) == kDifCsrngOk
+addr: 20002007
+string: CHECK-fail: dif_csrng_configure(&csrng, config) == kDifCsrngOk
+addr: 20002048
+string: 
+addr: 20002058
+string: %s%5d %s:%d]
+addr: 20002066
+string: 
+addr: 20002069
+string: I
+addr: 2000206b
+string: W
+addr: 2000206d
+string: E
+addr: 2000206f
+string: F
+addr: 20002071
+string: ?
+addr: 20002073
+string: %
+addr: 20002075
+string: -
+addr: 20002077
+string: 0x

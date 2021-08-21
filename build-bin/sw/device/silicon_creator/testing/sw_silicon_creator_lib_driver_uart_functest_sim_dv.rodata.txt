@@ -1,0 +1,184 @@
+addr: 20001554
+string: �
+addr: 20001557
+string: E
+addr: 20001560
+string: �
+addr: 20001563
+string: 
+addr: 20001568
+string: �
+addr: 2000156b
+string: K
+addr: 20001574
+string: 
+addr: 20001577
+string: 
+addr: 2000157c
+string: �
+addr: 2000157f
+string: Q
+addr: 20001588
+string: 
+addr: 2000158b
+string: 
+addr: 20001590
+string: �
+addr: 20001593
+string: n
+addr: 2000159c
+string: 
+addr: 2000159f
+string: 
+addr: 200015a4
+string: �
+addr: 200015a7
+string: 
+addr: 200015ac
+string: 
+addr: 200015b0
+string: ,
+addr: 200015b3
+string: 
+addr: 200015b8
+string: �
+addr: 200015bb
+string: 
+addr: 200015c0
+string: 
+addr: 200015c4
+string: /
+addr: 200015c7
+string: Q
+addr: 200015cb
+string: S
+addr: 200015cf
+string: U
+addr: 200015d3
+string: W
+addr: 200015d7
+string: %<unexpected nul>%<bad width>0123456789abcdef0123456789ABCDEF%<unknown spec>
+addr: 20001628
+string: 
+addr: 2000162c
+string: b
+addr: 2000162f
+string: 
+addr: 20001638
+string: �
+addr: 2000163b
+string: 
+addr: 20001640
+string: b
+addr: 20001643
+string: !
+addr: 2000164c
+string: �
+addr: 2000164f
+string: 
+addr: 20001654
+string: �
+addr: 20001657
+string: 
+addr: 20001660
+string: �
+addr: 20001663
+string: 
+addr: 20001668
+string: �
+addr: 2000166b
+string: "
+addr: 20001674
+string: �
+addr: 20001677
+string: 
+addr: 20001681
+string: ��
+addr: 20001689
+string: 6n
+addr: 20001691
+string: l�
+addr: 20001698
+string: @B
+addr: 200016a0
+string: ��
+addr: 200016a7
+string: 0
+addr: 200016ab
+string: 0
+addr: 200016b4
+string: 
+addr: 200016b7
+string: "
+addr: 200016c0
+string: P
+addr: 200016c3
+string: 
+addr: 200016c8
+string: 
+addr: 200016cb
+string: "
+addr: 200016d4
+string: k
+addr: 200016d7
+string: 
+addr: 200016d9
+string: ../sw/device/lib/handler.c
+addr: 200017f3
+string: Software IRQ triggered!
+addr: 2000180b
+string: Timer IRQ triggered!
+addr: 20001820
+string: External IRQ triggered!
+addr: 20001838
+string: Instruction access fault, mtval shows fault address
+addr: 2000186c
+string: Illegal Instruction fault, mtval shows instruction content
+addr: 200018a7
+string: Breakpoint triggerd, mtval shows the breakpoint address
+addr: 200018df
+string: Load/Store fault, mtval shows the fault address
+addr: 2000190f
+string: Environment call encountered
+addr: 2000192c
+string: %s
+addr: 2000192f
+string: MTVAL value is 0x%x
+addr: 20001943
+string: %s%5d %s:%d]
+addr: 20001951
+string: I
+addr: 20001953
+string: W
+addr: 20001955
+string: E
+addr: 20001957
+string: F
+addr: 20001959
+string: ?
+addr: 2000195b
+string: %
+addr: 2000195d
+string: -
+addr: 2000195f
+string: 0x
+addr: 20001962
+string: ../sw/device/lib/testing/test_main.c
+addr: 20001987
+string: CHECK-fail: failed to init UART
+addr: 200019a7
+string: CHECK-fail: failed to configure UART
+addr: 200019cc
+string: ../sw/device/lib/testing/test_status.c
+addr: 200019f3
+string: PASS!
+addr: 200019f9
+string: FAIL!
+addr: 200019ff
+string: uart functional test!
+addr: 20001a17
+string: ../sw/device/silicon_creator/lib/drivers/uart_functest.c
+addr: 20001a50
+string: Starting test uart_test...
+addr: 20001a6b
+string: Finished test uart_test: ok.

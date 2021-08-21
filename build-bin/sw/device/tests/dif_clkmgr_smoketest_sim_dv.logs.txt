@@ -1,0 +1,147 @@
+addr: 10000
+severity: 0
+file: sw/device/lib/handler.c
+line: 69
+nargs: 0
+format: Software IRQ triggered!
+str_arg_idx: 
+addr: 10014
+severity: 0
+file: sw/device/lib/handler.c
+line: 75
+nargs: 0
+format: Timer IRQ triggered!
+str_arg_idx: 
+addr: 10028
+severity: 0
+file: sw/device/lib/handler.c
+line: 81
+nargs: 0
+format: External IRQ triggered!
+str_arg_idx: 
+addr: 1003c
+severity: 0
+file: sw/device/lib/handler.c
+line: 110
+nargs: 0
+format: Environment call encountered
+str_arg_idx: 
+addr: 10050
+severity: 0
+file: sw/device/lib/handler.c
+line: 26
+nargs: 1
+format: %0s
+str_arg_idx: 0
+addr: 10064
+severity: 0
+file: sw/device/lib/handler.c
+line: 27
+nargs: 1
+format: MTVAL value is 0x%0h
+str_arg_idx: 
+addr: 10078
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 25
+nargs: 0
+format: CHECK-fail: failed to init UART
+str_arg_idx: 
+addr: 1008c
+severity: 2
+file: sw/device/lib/testing/test_main.c
+line: 33
+nargs: 0
+format: CHECK-fail: failed to configure UART
+str_arg_idx: 
+addr: 100a0
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 28
+nargs: 0
+format: PASS!
+str_arg_idx: 
+addr: 100b4
+severity: 0
+file: sw/device/lib/testing/test_status.c
+line: 34
+nargs: 0
+format: FAIL!
+str_arg_idx: 
+addr: 100c8
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 68
+nargs: 0
+format: CHECK-fail: dif_clkmgr_hintable_clock_get_hint(clkmgr, clock, &enabled) == kDifClkmgrOk
+str_arg_idx: 
+addr: 100dc
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 76
+nargs: 0
+format: CHECK-fail: dif_clkmgr_hintable_clock_set_hint( clkmgr, clock, expected ? kDifClkmgrToggleEnabled : kDifClkmgrToggleDisabled) == kDifClkmgrOk
+str_arg_idx: 
+addr: 100f0
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 78
+nargs: 0
+format: CHECK-fail: dif_clkmgr_hintable_clock_get_hint(clkmgr, clock, &enabled) == kDifClkmgrOk
+str_arg_idx: 
+addr: 10104
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 79
+nargs: 0
+format: CHECK-fail: enabled == expected
+str_arg_idx: 
+addr: 10118
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 85
+nargs: 0
+format: CHECK-fail: dif_clkmgr_hintable_clock_get_enabled(clkmgr, clock, &status) == kDifClkmgrOk
+str_arg_idx: 
+addr: 1012c
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 86
+nargs: 1
+format: CHECK-fail: clock %0d hint is enabled but status is disabled
+str_arg_idx: 
+addr: 10140
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 100
+nargs: 0
+format: CHECK-fail: dif_clkmgr_init(params, &clkmgr) == kDifClkmgrOk
+str_arg_idx: 
+addr: 10154
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 32
+nargs: 0
+format: CHECK-fail: dif_clkmgr_gateable_clock_get_enabled(clkmgr, clock, &enabled) == kDifClkmgrOk
+str_arg_idx: 
+addr: 10168
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 40
+nargs: 0
+format: CHECK-fail: dif_clkmgr_gateable_clock_set_enabled( clkmgr, clock, expected ? kDifClkmgrToggleEnabled : kDifClkmgrToggleDisabled) == kDifClkmgrOk
+str_arg_idx: 
+addr: 1017c
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 42
+nargs: 0
+format: CHECK-fail: dif_clkmgr_gateable_clock_get_enabled(clkmgr, clock, &enabled) == kDifClkmgrOk
+str_arg_idx: 
+addr: 10190
+severity: 2
+file: sw/device/tests/dif/dif_clkmgr_smoketest.c
+line: 43
+nargs: 0
+format: CHECK-fail: enabled == expected
+str_arg_idx:
