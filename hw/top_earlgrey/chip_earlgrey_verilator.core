@@ -120,6 +120,7 @@ targets:
           # XXX: Cleanup all warnings and remove this option
           # (or make it more fine-grained at least)
           - '-Wno-fatal'
+          - '--stats'
 
   lint:
     <<: *default_target
