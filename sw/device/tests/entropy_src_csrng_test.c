@@ -358,6 +358,9 @@ void ottf_external_isr(uint32_t *exc_info) {
                                         plic_irq_id));
 }
 
+__attribute__((section(".iterCount")))
+volatile unsigned iterations = 1;
+
 bool test_main(void) {
   init_peripherals();
 
@@ -377,12 +380,13 @@ bool test_main(void) {
     edn_seed.data[i] = rand_testutils_gen32();
   }
 
-  uint32_t num_iterations = kTestParamNumIterationsSim;
-  if (kDeviceType != kDeviceSimDV && kDeviceType != kDeviceSimVerilator) {
-    num_iterations = kTestParamNumIterationsOther;
-  }
+  uint32_t num_iterations = iterations;
+  //if (kDeviceType != kDeviceSimDV && kDeviceType != kDeviceSimVerilator) {
+  //  num_iterations = kTestParamNumIterationsOther;
+  //}
 
   for (size_t i = 0; i < num_iterations; ++i) {
+    LOG_INFO("I%d", (int)i);
     test_csrng_sw_entropy_req_interrupt(&csrng_seed);
     test_edn_cmd_done(&edn_seed);
   }

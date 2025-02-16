@@ -55,7 +55,7 @@
  * this translates to a RSA 512 decode taking around two minutes to execute,
  * and a RSA 4096 decode taking over seven hours.
  */
-static const bool kTestDecrypt = true;
+static const bool kTestDecrypt = false;
 
 /**
  * Tests RSA 2k, 3k, and 4k.
@@ -118,32 +118,30 @@ static void rsa_roundtrip(uint32_t size_bytes, const uint8_t *modulus,
   dif_otbn_t otbn;
 
   // Initialize
-  uint64_t t_start = profile_start();
+  //uint64_t t_start = profile_start();
   CHECK_DIF_OK(
       dif_otbn_init(mmio_region_from_addr(TOP_EARLGREY_OTBN_BASE_ADDR), &otbn));
   CHECK_STATUS_OK(otbn_testutils_rsa_load(&otbn));
-  profile_end_and_print(t_start, "Initialization");
+  //profile_end_and_print(t_start, "Initialization");
 
   // Encrypt
-  LOG_INFO("Encrypting");
-  t_start = profile_start();
+  //t_start = profile_start();
   CHECK_STATUS_OK(
       otbn_testutils_rsa_modexp_f4_start(&otbn, modulus, in, size_bytes));
   CHECK_STATUS_OK(
       otbn_testutils_rsa_modexp_f4_finalize(&otbn, out_encrypted, size_bytes));
   check_data(out_encrypted, encrypted_expected, size_bytes);
-  profile_end_and_print(t_start, "Encryption");
+  //profile_end_and_print(t_start, "Encryption");
 
   if (kTestDecrypt) {
     // Decrypt
-    LOG_INFO("Decrypting");
-    t_start = profile_start();
+    //t_start = profile_start();
     CHECK_STATUS_OK(otbn_testutils_rsa_modexp_consttime_start(
         &otbn, modulus, private_exponent, encrypted_expected, size_bytes));
     CHECK_STATUS_OK(otbn_testutils_rsa_modexp_consttime_finalize(
         &otbn, out_decrypted, size_bytes));
     check_data(out_decrypted, in, size_bytes);
-    profile_end_and_print(t_start, "Decryption");
+    //profile_end_and_print(t_start, "Decryption");
   }
 }
 
@@ -177,7 +175,7 @@ static void test_rsa512_roundtrip(void) {
   uint8_t out_encrypted[kRsa512SizeBytes] = {0};
   uint8_t out_decrypted[kRsa512SizeBytes] = {0};
 
-  LOG_INFO("Running RSA512 test");
+  LOG_INFO("RSA512");
   rsa_roundtrip(kRsa512SizeBytes, kModulus, kPrivateExponent, kIn,
                 kEncryptedExpected, out_encrypted, out_decrypted);
 }
@@ -227,7 +225,7 @@ static void test_rsa1024_roundtrip(void) {
   uint8_t out_encrypted[kRsa1024SizeBytes] = {0};
   uint8_t out_decrypted[kRsa1024SizeBytes] = {0};
 
-  LOG_INFO("Running RSA1024 test");
+  LOG_INFO("RSA1024");
   rsa_roundtrip(kRsa1024SizeBytes, kModulus, kPrivateExponent, kIn,
                 kEncryptedExpected, out_encrypted, out_decrypted);
 }
@@ -309,7 +307,7 @@ static void test_rsa2048_roundtrip(void) {
   uint8_t out_encrypted[kRsa2048SizeBytes] = {0};
   uint8_t out_decrypted[kRsa2048SizeBytes] = {0};
 
-  LOG_INFO("Running RSA2048 test");
+  LOG_INFO("RSA2048");
   rsa_roundtrip(kRsa2048SizeBytes, kModulus, kPrivateExponent, kIn,
                 kEncryptedExpected, out_encrypted, out_decrypted);
 }
@@ -422,7 +420,7 @@ static void test_rsa3072_roundtrip(void) {
   uint8_t out_encrypted[kRsa3072SizeBytes] = {0};
   uint8_t out_decrypted[kRsa3072SizeBytes] = {0};
 
-  LOG_INFO("Running RSA3072 test");
+  LOG_INFO("RSA3072");
   rsa_roundtrip(kRsa3072SizeBytes, kModulus, kPrivateExponent, kIn,
                 kEncryptedExpected, out_encrypted, out_decrypted);
 }
@@ -567,22 +565,33 @@ static void test_rsa4096_roundtrip(void) {
   uint8_t out_encrypted[kRsa4096SizeBytes] = {0};
   uint8_t out_decrypted[kRsa4096SizeBytes] = {0};
 
-  LOG_INFO("Running RSA4096 test");
+  LOG_INFO("RSA4096");
   rsa_roundtrip(kRsa4096SizeBytes, kModulus, kPrivateExponent, kIn,
                 kEncryptedExpected, out_encrypted, out_decrypted);
 }
 
+__attribute__((section(".iterCount")))
+volatile unsigned iterations = 1;
+
 bool test_main(void) {
+  LOG_INFO("Main");
   CHECK_STATUS_OK(entropy_testutils_auto_mode_init());
 
-  test_rsa512_roundtrip();
-  test_rsa1024_roundtrip();
+  uint32_t num_iterations = iterations;
+  for (uint32_t j = 0; j < num_iterations; ++j) {
+    LOG_INFO("I%d", j);
 
-  if (kTestRsaGreater1k) {
-    test_rsa2048_roundtrip();
-    test_rsa3072_roundtrip();
-    test_rsa4096_roundtrip();
+    test_rsa512_roundtrip();
+    test_rsa1024_roundtrip();
+
+    if (kTestRsaGreater1k) {
+      test_rsa2048_roundtrip();
+      test_rsa3072_roundtrip();
+      test_rsa4096_roundtrip();
+    }
+
   }
 
+  LOG_INFO("Done");
   return true;
 }

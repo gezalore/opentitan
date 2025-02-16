@@ -45,31 +45,31 @@ static const char *stringify_severity(log_severity_t severity) {
  * @param ... format parameters matching the format string.
  */
 void base_log_internal_core(const log_fields_t *log, ...) {
-  size_t file_name_len =
-      (size_t)(((const char *)memchr(log->file_name, '\0', PTRDIFF_MAX)) -
-               log->file_name);
-  const char *base_name = memrchr(log->file_name, '/', file_name_len);
-  if (base_name == NULL) {
-    base_name = log->file_name;
-  } else {
-    ++base_name;  // Remove the final '/'.
-  }
+  //size_t file_name_len =
+  //    (size_t)(((const char *)memchr(log->file_name, '\0', PTRDIFF_MAX)) -
+  //             log->file_name);
+  //const char *base_name = memrchr(log->file_name, '/', file_name_len);
+  //if (base_name == NULL) {
+  //  base_name = log->file_name;
+  //} else {
+  //  ++base_name;  // Remove the final '/'.
+  //}
 
   // A small global counter that increments with each log line. This can be
   // useful for seeing how many times this function has been called, even if
   // nothing was printed for some time.
-  static uint16_t global_log_counter = 0;
+  //static uint16_t global_log_counter = 0;
 
-  base_printf("%s%05d %s:%d] ", stringify_severity(log->severity),
-              global_log_counter, base_name, log->line);
-  ++global_log_counter;
+  //base_printf("%s%05d %s:%d] ", stringify_severity(log->severity),
+  //            global_log_counter, base_name, log->line);
+  //++global_log_counter;
 
   va_list args;
   va_start(args, log);
   base_vprintf(log->format, args);
   va_end(args);
 
-  base_printf("\r\n");
+  base_printf("\n");
 }
 
 /**

@@ -33,23 +33,18 @@ static otcrypto_key_config_t make_key_config(const aes_test_t *test) {
   otcrypto_key_mode_t key_mode;
   switch (test->mode) {
     case kOtcryptoAesModeEcb:
-      LOG_INFO("Mode: ECB");
       key_mode = kOtcryptoKeyModeAesEcb;
       break;
     case kOtcryptoAesModeCbc:
-      LOG_INFO("Mode: CBC");
       key_mode = kOtcryptoKeyModeAesCbc;
       break;
     case kOtcryptoAesModeCfb:
-      LOG_INFO("Mode: CFB");
       key_mode = kOtcryptoKeyModeAesCfb;
       break;
     case kOtcryptoAesModeOfb:
-      LOG_INFO("Mode: OFB");
       key_mode = kOtcryptoKeyModeAesOfb;
       break;
     case kOtcryptoAesModeCtr:
-      LOG_INFO("Mode: CTR");
       key_mode = kOtcryptoKeyModeAesCtr;
       break;
     default:
@@ -250,21 +245,50 @@ static status_t decrypt_streaming_test(void) {
 
 OTTF_DEFINE_TEST_CONFIG();
 
+__attribute__((section(".iterCount")))
+volatile unsigned iterations = 1;
+
 bool test_main(void) {
+  LOG_INFO("Main");
   status_t result = OK_STATUS();
 
   // Start the entropy complex.
   CHECK_STATUS_OK(entropy_complex_init());
 
-  for (size_t i = 0; i < ARRAYSIZE(kAesTests); i++) {
-    LOG_INFO("Starting AES test %d of %d...", i + 1, ARRAYSIZE(kAesTests));
+
+  uint32_t num_iterations = iterations;
+  for (uint32_t j = 0; j < num_iterations; ++j) {
+    LOG_INFO("I%d", j);
+
+  for (size_t i = 0; i < ARRAYSIZE(kAesTests) - 2; i++) {
     test = &kAesTests[i];
+    switch (test->mode) {
+      case kOtcryptoAesModeEcb:
+        LOG_INFO("ECB");
+        break;
+      case kOtcryptoAesModeCbc:
+        LOG_INFO("CBC");
+        break;
+      case kOtcryptoAesModeCfb:
+        LOG_INFO("CFB");
+        break;
+      case kOtcryptoAesModeOfb:
+        LOG_INFO("OFB");
+        break;
+      case kOtcryptoAesModeCtr:
+        LOG_INFO("CTR");
+        break;
+      default:
+        CHECK(false, "Invalid block cipher mode.");
+    };
     EXECUTE_TEST(result, encrypt_test);
     EXECUTE_TEST(result, decrypt_test);
     EXECUTE_TEST(result, encrypt_streaming_test);
     EXECUTE_TEST(result, decrypt_streaming_test);
-    LOG_INFO("Finished AES test %d.", i + 1);
   }
 
+  }
+
+  LOG_INFO("Done");
   return status_ok(result);
 }

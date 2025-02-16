@@ -108,7 +108,7 @@ static void report_test_status(bool result) {
       ottf_console_init();
     }
     if (!kOttfTestConfig.silence_console_prints) {
-      LOG_INFO("Finished %s", kOttfTestConfig.file);
+      //LOG_INFO("Finished %s", kOttfTestConfig.file);
     }
   }
   // Print the reported status in case of error. Beware that
@@ -163,7 +163,7 @@ void _ottf_main(void) {
   if (kDeviceType != kDeviceSimDV) {
     ottf_console_init();
     if (!kOttfTestConfig.silence_console_prints) {
-      LOG_INFO("Running %s", kOttfTestConfig.file);
+      //LOG_INFO("Running %s", kOttfTestConfig.file);
     }
   }
 

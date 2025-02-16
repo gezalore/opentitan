@@ -70,11 +70,11 @@ typedef struct log_fields {
    * are no requirements for this string, other than that it be some kind of
    * UNIX-like pathname.
    */
-  const char *file_name;
+  const char *__file_name;
   /**
    * Indicates the line number at which the LOG line occurs, e.g., `__LINE__`.
    */
-  uint32_t line;
+   uint32_t __line;
   /**
    * Indicates the number of arguments passed to the format string.
    *
@@ -156,7 +156,7 @@ extern char _dv_log_offset[];
  */
 #define LOG_MAKE_FIELDS_(_severity, _format, ...)                         \
   {                                                                       \
-    .severity = _severity, .file_name = "" __FILE__ "", .line = __LINE__, \
+    .severity = _severity, \
     .nargs = OT_VA_ARGS_COUNT(_format, ##__VA_ARGS__), .format = _format, \
   }
 

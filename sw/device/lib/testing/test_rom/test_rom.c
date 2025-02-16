@@ -155,7 +155,7 @@ bool rom_test_main(void) {
   }
 
   // Print the chip version information
-  LOG_INFO("kChipInfo: scm_revision=%x", kChipInfo.scm_revision);
+  //LOG_INFO("kChipInfo: scm_revision=%x", kChipInfo.scm_revision);
 
   // Skip sram_init for test_rom
   dif_rstmgr_reset_info_bitfield_t reset_reasons;
@@ -227,7 +227,7 @@ bool rom_test_main(void) {
 
   // Jump to the OTTF in flash. Within the flash binary, it is the
   // responsibily of the OTTF to set up its own stack, and to never return.
-  LOG_INFO("Test ROM complete, jumping to flash (addr: %x)!", entry_point);
+  //LOG_INFO("Test ROM complete, jumping to flash (addr: %x)!", entry_point);
   ((ottf_entry_point *)entry_point)();
 
   // If the flash image returns, we should abort anyway.

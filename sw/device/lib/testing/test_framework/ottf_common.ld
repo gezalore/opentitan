@@ -287,6 +287,12 @@ SECTIONS {
    _non_volatile_counter_3_end = _non_volatile_counter_2_start;
    _non_volatile_counter_3_start = _non_volatile_counter_3_end - _non_volatile_counter_size;
 
+  .iterCount _non_volatile_counter_3_start - 8 : ALIGN(8) {
+    *(.iterCount)
+  } > ottf_flash
+
+
+
   /**
    * Non-volatile counter area in flash.
    *

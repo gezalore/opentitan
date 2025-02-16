@@ -110,30 +110,26 @@ char *ottf_task_get_self_name(void);
  * Execute a test function, profile the execution and log the test result.
  * Update the result value if there is a failure code.
  */
+//#define EXECUTE_TEST(result_, test_function_, ...)                       \
+//  do {                                                                   \
+//    LOG_INFO("Start " #test_function_);                    \
+//    uint64_t t_start_ = ibex_mcycle_read();                              \
+//    status_t local_status = INTO_STATUS(test_function_(__VA_ARGS__));    \
+//    uint64_t cycles_ = ibex_mcycle_read() - t_start_;                    \
+//    if (status_ok(local_status)) {                                       \
+//      LOG_INFO("Success %d", (uint32_t)cycles_); \
+//    } else {                                                             \
+//      result_ = local_status;                                            \
+//      LOG_ERROR("Faliure %d", (uint32_t)cycles_); \
+//    }                                                                    \
+//  } while (0)
+
 #define EXECUTE_TEST(result_, test_function_, ...)                       \
   do {                                                                   \
-    LOG_INFO("Starting test " #test_function_ "...");                    \
-    uint64_t t_start_ = ibex_mcycle_read();                              \
     status_t local_status = INTO_STATUS(test_function_(__VA_ARGS__));    \
-    uint64_t cycles_ = ibex_mcycle_read() - t_start_;                    \
-    CHECK(kClockFreqCpuHz <= UINT32_MAX, "");                            \
-    uint32_t clock_mhz = (uint32_t)kClockFreqCpuHz / 1000000;            \
     if (status_ok(local_status)) {                                       \
-      if (cycles_ <= UINT32_MAX) {                                       \
-        uint32_t micros = (uint32_t)cycles_ / clock_mhz;                 \
-        LOG_INFO("Successfully finished test " #test_function_           \
-                 " in %u cycles or %u us @ %u MHz.",                     \
-                 (uint32_t)cycles_, micros, clock_mhz);                  \
-      } else {                                                           \
-        uint32_t cycles_lower_ = (uint32_t)(cycles_ & UINT32_MAX);       \
-        uint32_t cycles_upper_ = (uint32_t)(cycles_ >> 32);              \
-        LOG_INFO("Successfully finished test " #test_function_           \
-                 " in 0x%08x%08x cycles.",                               \
-                 cycles_upper_, cycles_lower_);                          \
-      }                                                                  \
     } else {                                                             \
       result_ = local_status;                                            \
-      LOG_ERROR("Finished test " #test_function_ ": %r.", local_status); \
     }                                                                    \
   } while (0)
 

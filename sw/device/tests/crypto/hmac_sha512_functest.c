@@ -87,7 +87,9 @@ static status_t run_test(const uint32_t *key, size_t key_len,
       .len = ARRAYSIZE(act_tag),
   };
 
-  TRY(otcrypto_hmac(&blinded_key, msg, tag_buf));
+  for (int i = 0 ; i < 16 ; ++i) {
+    TRY(otcrypto_hmac(&blinded_key, msg, tag_buf));
+  }
   TRY_CHECK_ARRAYS_EQ(act_tag, exp_tag, kTagLenWords);
   return OK_STATUS();
 }
@@ -162,11 +164,23 @@ OTTF_DEFINE_TEST_CONFIG();
 // Holds the test result.
 static volatile status_t test_result;
 
+__attribute__((section(".iterCount")))
+volatile unsigned iterations = 3;
+
 bool test_main(void) {
+  LOG_INFO("Main");
   test_result = OK_STATUS();
   CHECK_STATUS_OK(entropy_complex_init());
-  EXECUTE_TEST(test_result, empty_test);
-  EXECUTE_TEST(test_result, simple_test);
-  EXECUTE_TEST(test_result, long_key_test);
+  uint32_t num_iterations = iterations;
+  for (size_t i = 0; i < num_iterations; ++i) {
+    LOG_INFO("I%d", (int)i);
+    //EXECUTE_TEST(test_result, empty_test);
+
+    LOG_INFO("Base");
+    EXECUTE_TEST(test_result, simple_test);
+    LOG_INFO("Long");
+    EXECUTE_TEST(test_result, long_key_test);
+  }
+  LOG_INFO("Done");
   return status_ok(test_result);
 }

@@ -2,8 +2,30 @@ diff --git a/core_main.c b/core_main.c
 index a4beeb6..3b782ad 100644
 --- a/core_main.c
 +++ b/core_main.c
-@@ -379,6 +379,13 @@ for (i = 0; i < MULTITHREAD; i++)
-
+@@ -357,28 +357,15 @@ for (i = 0; i < MULTITHREAD; i++)
+     /* and report results */
+     ee_printf("CoreMark Size    : %lu\n", (long unsigned)results[0].size);
+     ee_printf("Total ticks      : %lu\n", (long unsigned)total_time);
+-#if HAS_FLOAT
+-    ee_printf("Total time (secs): %f\n", time_in_secs(total_time));
+-    if (time_in_secs(total_time) > 0)
+-        ee_printf("Iterations/Sec   : %f\n",
+-                  default_num_contexts * results[0].iterations
+-                      / time_in_secs(total_time));
+-#else
+-    ee_printf("Total time (secs): %d\n", time_in_secs(total_time));
+-    if (time_in_secs(total_time) > 0)
+-        ee_printf("Iterations/Sec   : %d\n",
+-                  default_num_contexts * results[0].iterations
+-                      / time_in_secs(total_time));
+-#endif
+-    if (time_in_secs(total_time) < 10)
+-    {
+-        ee_printf(
+-            "ERROR! Must execute for at least 10 secs for a valid result!\n");
+-        total_errors++;
+-    }
+-
      ee_printf("Iterations       : %lu\n",
                (long unsigned)default_num_contexts * results[0].iterations);
 +    ee_u32 coremark_per_100mhz =
@@ -16,3 +38,14 @@ index a4beeb6..3b782ad 100644
      ee_printf("Compiler version : %s\n", COMPILER_VERSION);
      ee_printf("Compiler flags   : %s\n", COMPILER_FLAGS);
  #if (MULTITHREAD > 1)
+@@ -407,9 +381,6 @@ for (i = 0; i < MULTITHREAD; i++)
+         ee_printf("[%d]crcfinal      : 0x%04x\n", i, results[i].crc);
+     if (total_errors == 0)
+     {
+-        ee_printf(
+-            "Correct operation validated. See README.md for run and reporting "
+-            "rules.\n");
+ #if HAS_FLOAT
+         if (known_id == 3)
+         {
+

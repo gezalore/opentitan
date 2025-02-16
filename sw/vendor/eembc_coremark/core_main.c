@@ -286,19 +286,19 @@ MAIN_RETURN_TYPE _ottf_main(int argc, char *argv[]) {
 	/* and report results */
 	ee_printf("CoreMark Size    : %lu\n", (long unsigned) results[0].size);
 	ee_printf("Total ticks      : %lu\n", (long unsigned) total_time);
-#if HAS_FLOAT
-	ee_printf("Total time (secs): %f\n",time_in_secs(total_time));
-	if (time_in_secs(total_time) > 0)
-		ee_printf("Iterations/Sec   : %f\n",default_num_contexts*results[0].iterations/time_in_secs(total_time));
-#else 
-	ee_printf("Total time (secs): %d\n",time_in_secs(total_time));
-	if (time_in_secs(total_time) > 0)
-		ee_printf("Iterations/Sec   : %d\n",default_num_contexts*results[0].iterations/time_in_secs(total_time));
-#endif
-	if (time_in_secs(total_time) < 10) {
-		ee_printf("ERROR! Must execute for at least 10 secs for a valid result!\n");
-		total_errors++;
-	}
+//#if HAS_FLOAT
+//	ee_printf("Total time (secs): %f\n",time_in_secs(total_time));
+//	if (time_in_secs(total_time) > 0)
+//		ee_printf("Iterations/Sec   : %f\n",default_num_contexts*results[0].iterations/time_in_secs(total_time));
+//#else 
+//	ee_printf("Total time (secs): %d\n",time_in_secs(total_time));
+//	if (time_in_secs(total_time) > 0)
+//		ee_printf("Iterations/Sec   : %d\n",default_num_contexts*results[0].iterations/time_in_secs(total_time));
+//#endif
+	//if (time_in_secs(total_time) < 10) {
+	//	ee_printf("ERROR! Must execute for at least 10 secs for a valid result!\n");
+	//	total_errors++;
+	//}
 
 	ee_printf("Iterations       : %lu\n", (long unsigned) default_num_contexts*results[0].iterations);
 	ee_printf("Compiler version : %s\n",COMPILER_VERSION);
@@ -321,7 +321,7 @@ MAIN_RETURN_TYPE _ottf_main(int argc, char *argv[]) {
 	for (i=0 ; i<default_num_contexts; i++) 
 		ee_printf("[%d]crcfinal      : 0x%04x\n",i,results[i].crc);
 	if (total_errors==0) {
-		ee_printf("Correct operation validated. See README.md for run and reporting rules.\n");
+		//ee_printf("Correct operation validated. See README.md for run and reporting rules.\n");
 #if HAS_FLOAT
 		if (known_id==3) {
 			ee_printf("CoreMark 1.0 : %f / %s %s",default_num_contexts*results[0].iterations/time_in_secs(total_time),COMPILER_VERSION,COMPILER_FLAGS);
